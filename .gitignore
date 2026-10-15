@@ -1,0 +1,8 @@
+.reassembled/
+_site/
+app/node_modules/
+app/dist/
+app/public/
+app/src/package-data/
+.env
+.env.local

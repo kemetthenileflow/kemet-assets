@@ -1,0 +1,86 @@
+[
+  {
+    "path": "cards/participles/009.webp",
+    "source": "/pdfs/grammar/participles.pdf",
+    "page": 9,
+    "bytes": 244392
+  },
+  {
+    "path": "cards/participles/030.webp",
+    "source": "/pdfs/grammar/participles.pdf",
+    "page": 30,
+    "bytes": 209988
+  },
+  {
+    "path": "cards/conditionals/030.webp",
+    "source": "/pdfs/grammar/conditionals.pdf",
+    "page": 30,
+    "bytes": 251464
+  },
+  {
+    "path": "cards/cleopatra/030.webp",
+    "source": "/pdfs/story/cleopatra.pdf",
+    "page": 30,
+    "bytes": 84760
+  },
+  {
+    "path": "cards/cleopatra/011.webp",
+    "source": "/pdfs/story/cleopatra.pdf",
+    "page": 11,
+    "bytes": 105336
+  },
+  {
+    "path": "cards/cleopatra/004.webp",
+    "source": "/pdfs/story/cleopatra.pdf",
+    "page": 4,
+    "bytes": 117966
+  },
+  {
+    "path": "cards/osiris/011.webp",
+    "source": "/pdfs/story/osiris.pdf",
+    "page": 11,
+    "bytes": 105866
+  },
+  {
+    "path": "cards/living_lexicon/014.webp",
+    "source": "/pdfs/story/living_lexicon.pdf",
+    "page": 14,
+    "bytes": 52574
+  },
+  {
+    "path": "cards/living_lexicon/062.webp",
+    "source": "/pdfs/story/living_lexicon.pdf",
+    "page": 62,
+    "bytes": 60004
+  },
+  {
+    "path": "cards/living_lexicon/191.webp",
+    "source": "/pdfs/story/living_lexicon.pdf",
+    "page": 191,
+    "bytes": 64482
+  },
+  {
+    "path": "cards/thoth/035.webp",
+    "source": "/pdfs/story/thoth.pdf",
+    "page": 35,
+    "bytes": 101348
+  },
+  {
+    "path": "cards/thoth/021.webp",
+    "source": "/pdfs/story/thoth.pdf",
+    "page": 21,
+    "bytes": 156710
+  },
+  {
+    "path": "cards/thoth/028.webp",
+    "source": "/pdfs/story/thoth.pdf",
+    "page": 28,
+    "bytes": 107900
+  },
+  {
+    "path": "cards/thoth/013.webp",
+    "source": "/pdfs/story/thoth.pdf",
+    "page": 13,
+    "bytes": 118814
+  }
+]

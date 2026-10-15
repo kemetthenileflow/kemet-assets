@@ -1,0 +1,21 @@
+{
+  "finalPackageSha256": "0dd17d2dc718ed062f3fff1e54f4b3a32b2e3db801696ea89e3fd84193c71f8f",
+  "nestedPackages": [
+    {
+      "name": "02_Control_Visuals.zip",
+      "sha256": "8e669eaa57393a4a25a1b452337ed3e0eceeceda675cd57d1a76e7df509c1168",
+      "matchesSeparateLibraryPackage": true
+    },
+    {
+      "name": "03_PDF_Documents.zip",
+      "sha256": "3ded94e0fdd90b1a84d4cf58e13ff753825fd8e357dfbe34e123c005c0a5fa5c",
+      "matchesSeparateLibraryPackage": true
+    },
+    {
+      "name": "04_Audio_Video.zip",
+      "sha256": "45ff881d8388759916d1136e540f74d5303ae5bd53c3240c6a32204b93404b7c",
+      "matchesSeparateLibraryPackage": true
+    }
+  ],
+  "duplicateUploadAvoided": true
+}
