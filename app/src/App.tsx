@@ -209,11 +209,16 @@ export default function App() {
       <div className="temple-sidewall temple-sidewall-right" aria-hidden="true"></div>
 
       <header className="temple-header">
-        <div className="brand-group">
+        <div className="brand-group" style={{ justifyContent: "center" }}>
           <button className="brand-button" onClick={back} aria-label="Kemet Home">
             <Logo />
           </button>
-          <div className="header-identity">
+          <div className="header-identity" style={{ textAlign: "center" }}>
+            <div className="brand-wordmark" style={{ marginBottom: 8, lineHeight: 1.2 }}>
+              <div dir="ltr" style={{ fontSize: "clamp(20px, 2.3vw, 30px)", fontWeight: 800, color: "#553e18" }}>
+                KEMET: The Nile Flow
+              </div>
+            </div>
             <span className="app-subtitle">Egyptian Baccalaureate — Second Secondary — English</span>
             <span className="ai-assistant-badge">AI Language Assistant</span>
           </div>
@@ -252,15 +257,19 @@ export default function App() {
         {/* HOME VIEW: Hero, 3 Gateways, Stepped Pyramid, Daily Symbol, Library Chips */}
         {route.page === 'home' && (
           <>
-            <section className="hero">
-              <span className="eyebrow">KEMET: THE NILE FLOW</span>
-              <h1>{lang === 'ar' ? 'بمعرفتك تصنع أثرًا' : 'Let knowledge shape your legacy.'}</h1>
+            <section className="hero" style={{ textAlign: "center" }}>
+              <span className="eyebrow">LEARN · PRACTISE · DISCOVER</span>
+              <h1 dir="ltr" style={{ fontSize: "clamp(30px, 4.2vw, 48px)", lineHeight: 1.15, color: "#173b3d", margin: "16px 0 8px" }}>KEMET: The Nile Flow</h1>
+              <div lang="egy" dir="ltr" aria-label="Kemet — km.t — كِمِت بالهيروغليفية" style={{ fontFamily: "Noto Sans Egyptian Hieroglyphs, Segoe UI Historic, sans-serif", fontSize: 26, letterSpacing: 5, color: "#766020", margin: "8px 0 14px" }}>𓆎𓅓𓏏𓊖</div>
+              <p style={{ color: "#006e77", fontWeight: 700, fontSize: 19, margin: "6px 0" }}>KEMET AI Language Assistant</p>
+              <p style={{ color: "#553e18", fontWeight: 600, fontSize: 16, margin: "6px 0 14px" }}>English Baccalaureate – Secondary 2</p>
+              <p style={{ fontStyle: "italic", fontSize: 17 }}>{lang === 'ar' ? 'بمعرفتك تصنع أثرًا' : 'Let knowledge shape your legacy.'}</p>
               <p>
                 {lang === 'ar'
                   ? 'اختار طريقك، وخد خطوة صغيرة نحو فهم أوضح عبر لغة حية وأصيلة.'
                   : 'Choose your path through a living library of language grounded in authentic Egyptian heritage.'}
               </p>
-              <div className="hero-cta-group">
+              <div className="hero-cta-group" style={{ justifyContent: "center" }}>
                 <button
                   className="primary primary-hero"
                   onClick={() => go(read<Route>('kemet_resume_' + profile().uid, { page: 'journey' }))}

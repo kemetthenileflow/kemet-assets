@@ -7,8 +7,8 @@
   "files": [
     {
       "path": "IMPLEMENTATION_REPORT_2026-10-16.md",
-      "bytes": 8745,
-      "sha256": "e800272c26853379273078a3b95686324b368bc1dd963d6d8c2364751100aba8"
+      "bytes": 9777,
+      "sha256": "4c99aa9d43fa2a66f023be83019660ca8c977566aeea254ba31c4d5461dd6c7d"
     },
     {
       "path": "acceptance-results.txt",
@@ -37,8 +37,8 @@
     },
     {
       "path": "src/App.tsx",
-      "bytes": 31809,
-      "sha256": "9fd72d7a09486d40fb823e0959882e22106067a20abc71f4cccae68f5b4c918f"
+      "bytes": 33002,
+      "sha256": "b182a6744571d2cb8b7fae60edbea54a8c15ccc979f01a3b8d1d914809b4c8bd"
     },
     {
       "path": "src/activities.tsx",
@@ -105,5 +105,6 @@
       "bytes": 213,
       "sha256": "776deed028b575a195d2dd2b17af0fd519927feca2db149a7a695c8eb6ee92f7"
     }
-  ]
+  ],
+  "brandingUpdate": "Owner requested exact title and Kemet hieroglyph line; manually applied and visually verified in current draft."
 }
