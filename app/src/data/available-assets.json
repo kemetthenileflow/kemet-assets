@@ -1,1 +1,2634 @@
-{"/brand/intro.mp4": {"bytes": 2705849, "available": true}, "/brand/logo_elements_reference.png": {"bytes": 2111863, "available": true}, "/brand/logo_authoritative.png": {"bytes": 1845319, "available": true}, "/video/intro.mp4": {"bytes": 2705849, "available": true}, "/heritage/ramses.svg": {"bytes": 923, "available": true}, "/heritage/mahfouz.svg": {"bytes": 908, "available": true}, "/heritage/zewail.svg": {"bytes": 1040, "available": true}, "/heritage/wedjat.svg": {"bytes": 958, "available": true}, "/heritage/scarab.svg": {"bytes": 998, "available": true}, "/heritage/papyrus.svg": {"bytes": 914, "available": true}, "/heritage/cleopatra.svg": {"bytes": 897, "available": true}, "/heritage/rosetta.svg": {"bytes": 914, "available": true}, "/heritage/lotus.svg": {"bytes": 920, "available": true}, "/heritage/ankh.svg": {"bytes": 883, "available": true}, "/art/nile_sandstone.png": {"bytes": 3271471, "available": true}, "/pdfs/sources/unit1_original.pdf": {"bytes": 35522435, "available": true}, "/pdfs/unit1/dyslexia_friendly.pdf": {"bytes": 7492725, "available": true}, "/pdfs/unit1/below_level.pdf": {"bytes": 5613322, "available": true}, "/pdfs/unit1/above_level.pdf": {"bytes": 5660487, "available": true}, "/pdfs/unit1/standard.pdf": {"bytes": 5583430, "available": true}, "/pdfs/story/read_your_story.pdf": {"bytes": 10035027, "available": true}, "/pdfs/story/thoth.pdf": {"bytes": 10103875, "available": true}, "/pdfs/story/characters.pdf": {"bytes": 26420744, "available": true}, "/pdfs/story/cleopatra.pdf": {"bytes": 8396087, "available": true}, "/pdfs/story/osiris.pdf": {"bytes": 3771558, "available": true}, "/pdfs/story/living_lexicon.pdf": {"bytes": 14057376, "available": true}, "/pdfs/grammar/participles.pdf": {"bytes": 22564695, "available": true}, "/pdfs/grammar/relative_clauses.pdf": {"bytes": 26018224, "available": true}, "/pdfs/grammar/conditionals.pdf": {"bytes": 28915247, "available": true}, "/pdfs/story/levels/dyslexia_friendly.pdf": {"bytes": 2208651, "available": true}, "/pdfs/story/levels/below_level.pdf": {"bytes": 2099018, "available": true}, "/pdfs/story/levels/above_level.pdf": {"bytes": 2090627, "available": true}, "/pdfs/story/levels/standard.pdf": {"bytes": 2090475, "available": true}, "/audio/words/evidence.wav": {"bytes": 62460, "available": true}, "/audio/words/explain.wav": {"bytes": 67408, "available": true}, "/audio/words/challenge.wav": {"bytes": 59204, "available": true}, "/audio/words/courage.wav": {"bytes": 56254, "available": true}, "/audio/words/damaged.wav": {"bytes": 56158, "available": true}, "/audio/words/face.wav": {"bytes": 53258, "available": true}, "/audio/words/energy.wav": {"bytes": 54822, "available": true}, "/audio/words/impress.wav": {"bytes": 59196, "available": true}, "/audio/words/value.wav": {"bytes": 58624, "available": true}, "/audio/words/remarkable.wav": {"bytes": 69756, "available": true}, "/audio/words/experienced.wav": {"bytes": 74138, "available": true}, "/audio/words/mistaken.wav": {"bytes": 65710, "available": true}, "/audio/words/realise.wav": {"bytes": 58216, "available": true}, "/audio/words/danger.wav": {"bytes": 57388, "available": true}, "/audio/words/reporter.wav": {"bytes": 62766, "available": true}, "/audio/words/brave.wav": {"bytes": 53738, "available": true}, "/audio/words/discover.wav": {"bytes": 62738, "available": true}, "/audio/words/unknown.wav": {"bytes": 62214, "available": true}, "/audio/words/evolution.wav": {"bytes": 66926, "available": true}, "/audio/words/consider.wav": {"bytes": 63440, "available": true}, "/audio/words/refuse.wav": {"bytes": 60412, "available": true}, "/audio/words/zoologist.wav": {"bytes": 69198, "available": true}, "/audio/words/find_out.wav": {"bytes": 70736, "available": true}, "/audio/words/risk.wav": {"bytes": 50280, "available": true}, "/audio/words/assignment.wav": {"bytes": 66854, "available": true}, "/audio/words/complicated.wav": {"bytes": 79414, "available": true}, "/audio/words/sketches.wav": {"bytes": 60148, "available": true}, "/audio/words/suddenly.wav": {"bytes": 59440, "available": true}, "/audio/words/pretend.wav": {"bytes": 63238, "available": true}, "/audio/words/purpose.wav": {"bytes": 56592, "available": true}, "/audio/words/aggressive.wav": {"bytes": 60202, "available": true}, "/audio/words/character.wav": {"bytes": 64836, "available": true}, "/audio/words/willing.wav": {"bytes": 53080, "available": true}, "/audio/words/warn.wav": {"bytes": 55146, "available": true}, "/audio/words/details.wav": {"bytes": 62364, "available": true}, "/audio/words/clever.wav": {"bytes": 59804, "available": true}, "/audio/words/expect.wav": {"bytes": 62606, "available": true}, "/audio/words/brilliant.wav": {"bytes": 55914, "available": true}, "/audio/words/nervous.wav": {"bytes": 58182, "available": true}, "/audio/words/theory.wav": {"bytes": 53406, "available": true}, "/audio/words/fossils.wav": {"bytes": 60436, "available": true}, "/audio/words/technical.wav": {"bytes": 63224, "available": true}, "/audio/words/barely.wav": {"bytes": 52302, "available": true}, "/audio/words/sensible.wav": {"bytes": 65996, "available": true}, "/audio/words/demand.wav": {"bytes": 58968, "available": true}, "/audio/words/reveal.wav": {"bytes": 60320, "available": true}, "/audio/words/journal.wav": {"bytes": 48876, "available": true}, "/audio/words/extraordinary.wav": {"bytes": 83726, "available": true}, "/audio/words/claim.wav": {"bytes": 59570, "available": true}, "/audio/words/avoid.wav": {"bytes": 61164, "available": true}, "/audio/words/prove.wav": {"bytes": 56558, "available": true}, "/audio/words/interview.wav": {"bytes": 62976, "available": true}, "/audio/words/scientific.wav": {"bytes": 68028, "available": true}, "/audio/words/argue.wav": {"bytes": 54864, "available": true}, "/audio/words/admire.wav": {"bytes": 62244, "available": true}, "/audio/words/truly.wav": {"bytes": 55216, "available": true}, "/audio/words/strangely.wav": {"bytes": 65924, "available": true}, "/audio/words/adventure.wav": {"bytes": 67232, "available": true}, "/audio/words/disappointed.wav": {"bytes": 76296, "available": true}, "/audio/media/media-14.mp3": {"bytes": 9747978, "available": true}, "/audio/media/media-02.mp3": {"bytes": 9351642, "available": true}, "/audio/media/media-03.mp3": {"bytes": 6845096, "available": true}, "/audio/media/media-07.mp3": {"bytes": 7765074, "available": true}, "/audio/media/media-12.mp3": {"bytes": 3411507, "available": true}, "/audio/media/media-04.mp3": {"bytes": 4593944, "available": true}, "/audio/media/media-10.mp3": {"bytes": 3556218, "available": true}, "/audio/media/media-13.mp3": {"bytes": 6771834, "available": true}, "/audio/media/media-06.mp3": {"bytes": 4725752, "available": true}, "/audio/media/media-01.mp3": {"bytes": 7817082, "available": true}, "/audio/media/media-11.mp3": {"bytes": 593568, "available": true}, "/audio/media/media-09.mp3": {"bytes": 6584562, "available": true}, "/audio/media/media-05.mp3": {"bytes": 3705368, "available": true}, "/audio/media/media-08.mp3": {"bytes": 9679842, "available": true}, "/cards/relative_clauses/009.webp": {"bytes": 151100, "available": true}, "/cards/relative_clauses/025.webp": {"bytes": 154238, "available": true}, "/cards/relative_clauses/015.webp": {"bytes": 126732, "available": true}, "/cards/relative_clauses/022.webp": {"bytes": 150216, "available": true}, "/cards/relative_clauses/035.webp": {"bytes": 154856, "available": true}, "/cards/relative_clauses/006.webp": {"bytes": 140688, "available": true}, "/cards/relative_clauses/036.webp": {"bytes": 162924, "available": true}, "/cards/relative_clauses/002.webp": {"bytes": 300830, "available": true}, "/cards/relative_clauses/020.webp": {"bytes": 142094, "available": true}, "/cards/relative_clauses/023.webp": {"bytes": 136874, "available": true}, "/cards/relative_clauses/030.webp": {"bytes": 154900, "available": true}, "/cards/relative_clauses/014.webp": {"bytes": 128256, "available": true}, "/cards/relative_clauses/007.webp": {"bytes": 129358, "available": true}, "/cards/relative_clauses/031.webp": {"bytes": 151048, "available": true}, "/cards/relative_clauses/003.webp": {"bytes": 258456, "available": true}, "/cards/relative_clauses/026.webp": {"bytes": 155950, "available": true}, "/cards/relative_clauses/034.webp": {"bytes": 154670, "available": true}, "/cards/relative_clauses/041.webp": {"bytes": 171228, "available": true}, "/cards/relative_clauses/019.webp": {"bytes": 160112, "available": true}, "/cards/relative_clauses/033.webp": {"bytes": 164176, "available": true}, "/cards/relative_clauses/040.webp": {"bytes": 152312, "available": true}, "/cards/relative_clauses/011.webp": {"bytes": 131032, "available": true}, "/cards/relative_clauses/021.webp": {"bytes": 140086, "available": true}, "/cards/relative_clauses/028.webp": {"bytes": 135664, "available": true}, "/cards/relative_clauses/024.webp": {"bytes": 149712, "available": true}, "/cards/relative_clauses/008.webp": {"bytes": 140796, "available": true}, "/cards/relative_clauses/001.webp": {"bytes": 281558, "available": true}, "/cards/relative_clauses/037.webp": {"bytes": 148896, "available": true}, "/cards/relative_clauses/012.webp": {"bytes": 145254, "available": true}, "/cards/relative_clauses/004.webp": {"bytes": 137994, "available": true}, "/cards/relative_clauses/029.webp": {"bytes": 135410, "available": true}, "/cards/relative_clauses/032.webp": {"bytes": 148244, "available": true}, "/cards/relative_clauses/017.webp": {"bytes": 147406, "available": true}, "/cards/relative_clauses/016.webp": {"bytes": 141886, "available": true}, "/cards/relative_clauses/010.webp": {"bytes": 156054, "available": true}, "/cards/relative_clauses/027.webp": {"bytes": 156240, "available": true}, "/cards/relative_clauses/013.webp": {"bytes": 144242, "available": true}, "/cards/relative_clauses/018.webp": {"bytes": 149732, "available": true}, "/cards/relative_clauses/039.webp": {"bytes": 157772, "available": true}, "/cards/relative_clauses/005.webp": {"bytes": 124354, "available": true}, "/cards/relative_clauses/038.webp": {"bytes": 149462, "available": true}, "/cards/participles/009.webp": {"bytes": 244392, "available": true}, "/cards/participles/025.webp": {"bytes": 147786, "available": true}, "/cards/participles/015.webp": {"bytes": 152000, "available": true}, "/cards/participles/022.webp": {"bytes": 134656, "available": true}, "/cards/participles/035.webp": {"bytes": 141460, "available": true}, "/cards/participles/006.webp": {"bytes": 124452, "available": true}, "/cards/participles/036.webp": {"bytes": 141350, "available": true}, "/cards/participles/002.webp": {"bytes": 292670, "available": true}, "/cards/participles/020.webp": {"bytes": 120068, "available": true}, "/cards/participles/023.webp": {"bytes": 121232, "available": true}, "/cards/participles/030.webp": {"bytes": 209988, "available": true}, "/cards/participles/014.webp": {"bytes": 128636, "available": true}, "/cards/participles/007.webp": {"bytes": 123694, "available": true}, "/cards/participles/031.webp": {"bytes": 150584, "available": true}, "/cards/participles/003.webp": {"bytes": 266762, "available": true}, "/cards/participles/026.webp": {"bytes": 127200, "available": true}, "/cards/participles/034.webp": {"bytes": 137100, "available": true}, "/cards/participles/019.webp": {"bytes": 106060, "available": true}, "/cards/participles/033.webp": {"bytes": 140610, "available": true}, "/cards/participles/011.webp": {"bytes": 109212, "available": true}, "/cards/participles/021.webp": {"bytes": 125650, "available": true}, "/cards/participles/028.webp": {"bytes": 144080, "available": true}, "/cards/participles/024.webp": {"bytes": 125398, "available": true}, "/cards/participles/008.webp": {"bytes": 139312, "available": true}, "/cards/participles/001.webp": {"bytes": 283286, "available": true}, "/cards/participles/037.webp": {"bytes": 157500, "available": true}, "/cards/participles/012.webp": {"bytes": 133644, "available": true}, "/cards/participles/004.webp": {"bytes": 133856, "available": true}, "/cards/participles/029.webp": {"bytes": 137018, "available": true}, "/cards/participles/032.webp": {"bytes": 138630, "available": true}, "/cards/participles/017.webp": {"bytes": 155960, "available": true}, "/cards/participles/016.webp": {"bytes": 149106, "available": true}, "/cards/participles/010.webp": {"bytes": 120146, "available": true}, "/cards/participles/027.webp": {"bytes": 143452, "available": true}, "/cards/participles/013.webp": {"bytes": 131228, "available": true}, "/cards/participles/018.webp": {"bytes": 155618, "available": true}, "/cards/participles/005.webp": {"bytes": 117706, "available": true}, "/cards/read_story/009.webp": {"bytes": 112804, "available": true}, "/cards/read_story/025.webp": {"bytes": 128130, "available": true}, "/cards/read_story/015.webp": {"bytes": 113444, "available": true}, "/cards/read_story/022.webp": {"bytes": 104684, "available": true}, "/cards/read_story/006.webp": {"bytes": 101628, "available": true}, "/cards/read_story/002.webp": {"bytes": 91446, "available": true}, "/cards/read_story/020.webp": {"bytes": 120154, "available": true}, "/cards/read_story/023.webp": {"bytes": 124560, "available": true}, "/cards/read_story/030.webp": {"bytes": 109744, "available": true}, "/cards/read_story/014.webp": {"bytes": 108096, "available": true}, "/cards/read_story/007.webp": {"bytes": 98482, "available": true}, "/cards/read_story/031.webp": {"bytes": 118000, "available": true}, "/cards/read_story/003.webp": {"bytes": 135476, "available": true}, "/cards/read_story/026.webp": {"bytes": 92906, "available": true}, "/cards/read_story/019.webp": {"bytes": 117336, "available": true}, "/cards/read_story/011.webp": {"bytes": 112170, "available": true}, "/cards/read_story/021.webp": {"bytes": 113000, "available": true}, "/cards/read_story/028.webp": {"bytes": 104730, "available": true}, "/cards/read_story/024.webp": {"bytes": 115776, "available": true}, "/cards/read_story/008.webp": {"bytes": 128790, "available": true}, "/cards/read_story/001.webp": {"bytes": 107242, "available": true}, "/cards/read_story/012.webp": {"bytes": 135890, "available": true}, "/cards/read_story/004.webp": {"bytes": 110620, "available": true}, "/cards/read_story/029.webp": {"bytes": 94692, "available": true}, "/cards/read_story/017.webp": {"bytes": 125490, "available": true}, "/cards/read_story/016.webp": {"bytes": 125880, "available": true}, "/cards/read_story/010.webp": {"bytes": 109624, "available": true}, "/cards/read_story/027.webp": {"bytes": 101594, "available": true}, "/cards/read_story/013.webp": {"bytes": 111290, "available": true}, "/cards/read_story/018.webp": {"bytes": 112140, "available": true}, "/cards/read_story/005.webp": {"bytes": 97192, "available": true}, "/cards/conditionals/009.webp": {"bytes": 145210, "available": true}, "/cards/conditionals/025.webp": {"bytes": 134738, "available": true}, "/cards/conditionals/015.webp": {"bytes": 151736, "available": true}, "/cards/conditionals/022.webp": {"bytes": 152912, "available": true}, "/cards/conditionals/035.webp": {"bytes": 157034, "available": true}, "/cards/conditionals/006.webp": {"bytes": 147958, "available": true}, "/cards/conditionals/036.webp": {"bytes": 150184, "available": true}, "/cards/conditionals/002.webp": {"bytes": 291078, "available": true}, "/cards/conditionals/020.webp": {"bytes": 141464, "available": true}, "/cards/conditionals/023.webp": {"bytes": 133882, "available": true}, "/cards/conditionals/030.webp": {"bytes": 251464, "available": true}, "/cards/conditionals/014.webp": {"bytes": 128348, "available": true}, "/cards/conditionals/007.webp": {"bytes": 147426, "available": true}, "/cards/conditionals/031.webp": {"bytes": 143002, "available": true}, "/cards/conditionals/003.webp": {"bytes": 243596, "available": true}, "/cards/conditionals/026.webp": {"bytes": 159584, "available": true}, "/cards/conditionals/034.webp": {"bytes": 155512, "available": true}, "/cards/conditionals/041.webp": {"bytes": 160568, "available": true}, "/cards/conditionals/019.webp": {"bytes": 152628, "available": true}, "/cards/conditionals/033.webp": {"bytes": 153924, "available": true}, "/cards/conditionals/040.webp": {"bytes": 151634, "available": true}, "/cards/conditionals/011.webp": {"bytes": 141870, "available": true}, "/cards/conditionals/021.webp": {"bytes": 132022, "available": true}, "/cards/conditionals/028.webp": {"bytes": 146560, "available": true}, "/cards/conditionals/024.webp": {"bytes": 129832, "available": true}, "/cards/conditionals/008.webp": {"bytes": 153644, "available": true}, "/cards/conditionals/001.webp": {"bytes": 263544, "available": true}, "/cards/conditionals/037.webp": {"bytes": 137130, "available": true}, "/cards/conditionals/012.webp": {"bytes": 139120, "available": true}, "/cards/conditionals/004.webp": {"bytes": 149228, "available": true}, "/cards/conditionals/029.webp": {"bytes": 151022, "available": true}, "/cards/conditionals/032.webp": {"bytes": 151548, "available": true}, "/cards/conditionals/017.webp": {"bytes": 149526, "available": true}, "/cards/conditionals/016.webp": {"bytes": 141752, "available": true}, "/cards/conditionals/010.webp": {"bytes": 147202, "available": true}, "/cards/conditionals/027.webp": {"bytes": 139994, "available": true}, "/cards/conditionals/013.webp": {"bytes": 158676, "available": true}, "/cards/conditionals/018.webp": {"bytes": 153496, "available": true}, "/cards/conditionals/039.webp": {"bytes": 153552, "available": true}, "/cards/conditionals/005.webp": {"bytes": 138108, "available": true}, "/cards/conditionals/038.webp": {"bytes": 151636, "available": true}, "/cards/characters/009.webp": {"bytes": 168428, "available": true}, "/cards/characters/015.webp": {"bytes": 179494, "available": true}, "/cards/characters/006.webp": {"bytes": 153716, "available": true}, "/cards/characters/002.webp": {"bytes": 158878, "available": true}, "/cards/characters/014.webp": {"bytes": 209944, "available": true}, "/cards/characters/007.webp": {"bytes": 185440, "available": true}, "/cards/characters/003.webp": {"bytes": 182704, "available": true}, "/cards/characters/011.webp": {"bytes": 158042, "available": true}, "/cards/characters/008.webp": {"bytes": 167780, "available": true}, "/cards/characters/001.webp": {"bytes": 202768, "available": true}, "/cards/characters/012.webp": {"bytes": 142998, "available": true}, "/cards/characters/004.webp": {"bytes": 197036, "available": true}, "/cards/characters/016.webp": {"bytes": 143744, "available": true}, "/cards/characters/010.webp": {"bytes": 162952, "available": true}, "/cards/characters/013.webp": {"bytes": 154492, "available": true}, "/cards/characters/005.webp": {"bytes": 155450, "available": true}, "/cards/cleopatra/009.webp": {"bytes": 134990, "available": true}, "/cards/cleopatra/025.webp": {"bytes": 134500, "available": true}, "/cards/cleopatra/015.webp": {"bytes": 152916, "available": true}, "/cards/cleopatra/022.webp": {"bytes": 147844, "available": true}, "/cards/cleopatra/035.webp": {"bytes": 125668, "available": true}, "/cards/cleopatra/006.webp": {"bytes": 139654, "available": true}, "/cards/cleopatra/002.webp": {"bytes": 161484, "available": true}, "/cards/cleopatra/020.webp": {"bytes": 167274, "available": true}, "/cards/cleopatra/023.webp": {"bytes": 126418, "available": true}, "/cards/cleopatra/030.webp": {"bytes": 84760, "available": true}, "/cards/cleopatra/014.webp": {"bytes": 146454, "available": true}, "/cards/cleopatra/007.webp": {"bytes": 141002, "available": true}, "/cards/cleopatra/031.webp": {"bytes": 115358, "available": true}, "/cards/cleopatra/003.webp": {"bytes": 117212, "available": true}, "/cards/cleopatra/026.webp": {"bytes": 104654, "available": true}, "/cards/cleopatra/034.webp": {"bytes": 138772, "available": true}, "/cards/cleopatra/019.webp": {"bytes": 133076, "available": true}, "/cards/cleopatra/033.webp": {"bytes": 114250, "available": true}, "/cards/cleopatra/011.webp": {"bytes": 105336, "available": true}, "/cards/cleopatra/021.webp": {"bytes": 153976, "available": true}, "/cards/cleopatra/028.webp": {"bytes": 112626, "available": true}, "/cards/cleopatra/024.webp": {"bytes": 136856, "available": true}, "/cards/cleopatra/008.webp": {"bytes": 161494, "available": true}, "/cards/cleopatra/001.webp": {"bytes": 151424, "available": true}, "/cards/cleopatra/012.webp": {"bytes": 139652, "available": true}, "/cards/cleopatra/004.webp": {"bytes": 117966, "available": true}, "/cards/cleopatra/029.webp": {"bytes": 114512, "available": true}, "/cards/cleopatra/032.webp": {"bytes": 111642, "available": true}, "/cards/cleopatra/017.webp": {"bytes": 138532, "available": true}, "/cards/cleopatra/016.webp": {"bytes": 140886, "available": true}, "/cards/cleopatra/010.webp": {"bytes": 156184, "available": true}, "/cards/cleopatra/027.webp": {"bytes": 110998, "available": true}, "/cards/cleopatra/013.webp": {"bytes": 155066, "available": true}, "/cards/cleopatra/018.webp": {"bytes": 132256, "available": true}, "/cards/cleopatra/005.webp": {"bytes": 160030, "available": true}, "/cards/osiris/009.webp": {"bytes": 141748, "available": true}, "/cards/osiris/015.webp": {"bytes": 142220, "available": true}, "/cards/osiris/006.webp": {"bytes": 181530, "available": true}, "/cards/osiris/002.webp": {"bytes": 180740, "available": true}, "/cards/osiris/014.webp": {"bytes": 185332, "available": true}, "/cards/osiris/007.webp": {"bytes": 138950, "available": true}, "/cards/osiris/003.webp": {"bytes": 139482, "available": true}, "/cards/osiris/011.webp": {"bytes": 105866, "available": true}, "/cards/osiris/008.webp": {"bytes": 182062, "available": true}, "/cards/osiris/001.webp": {"bytes": 158406, "available": true}, "/cards/osiris/012.webp": {"bytes": 182018, "available": true}, "/cards/osiris/004.webp": {"bytes": 179994, "available": true}, "/cards/osiris/017.webp": {"bytes": 144534, "available": true}, "/cards/osiris/016.webp": {"bytes": 180002, "available": true}, "/cards/osiris/010.webp": {"bytes": 177752, "available": true}, "/cards/osiris/013.webp": {"bytes": 140812, "available": true}, "/cards/osiris/018.webp": {"bytes": 130272, "available": true}, "/cards/osiris/005.webp": {"bytes": 142852, "available": true}, "/cards/living_lexicon/144.webp": {"bytes": 82626, "available": true}, "/cards/living_lexicon/061.webp": {"bytes": 75490, "available": true}, "/cards/living_lexicon/211.webp": {"bytes": 51186, "available": true}, "/cards/living_lexicon/168.webp": {"bytes": 77808, "available": true}, "/cards/living_lexicon/009.webp": {"bytes": 39560, "available": true}, "/cards/living_lexicon/025.webp": {"bytes": 72492, "available": true}, "/cards/living_lexicon/015.webp": {"bytes": 65952, "available": true}, "/cards/living_lexicon/022.webp": {"bytes": 71634, "available": true}, "/cards/living_lexicon/141.webp": {"bytes": 79750, "available": true}, "/cards/living_lexicon/114.webp": {"bytes": 80954, "available": true}, "/cards/living_lexicon/208.webp": {"bytes": 32312, "available": true}, "/cards/living_lexicon/135.webp": {"bytes": 87182, "available": true}, "/cards/living_lexicon/196.webp": {"bytes": 34540, "available": true}, "/cards/living_lexicon/035.webp": {"bytes": 68844, "available": true}, "/cards/living_lexicon/006.webp": {"bytes": 40764, "available": true}, "/cards/living_lexicon/205.webp": {"bytes": 30932, "available": true}, "/cards/living_lexicon/139.webp": {"bytes": 83732, "available": true}, "/cards/living_lexicon/051.webp": {"bytes": 64996, "available": true}, "/cards/living_lexicon/036.webp": {"bytes": 60480, "available": true}, "/cards/living_lexicon/194.webp": {"bytes": 32844, "available": true}, "/cards/living_lexicon/116.webp": {"bytes": 65134, "available": true}, "/cards/living_lexicon/121.webp": {"bytes": 76516, "available": true}, "/cards/living_lexicon/105.webp": {"bytes": 69546, "available": true}, "/cards/living_lexicon/079.webp": {"bytes": 69672, "available": true}, "/cards/living_lexicon/111.webp": {"bytes": 66108, "available": true}, "/cards/living_lexicon/210.webp": {"bytes": 41564, "available": true}, "/cards/living_lexicon/085.webp": {"bytes": 73350, "available": true}, "/cards/living_lexicon/087.webp": {"bytes": 70082, "available": true}, "/cards/living_lexicon/163.webp": {"bytes": 81152, "available": true}, "/cards/living_lexicon/160.webp": {"bytes": 84008, "available": true}, "/cards/living_lexicon/130.webp": {"bytes": 32802, "available": true}, "/cards/living_lexicon/002.webp": {"bytes": 130346, "available": true}, "/cards/living_lexicon/020.webp": {"bytes": 75218, "available": true}, "/cards/living_lexicon/110.webp": {"bytes": 76124, "available": true}, "/cards/living_lexicon/184.webp": {"bytes": 86494, "available": true}, "/cards/living_lexicon/023.webp": {"bytes": 64926, "available": true}, "/cards/living_lexicon/140.webp": {"bytes": 80608, "available": true}, "/cards/living_lexicon/120.webp": {"bytes": 63488, "available": true}, "/cards/living_lexicon/089.webp": {"bytes": 74066, "available": true}, "/cards/living_lexicon/126.webp": {"bytes": 63694, "available": true}, "/cards/living_lexicon/151.webp": {"bytes": 86452, "available": true}, "/cards/living_lexicon/176.webp": {"bytes": 85298, "available": true}, "/cards/living_lexicon/202.webp": {"bytes": 32948, "available": true}, "/cards/living_lexicon/096.webp": {"bytes": 61342, "available": true}, "/cards/living_lexicon/063.webp": {"bytes": 66240, "available": true}, "/cards/living_lexicon/084.webp": {"bytes": 82328, "available": true}, "/cards/living_lexicon/113.webp": {"bytes": 70956, "available": true}, "/cards/living_lexicon/207.webp": {"bytes": 32418, "available": true}, "/cards/living_lexicon/086.webp": {"bytes": 72664, "available": true}, "/cards/living_lexicon/186.webp": {"bytes": 75990, "available": true}, "/cards/living_lexicon/094.webp": {"bytes": 70548, "available": true}, "/cards/living_lexicon/050.webp": {"bytes": 75190, "available": true}, "/cards/living_lexicon/058.webp": {"bytes": 72148, "available": true}, "/cards/living_lexicon/117.webp": {"bytes": 65506, "available": true}, "/cards/living_lexicon/030.webp": {"bytes": 68236, "available": true}, "/cards/living_lexicon/076.webp": {"bytes": 71994, "available": true}, "/cards/living_lexicon/090.webp": {"bytes": 69188, "available": true}, "/cards/living_lexicon/099.webp": {"bytes": 71966, "available": true}, "/cards/living_lexicon/149.webp": {"bytes": 78890, "available": true}, "/cards/living_lexicon/077.webp": {"bytes": 72696, "available": true}, "/cards/living_lexicon/083.webp": {"bytes": 65710, "available": true}, "/cards/living_lexicon/128.webp": {"bytes": 72998, "available": true}, "/cards/living_lexicon/124.webp": {"bytes": 69574, "available": true}, "/cards/living_lexicon/212.webp": {"bytes": 67350, "available": true}, "/cards/living_lexicon/167.webp": {"bytes": 72542, "available": true}, "/cards/living_lexicon/183.webp": {"bytes": 78296, "available": true}, "/cards/living_lexicon/112.webp": {"bytes": 67070, "available": true}, "/cards/living_lexicon/069.webp": {"bytes": 69162, "available": true}, "/cards/living_lexicon/165.webp": {"bytes": 76880, "available": true}, "/cards/living_lexicon/172.webp": {"bytes": 77662, "available": true}, "/cards/living_lexicon/014.webp": {"bytes": 52574, "available": true}, "/cards/living_lexicon/092.webp": {"bytes": 73304, "available": true}, "/cards/living_lexicon/007.webp": {"bytes": 34480, "available": true}, "/cards/living_lexicon/056.webp": {"bytes": 63776, "available": true}, "/cards/living_lexicon/159.webp": {"bytes": 80574, "available": true}, "/cards/living_lexicon/031.webp": {"bytes": 67066, "available": true}, "/cards/living_lexicon/189.webp": {"bytes": 71626, "available": true}, "/cards/living_lexicon/067.webp": {"bytes": 66262, "available": true}, "/cards/living_lexicon/045.webp": {"bytes": 68828, "available": true}, "/cards/living_lexicon/148.webp": {"bytes": 78696, "available": true}, "/cards/living_lexicon/119.webp": {"bytes": 70662, "available": true}, "/cards/living_lexicon/142.webp": {"bytes": 77700, "available": true}, "/cards/living_lexicon/003.webp": {"bytes": 158212, "available": true}, "/cards/living_lexicon/026.webp": {"bytes": 72334, "available": true}, "/cards/living_lexicon/161.webp": {"bytes": 82122, "available": true}, "/cards/living_lexicon/059.webp": {"bytes": 69706, "available": true}, "/cards/living_lexicon/127.webp": {"bytes": 67108, "available": true}, "/cards/living_lexicon/034.webp": {"bytes": 69684, "available": true}, "/cards/living_lexicon/088.webp": {"bytes": 69870, "available": true}, "/cards/living_lexicon/047.webp": {"bytes": 74042, "available": true}, "/cards/living_lexicon/177.webp": {"bytes": 77778, "available": true}, "/cards/living_lexicon/055.webp": {"bytes": 68414, "available": true}, "/cards/living_lexicon/068.webp": {"bytes": 72102, "available": true}, "/cards/living_lexicon/162.webp": {"bytes": 79100, "available": true}, "/cards/living_lexicon/041.webp": {"bytes": 75090, "available": true}, "/cards/living_lexicon/044.webp": {"bytes": 78752, "available": true}, "/cards/living_lexicon/019.webp": {"bytes": 68736, "available": true}, "/cards/living_lexicon/153.webp": {"bytes": 75756, "available": true}, "/cards/living_lexicon/185.webp": {"bytes": 73952, "available": true}, "/cards/living_lexicon/043.webp": {"bytes": 71032, "available": true}, "/cards/living_lexicon/072.webp": {"bytes": 77658, "available": true}, "/cards/living_lexicon/125.webp": {"bytes": 70040, "available": true}, "/cards/living_lexicon/098.webp": {"bytes": 72000, "available": true}, "/cards/living_lexicon/138.webp": {"bytes": 83418, "available": true}, "/cards/living_lexicon/187.webp": {"bytes": 78590, "available": true}, "/cards/living_lexicon/195.webp": {"bytes": 35118, "available": true}, "/cards/living_lexicon/049.webp": {"bytes": 68948, "available": true}, "/cards/living_lexicon/201.webp": {"bytes": 28962, "available": true}, "/cards/living_lexicon/180.webp": {"bytes": 84458, "available": true}, "/cards/living_lexicon/106.webp": {"bytes": 69316, "available": true}, "/cards/living_lexicon/033.webp": {"bytes": 71900, "available": true}, "/cards/living_lexicon/190.webp": {"bytes": 84926, "available": true}, "/cards/living_lexicon/170.webp": {"bytes": 96388, "available": true}, "/cards/living_lexicon/040.webp": {"bytes": 67164, "available": true}, "/cards/living_lexicon/169.webp": {"bytes": 86880, "available": true}, "/cards/living_lexicon/215.webp": {"bytes": 42716, "available": true}, "/cards/living_lexicon/071.webp": {"bytes": 69718, "available": true}, "/cards/living_lexicon/011.webp": {"bytes": 127304, "available": true}, "/cards/living_lexicon/156.webp": {"bytes": 79314, "available": true}, "/cards/living_lexicon/203.webp": {"bytes": 32270, "available": true}, "/cards/living_lexicon/174.webp": {"bytes": 76244, "available": true}, "/cards/living_lexicon/021.webp": {"bytes": 73228, "available": true}, "/cards/living_lexicon/107.webp": {"bytes": 74866, "available": true}, "/cards/living_lexicon/152.webp": {"bytes": 77606, "available": true}, "/cards/living_lexicon/028.webp": {"bytes": 69062, "available": true}, "/cards/living_lexicon/073.webp": {"bytes": 74838, "available": true}, "/cards/living_lexicon/054.webp": {"bytes": 80170, "available": true}, "/cards/living_lexicon/214.webp": {"bytes": 44884, "available": true}, "/cards/living_lexicon/024.webp": {"bytes": 81264, "available": true}, "/cards/living_lexicon/118.webp": {"bytes": 73080, "available": true}, "/cards/living_lexicon/150.webp": {"bytes": 80870, "available": true}, "/cards/living_lexicon/104.webp": {"bytes": 79242, "available": true}, "/cards/living_lexicon/064.webp": {"bytes": 69302, "available": true}, "/cards/living_lexicon/062.webp": {"bytes": 60004, "available": true}, "/cards/living_lexicon/008.webp": {"bytes": 139704, "available": true}, "/cards/living_lexicon/001.webp": {"bytes": 129122, "available": true}, "/cards/living_lexicon/037.webp": {"bytes": 70106, "available": true}, "/cards/living_lexicon/060.webp": {"bytes": 62676, "available": true}, "/cards/living_lexicon/145.webp": {"bytes": 72990, "available": true}, "/cards/living_lexicon/182.webp": {"bytes": 71484, "available": true}, "/cards/living_lexicon/102.webp": {"bytes": 65400, "available": true}, "/cards/living_lexicon/178.webp": {"bytes": 67666, "available": true}, "/cards/living_lexicon/198.webp": {"bytes": 30346, "available": true}, "/cards/living_lexicon/012.webp": {"bytes": 76854, "available": true}, "/cards/living_lexicon/213.webp": {"bytes": 43688, "available": true}, "/cards/living_lexicon/065.webp": {"bytes": 69112, "available": true}, "/cards/living_lexicon/100.webp": {"bytes": 68454, "available": true}, "/cards/living_lexicon/097.webp": {"bytes": 69968, "available": true}, "/cards/living_lexicon/091.webp": {"bytes": 66840, "available": true}, "/cards/living_lexicon/004.webp": {"bytes": 152530, "available": true}, "/cards/living_lexicon/209.webp": {"bytes": 35908, "available": true}, "/cards/living_lexicon/154.webp": {"bytes": 78616, "available": true}, "/cards/living_lexicon/192.webp": {"bytes": 47274, "available": true}, "/cards/living_lexicon/053.webp": {"bytes": 70036, "available": true}, "/cards/living_lexicon/166.webp": {"bytes": 83820, "available": true}, "/cards/living_lexicon/108.webp": {"bytes": 81420, "available": true}, "/cards/living_lexicon/029.webp": {"bytes": 73048, "available": true}, "/cards/living_lexicon/179.webp": {"bytes": 72760, "available": true}, "/cards/living_lexicon/052.webp": {"bytes": 66018, "available": true}, "/cards/living_lexicon/181.webp": {"bytes": 79492, "available": true}, "/cards/living_lexicon/048.webp": {"bytes": 80396, "available": true}, "/cards/living_lexicon/095.webp": {"bytes": 69794, "available": true}, "/cards/living_lexicon/134.webp": {"bytes": 90634, "available": true}, "/cards/living_lexicon/101.webp": {"bytes": 76048, "available": true}, "/cards/living_lexicon/188.webp": {"bytes": 69886, "available": true}, "/cards/living_lexicon/103.webp": {"bytes": 71926, "available": true}, "/cards/living_lexicon/199.webp": {"bytes": 29638, "available": true}, "/cards/living_lexicon/080.webp": {"bytes": 76284, "available": true}, "/cards/living_lexicon/075.webp": {"bytes": 66818, "available": true}, "/cards/living_lexicon/066.webp": {"bytes": 62498, "available": true}, "/cards/living_lexicon/132.webp": {"bytes": 54546, "available": true}, "/cards/living_lexicon/109.webp": {"bytes": 69850, "available": true}, "/cards/living_lexicon/082.webp": {"bytes": 71816, "available": true}, "/cards/living_lexicon/158.webp": {"bytes": 65110, "available": true}, "/cards/living_lexicon/146.webp": {"bytes": 97220, "available": true}, "/cards/living_lexicon/093.webp": {"bytes": 72852, "available": true}, "/cards/living_lexicon/032.webp": {"bytes": 73268, "available": true}, "/cards/living_lexicon/017.webp": {"bytes": 71922, "available": true}, "/cards/living_lexicon/123.webp": {"bytes": 67036, "available": true}, "/cards/living_lexicon/131.webp": {"bytes": 53112, "available": true}, "/cards/living_lexicon/122.webp": {"bytes": 75102, "available": true}, "/cards/living_lexicon/046.webp": {"bytes": 68346, "available": true}, "/cards/living_lexicon/191.webp": {"bytes": 64482, "available": true}, "/cards/living_lexicon/136.webp": {"bytes": 72982, "available": true}, "/cards/living_lexicon/070.webp": {"bytes": 26282, "available": true}, "/cards/living_lexicon/016.webp": {"bytes": 71152, "available": true}, "/cards/living_lexicon/078.webp": {"bytes": 69940, "available": true}, "/cards/living_lexicon/010.webp": {"bytes": 26306, "available": true}, "/cards/living_lexicon/027.webp": {"bytes": 69248, "available": true}, "/cards/living_lexicon/155.webp": {"bytes": 74016, "available": true}, "/cards/living_lexicon/173.webp": {"bytes": 68316, "available": true}, "/cards/living_lexicon/133.webp": {"bytes": 79556, "available": true}, "/cards/living_lexicon/081.webp": {"bytes": 73708, "available": true}, "/cards/living_lexicon/171.webp": {"bytes": 79862, "available": true}, "/cards/living_lexicon/206.webp": {"bytes": 21788, "available": true}, "/cards/living_lexicon/204.webp": {"bytes": 30248, "available": true}, "/cards/living_lexicon/074.webp": {"bytes": 66396, "available": true}, "/cards/living_lexicon/042.webp": {"bytes": 132122, "available": true}, "/cards/living_lexicon/115.webp": {"bytes": 69280, "available": true}, "/cards/living_lexicon/157.webp": {"bytes": 76888, "available": true}, "/cards/living_lexicon/197.webp": {"bytes": 32216, "available": true}, "/cards/living_lexicon/013.webp": {"bytes": 74034, "available": true}, "/cards/living_lexicon/200.webp": {"bytes": 31402, "available": true}, "/cards/living_lexicon/175.webp": {"bytes": 80452, "available": true}, "/cards/living_lexicon/018.webp": {"bytes": 69036, "available": true}, "/cards/living_lexicon/137.webp": {"bytes": 75038, "available": true}, "/cards/living_lexicon/143.webp": {"bytes": 80050, "available": true}, "/cards/living_lexicon/039.webp": {"bytes": 71126, "available": true}, "/cards/living_lexicon/057.webp": {"bytes": 64600, "available": true}, "/cards/living_lexicon/129.webp": {"bytes": 69526, "available": true}, "/cards/living_lexicon/147.webp": {"bytes": 77606, "available": true}, "/cards/living_lexicon/193.webp": {"bytes": 44158, "available": true}, "/cards/living_lexicon/005.webp": {"bytes": 170378, "available": true}, "/cards/living_lexicon/038.webp": {"bytes": 71120, "available": true}, "/cards/living_lexicon/164.webp": {"bytes": 68924, "available": true}, "/cards/thoth/009.webp": {"bytes": 87526, "available": true}, "/cards/thoth/025.webp": {"bytes": 106288, "available": true}, "/cards/thoth/015.webp": {"bytes": 85264, "available": true}, "/cards/thoth/022.webp": {"bytes": 124544, "available": true}, "/cards/thoth/035.webp": {"bytes": 101348, "available": true}, "/cards/thoth/006.webp": {"bytes": 92934, "available": true}, "/cards/thoth/036.webp": {"bytes": 100404, "available": true}, "/cards/thoth/002.webp": {"bytes": 112806, "available": true}, "/cards/thoth/020.webp": {"bytes": 110266, "available": true}, "/cards/thoth/023.webp": {"bytes": 115376, "available": true}, "/cards/thoth/030.webp": {"bytes": 100258, "available": true}, "/cards/thoth/014.webp": {"bytes": 105276, "available": true}, "/cards/thoth/007.webp": {"bytes": 112962, "available": true}, "/cards/thoth/031.webp": {"bytes": 118338, "available": true}, "/cards/thoth/003.webp": {"bytes": 140024, "available": true}, "/cards/thoth/026.webp": {"bytes": 108756, "available": true}, "/cards/thoth/034.webp": {"bytes": 105440, "available": true}, "/cards/thoth/041.webp": {"bytes": 83954, "available": true}, "/cards/thoth/019.webp": {"bytes": 98842, "available": true}, "/cards/thoth/043.webp": {"bytes": 73740, "available": true}, "/cards/thoth/033.webp": {"bytes": 117418, "available": true}, "/cards/thoth/040.webp": {"bytes": 112136, "available": true}, "/cards/thoth/011.webp": {"bytes": 94704, "available": true}, "/cards/thoth/021.webp": {"bytes": 156710, "available": true}, "/cards/thoth/028.webp": {"bytes": 0, "available": false}, "/cards/thoth/024.webp": {"bytes": 91168, "available": true}, "/cards/thoth/008.webp": {"bytes": 98200, "available": true}, "/cards/thoth/001.webp": {"bytes": 200774, "available": true}, "/cards/thoth/037.webp": {"bytes": 102734, "available": true}, "/cards/thoth/012.webp": {"bytes": 125750, "available": true}, "/cards/thoth/004.webp": {"bytes": 140090, "available": true}, "/cards/thoth/029.webp": {"bytes": 106578, "available": true}, "/cards/thoth/032.webp": {"bytes": 84528, "available": true}, "/cards/thoth/017.webp": {"bytes": 114318, "available": true}, "/cards/thoth/016.webp": {"bytes": 97884, "available": true}, "/cards/thoth/010.webp": {"bytes": 95814, "available": true}, "/cards/thoth/027.webp": {"bytes": 115322, "available": true}, "/cards/thoth/042.webp": {"bytes": 72212, "available": true}, "/cards/thoth/013.webp": {"bytes": 118814, "available": true}, "/cards/thoth/018.webp": {"bytes": 110262, "available": true}, "/cards/thoth/039.webp": {"bytes": 114714, "available": true}, "/cards/thoth/005.webp": {"bytes": 105580, "available": true}, "/cards/thoth/038.webp": {"bytes": 84444, "available": true}}
+{
+  "/brand/intro.mp4": {
+    "bytes": 2705849,
+    "available": true
+  },
+  "/brand/logo_elements_reference.png": {
+    "bytes": 2111863,
+    "available": true
+  },
+  "/brand/logo_authoritative.png": {
+    "bytes": 1845319,
+    "available": true
+  },
+  "/video/intro.mp4": {
+    "bytes": 2705849,
+    "available": true
+  },
+  "/heritage/ramses.svg": {
+    "bytes": 923,
+    "available": true
+  },
+  "/heritage/mahfouz.svg": {
+    "bytes": 908,
+    "available": true
+  },
+  "/heritage/zewail.svg": {
+    "bytes": 1040,
+    "available": true
+  },
+  "/heritage/wedjat.svg": {
+    "bytes": 958,
+    "available": true
+  },
+  "/heritage/scarab.svg": {
+    "bytes": 998,
+    "available": true
+  },
+  "/heritage/papyrus.svg": {
+    "bytes": 914,
+    "available": true
+  },
+  "/heritage/cleopatra.svg": {
+    "bytes": 897,
+    "available": true
+  },
+  "/heritage/rosetta.svg": {
+    "bytes": 914,
+    "available": true
+  },
+  "/heritage/lotus.svg": {
+    "bytes": 920,
+    "available": true
+  },
+  "/heritage/ankh.svg": {
+    "bytes": 883,
+    "available": true
+  },
+  "/art/nile_sandstone.png": {
+    "bytes": 3271471,
+    "available": true
+  },
+  "/pdfs/sources/unit1_original.pdf": {
+    "bytes": 35522435,
+    "available": true
+  },
+  "/pdfs/unit1/dyslexia_friendly.pdf": {
+    "bytes": 7492725,
+    "available": true
+  },
+  "/pdfs/unit1/below_level.pdf": {
+    "bytes": 5613322,
+    "available": true
+  },
+  "/pdfs/unit1/above_level.pdf": {
+    "bytes": 5660487,
+    "available": true
+  },
+  "/pdfs/unit1/standard.pdf": {
+    "bytes": 5583430,
+    "available": true
+  },
+  "/pdfs/story/read_your_story.pdf": {
+    "bytes": 10035027,
+    "available": true
+  },
+  "/pdfs/story/thoth.pdf": {
+    "bytes": 10103875,
+    "available": true
+  },
+  "/pdfs/story/characters.pdf": {
+    "bytes": 26420744,
+    "available": true
+  },
+  "/pdfs/story/cleopatra.pdf": {
+    "bytes": 8396087,
+    "available": true
+  },
+  "/pdfs/story/osiris.pdf": {
+    "bytes": 3771558,
+    "available": true
+  },
+  "/pdfs/story/living_lexicon.pdf": {
+    "bytes": 14057376,
+    "available": true
+  },
+  "/pdfs/grammar/participles.pdf": {
+    "bytes": 22564695,
+    "available": true
+  },
+  "/pdfs/grammar/relative_clauses.pdf": {
+    "bytes": 26018224,
+    "available": true
+  },
+  "/pdfs/grammar/conditionals.pdf": {
+    "bytes": 28915247,
+    "available": true
+  },
+  "/pdfs/story/levels/dyslexia_friendly.pdf": {
+    "bytes": 2208651,
+    "available": true
+  },
+  "/pdfs/story/levels/below_level.pdf": {
+    "bytes": 2099018,
+    "available": true
+  },
+  "/pdfs/story/levels/above_level.pdf": {
+    "bytes": 2090627,
+    "available": true
+  },
+  "/pdfs/story/levels/standard.pdf": {
+    "bytes": 2090475,
+    "available": true
+  },
+  "/audio/words/evidence.wav": {
+    "bytes": 62460,
+    "available": true
+  },
+  "/audio/words/explain.wav": {
+    "bytes": 67408,
+    "available": true
+  },
+  "/audio/words/challenge.wav": {
+    "bytes": 59204,
+    "available": true
+  },
+  "/audio/words/courage.wav": {
+    "bytes": 56254,
+    "available": true
+  },
+  "/audio/words/damaged.wav": {
+    "bytes": 56158,
+    "available": true
+  },
+  "/audio/words/face.wav": {
+    "bytes": 53258,
+    "available": true
+  },
+  "/audio/words/energy.wav": {
+    "bytes": 54822,
+    "available": true
+  },
+  "/audio/words/impress.wav": {
+    "bytes": 59196,
+    "available": true
+  },
+  "/audio/words/value.wav": {
+    "bytes": 58624,
+    "available": true
+  },
+  "/audio/words/remarkable.wav": {
+    "bytes": 69756,
+    "available": true
+  },
+  "/audio/words/experienced.wav": {
+    "bytes": 74138,
+    "available": true
+  },
+  "/audio/words/mistaken.wav": {
+    "bytes": 65710,
+    "available": true
+  },
+  "/audio/words/realise.wav": {
+    "bytes": 58216,
+    "available": true
+  },
+  "/audio/words/danger.wav": {
+    "bytes": 57388,
+    "available": true
+  },
+  "/audio/words/reporter.wav": {
+    "bytes": 62766,
+    "available": true
+  },
+  "/audio/words/brave.wav": {
+    "bytes": 53738,
+    "available": true
+  },
+  "/audio/words/discover.wav": {
+    "bytes": 62738,
+    "available": true
+  },
+  "/audio/words/unknown.wav": {
+    "bytes": 62214,
+    "available": true
+  },
+  "/audio/words/evolution.wav": {
+    "bytes": 66926,
+    "available": true
+  },
+  "/audio/words/consider.wav": {
+    "bytes": 63440,
+    "available": true
+  },
+  "/audio/words/refuse.wav": {
+    "bytes": 60412,
+    "available": true
+  },
+  "/audio/words/zoologist.wav": {
+    "bytes": 69198,
+    "available": true
+  },
+  "/audio/words/find_out.wav": {
+    "bytes": 70736,
+    "available": true
+  },
+  "/audio/words/risk.wav": {
+    "bytes": 50280,
+    "available": true
+  },
+  "/audio/words/assignment.wav": {
+    "bytes": 66854,
+    "available": true
+  },
+  "/audio/words/complicated.wav": {
+    "bytes": 79414,
+    "available": true
+  },
+  "/audio/words/sketches.wav": {
+    "bytes": 60148,
+    "available": true
+  },
+  "/audio/words/suddenly.wav": {
+    "bytes": 59440,
+    "available": true
+  },
+  "/audio/words/pretend.wav": {
+    "bytes": 63238,
+    "available": true
+  },
+  "/audio/words/purpose.wav": {
+    "bytes": 56592,
+    "available": true
+  },
+  "/audio/words/aggressive.wav": {
+    "bytes": 60202,
+    "available": true
+  },
+  "/audio/words/character.wav": {
+    "bytes": 64836,
+    "available": true
+  },
+  "/audio/words/willing.wav": {
+    "bytes": 53080,
+    "available": true
+  },
+  "/audio/words/warn.wav": {
+    "bytes": 55146,
+    "available": true
+  },
+  "/audio/words/details.wav": {
+    "bytes": 62364,
+    "available": true
+  },
+  "/audio/words/clever.wav": {
+    "bytes": 59804,
+    "available": true
+  },
+  "/audio/words/expect.wav": {
+    "bytes": 62606,
+    "available": true
+  },
+  "/audio/words/brilliant.wav": {
+    "bytes": 55914,
+    "available": true
+  },
+  "/audio/words/nervous.wav": {
+    "bytes": 58182,
+    "available": true
+  },
+  "/audio/words/theory.wav": {
+    "bytes": 53406,
+    "available": true
+  },
+  "/audio/words/fossils.wav": {
+    "bytes": 60436,
+    "available": true
+  },
+  "/audio/words/technical.wav": {
+    "bytes": 63224,
+    "available": true
+  },
+  "/audio/words/barely.wav": {
+    "bytes": 52302,
+    "available": true
+  },
+  "/audio/words/sensible.wav": {
+    "bytes": 65996,
+    "available": true
+  },
+  "/audio/words/demand.wav": {
+    "bytes": 58968,
+    "available": true
+  },
+  "/audio/words/reveal.wav": {
+    "bytes": 60320,
+    "available": true
+  },
+  "/audio/words/journal.wav": {
+    "bytes": 48876,
+    "available": true
+  },
+  "/audio/words/extraordinary.wav": {
+    "bytes": 83726,
+    "available": true
+  },
+  "/audio/words/claim.wav": {
+    "bytes": 59570,
+    "available": true
+  },
+  "/audio/words/avoid.wav": {
+    "bytes": 61164,
+    "available": true
+  },
+  "/audio/words/prove.wav": {
+    "bytes": 56558,
+    "available": true
+  },
+  "/audio/words/interview.wav": {
+    "bytes": 62976,
+    "available": true
+  },
+  "/audio/words/scientific.wav": {
+    "bytes": 68028,
+    "available": true
+  },
+  "/audio/words/argue.wav": {
+    "bytes": 54864,
+    "available": true
+  },
+  "/audio/words/admire.wav": {
+    "bytes": 62244,
+    "available": true
+  },
+  "/audio/words/truly.wav": {
+    "bytes": 55216,
+    "available": true
+  },
+  "/audio/words/strangely.wav": {
+    "bytes": 65924,
+    "available": true
+  },
+  "/audio/words/adventure.wav": {
+    "bytes": 67232,
+    "available": true
+  },
+  "/audio/words/disappointed.wav": {
+    "bytes": 76296,
+    "available": true
+  },
+  "/audio/media/media-14.mp3": {
+    "bytes": 9747978,
+    "available": true
+  },
+  "/audio/media/media-02.mp3": {
+    "bytes": 9351642,
+    "available": true
+  },
+  "/audio/media/media-03.mp3": {
+    "bytes": 6845096,
+    "available": true
+  },
+  "/audio/media/media-07.mp3": {
+    "bytes": 7765074,
+    "available": true
+  },
+  "/audio/media/media-12.mp3": {
+    "bytes": 3411507,
+    "available": true
+  },
+  "/audio/media/media-04.mp3": {
+    "bytes": 4593944,
+    "available": true
+  },
+  "/audio/media/media-10.mp3": {
+    "bytes": 3556218,
+    "available": true
+  },
+  "/audio/media/media-13.mp3": {
+    "bytes": 6771834,
+    "available": true
+  },
+  "/audio/media/media-06.mp3": {
+    "bytes": 4725752,
+    "available": true
+  },
+  "/audio/media/media-01.mp3": {
+    "bytes": 7817082,
+    "available": true
+  },
+  "/audio/media/media-11.mp3": {
+    "bytes": 593568,
+    "available": true
+  },
+  "/audio/media/media-09.mp3": {
+    "bytes": 6584562,
+    "available": true
+  },
+  "/audio/media/media-05.mp3": {
+    "bytes": 3705368,
+    "available": true
+  },
+  "/audio/media/media-08.mp3": {
+    "bytes": 9679842,
+    "available": true
+  },
+  "/cards/relative_clauses/009.webp": {
+    "bytes": 151100,
+    "available": true
+  },
+  "/cards/relative_clauses/025.webp": {
+    "bytes": 154238,
+    "available": true
+  },
+  "/cards/relative_clauses/015.webp": {
+    "bytes": 126732,
+    "available": true
+  },
+  "/cards/relative_clauses/022.webp": {
+    "bytes": 150216,
+    "available": true
+  },
+  "/cards/relative_clauses/035.webp": {
+    "bytes": 154856,
+    "available": true
+  },
+  "/cards/relative_clauses/006.webp": {
+    "bytes": 140688,
+    "available": true
+  },
+  "/cards/relative_clauses/036.webp": {
+    "bytes": 162924,
+    "available": true
+  },
+  "/cards/relative_clauses/002.webp": {
+    "bytes": 300830,
+    "available": true
+  },
+  "/cards/relative_clauses/020.webp": {
+    "bytes": 142094,
+    "available": true
+  },
+  "/cards/relative_clauses/023.webp": {
+    "bytes": 136874,
+    "available": true
+  },
+  "/cards/relative_clauses/030.webp": {
+    "bytes": 154900,
+    "available": true
+  },
+  "/cards/relative_clauses/014.webp": {
+    "bytes": 128256,
+    "available": true
+  },
+  "/cards/relative_clauses/007.webp": {
+    "bytes": 129358,
+    "available": true
+  },
+  "/cards/relative_clauses/031.webp": {
+    "bytes": 151048,
+    "available": true
+  },
+  "/cards/relative_clauses/003.webp": {
+    "bytes": 258456,
+    "available": true
+  },
+  "/cards/relative_clauses/026.webp": {
+    "bytes": 155950,
+    "available": true
+  },
+  "/cards/relative_clauses/034.webp": {
+    "bytes": 154670,
+    "available": true
+  },
+  "/cards/relative_clauses/041.webp": {
+    "bytes": 171228,
+    "available": true
+  },
+  "/cards/relative_clauses/019.webp": {
+    "bytes": 160112,
+    "available": true
+  },
+  "/cards/relative_clauses/033.webp": {
+    "bytes": 164176,
+    "available": true
+  },
+  "/cards/relative_clauses/040.webp": {
+    "bytes": 152312,
+    "available": true
+  },
+  "/cards/relative_clauses/011.webp": {
+    "bytes": 131032,
+    "available": true
+  },
+  "/cards/relative_clauses/021.webp": {
+    "bytes": 140086,
+    "available": true
+  },
+  "/cards/relative_clauses/028.webp": {
+    "bytes": 135664,
+    "available": true
+  },
+  "/cards/relative_clauses/024.webp": {
+    "bytes": 149712,
+    "available": true
+  },
+  "/cards/relative_clauses/008.webp": {
+    "bytes": 140796,
+    "available": true
+  },
+  "/cards/relative_clauses/001.webp": {
+    "bytes": 281558,
+    "available": true
+  },
+  "/cards/relative_clauses/037.webp": {
+    "bytes": 148896,
+    "available": true
+  },
+  "/cards/relative_clauses/012.webp": {
+    "bytes": 145254,
+    "available": true
+  },
+  "/cards/relative_clauses/004.webp": {
+    "bytes": 137994,
+    "available": true
+  },
+  "/cards/relative_clauses/029.webp": {
+    "bytes": 135410,
+    "available": true
+  },
+  "/cards/relative_clauses/032.webp": {
+    "bytes": 148244,
+    "available": true
+  },
+  "/cards/relative_clauses/017.webp": {
+    "bytes": 147406,
+    "available": true
+  },
+  "/cards/relative_clauses/016.webp": {
+    "bytes": 141886,
+    "available": true
+  },
+  "/cards/relative_clauses/010.webp": {
+    "bytes": 156054,
+    "available": true
+  },
+  "/cards/relative_clauses/027.webp": {
+    "bytes": 156240,
+    "available": true
+  },
+  "/cards/relative_clauses/013.webp": {
+    "bytes": 144242,
+    "available": true
+  },
+  "/cards/relative_clauses/018.webp": {
+    "bytes": 149732,
+    "available": true
+  },
+  "/cards/relative_clauses/039.webp": {
+    "bytes": 157772,
+    "available": true
+  },
+  "/cards/relative_clauses/005.webp": {
+    "bytes": 124354,
+    "available": true
+  },
+  "/cards/relative_clauses/038.webp": {
+    "bytes": 149462,
+    "available": true
+  },
+  "/cards/participles/009.webp": {
+    "bytes": 244392,
+    "available": true
+  },
+  "/cards/participles/025.webp": {
+    "bytes": 147786,
+    "available": true
+  },
+  "/cards/participles/015.webp": {
+    "bytes": 152000,
+    "available": true
+  },
+  "/cards/participles/022.webp": {
+    "bytes": 134656,
+    "available": true
+  },
+  "/cards/participles/035.webp": {
+    "bytes": 141460,
+    "available": true
+  },
+  "/cards/participles/006.webp": {
+    "bytes": 124452,
+    "available": true
+  },
+  "/cards/participles/036.webp": {
+    "bytes": 141350,
+    "available": true
+  },
+  "/cards/participles/002.webp": {
+    "bytes": 292670,
+    "available": true
+  },
+  "/cards/participles/020.webp": {
+    "bytes": 120068,
+    "available": true
+  },
+  "/cards/participles/023.webp": {
+    "bytes": 121232,
+    "available": true
+  },
+  "/cards/participles/030.webp": {
+    "bytes": 209988,
+    "available": true
+  },
+  "/cards/participles/014.webp": {
+    "bytes": 128636,
+    "available": true
+  },
+  "/cards/participles/007.webp": {
+    "bytes": 123694,
+    "available": true
+  },
+  "/cards/participles/031.webp": {
+    "bytes": 150584,
+    "available": true
+  },
+  "/cards/participles/003.webp": {
+    "bytes": 266762,
+    "available": true
+  },
+  "/cards/participles/026.webp": {
+    "bytes": 127200,
+    "available": true
+  },
+  "/cards/participles/034.webp": {
+    "bytes": 137100,
+    "available": true
+  },
+  "/cards/participles/019.webp": {
+    "bytes": 106060,
+    "available": true
+  },
+  "/cards/participles/033.webp": {
+    "bytes": 140610,
+    "available": true
+  },
+  "/cards/participles/011.webp": {
+    "bytes": 109212,
+    "available": true
+  },
+  "/cards/participles/021.webp": {
+    "bytes": 125650,
+    "available": true
+  },
+  "/cards/participles/028.webp": {
+    "bytes": 144080,
+    "available": true
+  },
+  "/cards/participles/024.webp": {
+    "bytes": 125398,
+    "available": true
+  },
+  "/cards/participles/008.webp": {
+    "bytes": 139312,
+    "available": true
+  },
+  "/cards/participles/001.webp": {
+    "bytes": 283286,
+    "available": true
+  },
+  "/cards/participles/037.webp": {
+    "bytes": 157500,
+    "available": true
+  },
+  "/cards/participles/012.webp": {
+    "bytes": 133644,
+    "available": true
+  },
+  "/cards/participles/004.webp": {
+    "bytes": 133856,
+    "available": true
+  },
+  "/cards/participles/029.webp": {
+    "bytes": 137018,
+    "available": true
+  },
+  "/cards/participles/032.webp": {
+    "bytes": 138630,
+    "available": true
+  },
+  "/cards/participles/017.webp": {
+    "bytes": 155960,
+    "available": true
+  },
+  "/cards/participles/016.webp": {
+    "bytes": 149106,
+    "available": true
+  },
+  "/cards/participles/010.webp": {
+    "bytes": 120146,
+    "available": true
+  },
+  "/cards/participles/027.webp": {
+    "bytes": 143452,
+    "available": true
+  },
+  "/cards/participles/013.webp": {
+    "bytes": 131228,
+    "available": true
+  },
+  "/cards/participles/018.webp": {
+    "bytes": 155618,
+    "available": true
+  },
+  "/cards/participles/005.webp": {
+    "bytes": 117706,
+    "available": true
+  },
+  "/cards/read_story/009.webp": {
+    "bytes": 112804,
+    "available": true
+  },
+  "/cards/read_story/025.webp": {
+    "bytes": 128130,
+    "available": true
+  },
+  "/cards/read_story/015.webp": {
+    "bytes": 113444,
+    "available": true
+  },
+  "/cards/read_story/022.webp": {
+    "bytes": 104684,
+    "available": true
+  },
+  "/cards/read_story/006.webp": {
+    "bytes": 101628,
+    "available": true
+  },
+  "/cards/read_story/002.webp": {
+    "bytes": 91446,
+    "available": true
+  },
+  "/cards/read_story/020.webp": {
+    "bytes": 120154,
+    "available": true
+  },
+  "/cards/read_story/023.webp": {
+    "bytes": 124560,
+    "available": true
+  },
+  "/cards/read_story/030.webp": {
+    "bytes": 109744,
+    "available": true
+  },
+  "/cards/read_story/014.webp": {
+    "bytes": 108096,
+    "available": true
+  },
+  "/cards/read_story/007.webp": {
+    "bytes": 98482,
+    "available": true
+  },
+  "/cards/read_story/031.webp": {
+    "bytes": 118000,
+    "available": true
+  },
+  "/cards/read_story/003.webp": {
+    "bytes": 135476,
+    "available": true
+  },
+  "/cards/read_story/026.webp": {
+    "bytes": 92906,
+    "available": true
+  },
+  "/cards/read_story/019.webp": {
+    "bytes": 117336,
+    "available": true
+  },
+  "/cards/read_story/011.webp": {
+    "bytes": 112170,
+    "available": true
+  },
+  "/cards/read_story/021.webp": {
+    "bytes": 113000,
+    "available": true
+  },
+  "/cards/read_story/028.webp": {
+    "bytes": 104730,
+    "available": true
+  },
+  "/cards/read_story/024.webp": {
+    "bytes": 115776,
+    "available": true
+  },
+  "/cards/read_story/008.webp": {
+    "bytes": 128790,
+    "available": true
+  },
+  "/cards/read_story/001.webp": {
+    "bytes": 107242,
+    "available": true
+  },
+  "/cards/read_story/012.webp": {
+    "bytes": 135890,
+    "available": true
+  },
+  "/cards/read_story/004.webp": {
+    "bytes": 110620,
+    "available": true
+  },
+  "/cards/read_story/029.webp": {
+    "bytes": 94692,
+    "available": true
+  },
+  "/cards/read_story/017.webp": {
+    "bytes": 125490,
+    "available": true
+  },
+  "/cards/read_story/016.webp": {
+    "bytes": 125880,
+    "available": true
+  },
+  "/cards/read_story/010.webp": {
+    "bytes": 109624,
+    "available": true
+  },
+  "/cards/read_story/027.webp": {
+    "bytes": 101594,
+    "available": true
+  },
+  "/cards/read_story/013.webp": {
+    "bytes": 111290,
+    "available": true
+  },
+  "/cards/read_story/018.webp": {
+    "bytes": 112140,
+    "available": true
+  },
+  "/cards/read_story/005.webp": {
+    "bytes": 97192,
+    "available": true
+  },
+  "/cards/conditionals/009.webp": {
+    "bytes": 145210,
+    "available": true
+  },
+  "/cards/conditionals/025.webp": {
+    "bytes": 134738,
+    "available": true
+  },
+  "/cards/conditionals/015.webp": {
+    "bytes": 151736,
+    "available": true
+  },
+  "/cards/conditionals/022.webp": {
+    "bytes": 152912,
+    "available": true
+  },
+  "/cards/conditionals/035.webp": {
+    "bytes": 157034,
+    "available": true
+  },
+  "/cards/conditionals/006.webp": {
+    "bytes": 147958,
+    "available": true
+  },
+  "/cards/conditionals/036.webp": {
+    "bytes": 150184,
+    "available": true
+  },
+  "/cards/conditionals/002.webp": {
+    "bytes": 291078,
+    "available": true
+  },
+  "/cards/conditionals/020.webp": {
+    "bytes": 141464,
+    "available": true
+  },
+  "/cards/conditionals/023.webp": {
+    "bytes": 133882,
+    "available": true
+  },
+  "/cards/conditionals/030.webp": {
+    "bytes": 251464,
+    "available": true
+  },
+  "/cards/conditionals/014.webp": {
+    "bytes": 128348,
+    "available": true
+  },
+  "/cards/conditionals/007.webp": {
+    "bytes": 147426,
+    "available": true
+  },
+  "/cards/conditionals/031.webp": {
+    "bytes": 143002,
+    "available": true
+  },
+  "/cards/conditionals/003.webp": {
+    "bytes": 243596,
+    "available": true
+  },
+  "/cards/conditionals/026.webp": {
+    "bytes": 159584,
+    "available": true
+  },
+  "/cards/conditionals/034.webp": {
+    "bytes": 155512,
+    "available": true
+  },
+  "/cards/conditionals/041.webp": {
+    "bytes": 160568,
+    "available": true
+  },
+  "/cards/conditionals/019.webp": {
+    "bytes": 152628,
+    "available": true
+  },
+  "/cards/conditionals/033.webp": {
+    "bytes": 153924,
+    "available": true
+  },
+  "/cards/conditionals/040.webp": {
+    "bytes": 151634,
+    "available": true
+  },
+  "/cards/conditionals/011.webp": {
+    "bytes": 141870,
+    "available": true
+  },
+  "/cards/conditionals/021.webp": {
+    "bytes": 132022,
+    "available": true
+  },
+  "/cards/conditionals/028.webp": {
+    "bytes": 146560,
+    "available": true
+  },
+  "/cards/conditionals/024.webp": {
+    "bytes": 129832,
+    "available": true
+  },
+  "/cards/conditionals/008.webp": {
+    "bytes": 153644,
+    "available": true
+  },
+  "/cards/conditionals/001.webp": {
+    "bytes": 263544,
+    "available": true
+  },
+  "/cards/conditionals/037.webp": {
+    "bytes": 137130,
+    "available": true
+  },
+  "/cards/conditionals/012.webp": {
+    "bytes": 139120,
+    "available": true
+  },
+  "/cards/conditionals/004.webp": {
+    "bytes": 149228,
+    "available": true
+  },
+  "/cards/conditionals/029.webp": {
+    "bytes": 151022,
+    "available": true
+  },
+  "/cards/conditionals/032.webp": {
+    "bytes": 151548,
+    "available": true
+  },
+  "/cards/conditionals/017.webp": {
+    "bytes": 149526,
+    "available": true
+  },
+  "/cards/conditionals/016.webp": {
+    "bytes": 141752,
+    "available": true
+  },
+  "/cards/conditionals/010.webp": {
+    "bytes": 147202,
+    "available": true
+  },
+  "/cards/conditionals/027.webp": {
+    "bytes": 139994,
+    "available": true
+  },
+  "/cards/conditionals/013.webp": {
+    "bytes": 158676,
+    "available": true
+  },
+  "/cards/conditionals/018.webp": {
+    "bytes": 153496,
+    "available": true
+  },
+  "/cards/conditionals/039.webp": {
+    "bytes": 153552,
+    "available": true
+  },
+  "/cards/conditionals/005.webp": {
+    "bytes": 138108,
+    "available": true
+  },
+  "/cards/conditionals/038.webp": {
+    "bytes": 151636,
+    "available": true
+  },
+  "/cards/characters/009.webp": {
+    "bytes": 168428,
+    "available": true
+  },
+  "/cards/characters/015.webp": {
+    "bytes": 179494,
+    "available": true
+  },
+  "/cards/characters/006.webp": {
+    "bytes": 153716,
+    "available": true
+  },
+  "/cards/characters/002.webp": {
+    "bytes": 158878,
+    "available": true
+  },
+  "/cards/characters/014.webp": {
+    "bytes": 209944,
+    "available": true
+  },
+  "/cards/characters/007.webp": {
+    "bytes": 185440,
+    "available": true
+  },
+  "/cards/characters/003.webp": {
+    "bytes": 182704,
+    "available": true
+  },
+  "/cards/characters/011.webp": {
+    "bytes": 158042,
+    "available": true
+  },
+  "/cards/characters/008.webp": {
+    "bytes": 167780,
+    "available": true
+  },
+  "/cards/characters/001.webp": {
+    "bytes": 202768,
+    "available": true
+  },
+  "/cards/characters/012.webp": {
+    "bytes": 142998,
+    "available": true
+  },
+  "/cards/characters/004.webp": {
+    "bytes": 197036,
+    "available": true
+  },
+  "/cards/characters/016.webp": {
+    "bytes": 143744,
+    "available": true
+  },
+  "/cards/characters/010.webp": {
+    "bytes": 162952,
+    "available": true
+  },
+  "/cards/characters/013.webp": {
+    "bytes": 154492,
+    "available": true
+  },
+  "/cards/characters/005.webp": {
+    "bytes": 155450,
+    "available": true
+  },
+  "/cards/cleopatra/009.webp": {
+    "bytes": 134990,
+    "available": true
+  },
+  "/cards/cleopatra/025.webp": {
+    "bytes": 134500,
+    "available": true
+  },
+  "/cards/cleopatra/015.webp": {
+    "bytes": 152916,
+    "available": true
+  },
+  "/cards/cleopatra/022.webp": {
+    "bytes": 147844,
+    "available": true
+  },
+  "/cards/cleopatra/035.webp": {
+    "bytes": 125668,
+    "available": true
+  },
+  "/cards/cleopatra/006.webp": {
+    "bytes": 139654,
+    "available": true
+  },
+  "/cards/cleopatra/002.webp": {
+    "bytes": 161484,
+    "available": true
+  },
+  "/cards/cleopatra/020.webp": {
+    "bytes": 167274,
+    "available": true
+  },
+  "/cards/cleopatra/023.webp": {
+    "bytes": 126418,
+    "available": true
+  },
+  "/cards/cleopatra/030.webp": {
+    "bytes": 84760,
+    "available": true
+  },
+  "/cards/cleopatra/014.webp": {
+    "bytes": 146454,
+    "available": true
+  },
+  "/cards/cleopatra/007.webp": {
+    "bytes": 141002,
+    "available": true
+  },
+  "/cards/cleopatra/031.webp": {
+    "bytes": 115358,
+    "available": true
+  },
+  "/cards/cleopatra/003.webp": {
+    "bytes": 117212,
+    "available": true
+  },
+  "/cards/cleopatra/026.webp": {
+    "bytes": 104654,
+    "available": true
+  },
+  "/cards/cleopatra/034.webp": {
+    "bytes": 138772,
+    "available": true
+  },
+  "/cards/cleopatra/019.webp": {
+    "bytes": 133076,
+    "available": true
+  },
+  "/cards/cleopatra/033.webp": {
+    "bytes": 114250,
+    "available": true
+  },
+  "/cards/cleopatra/011.webp": {
+    "bytes": 105336,
+    "available": true
+  },
+  "/cards/cleopatra/021.webp": {
+    "bytes": 153976,
+    "available": true
+  },
+  "/cards/cleopatra/028.webp": {
+    "bytes": 112626,
+    "available": true
+  },
+  "/cards/cleopatra/024.webp": {
+    "bytes": 136856,
+    "available": true
+  },
+  "/cards/cleopatra/008.webp": {
+    "bytes": 161494,
+    "available": true
+  },
+  "/cards/cleopatra/001.webp": {
+    "bytes": 151424,
+    "available": true
+  },
+  "/cards/cleopatra/012.webp": {
+    "bytes": 139652,
+    "available": true
+  },
+  "/cards/cleopatra/004.webp": {
+    "bytes": 117966,
+    "available": true
+  },
+  "/cards/cleopatra/029.webp": {
+    "bytes": 114512,
+    "available": true
+  },
+  "/cards/cleopatra/032.webp": {
+    "bytes": 111642,
+    "available": true
+  },
+  "/cards/cleopatra/017.webp": {
+    "bytes": 138532,
+    "available": true
+  },
+  "/cards/cleopatra/016.webp": {
+    "bytes": 140886,
+    "available": true
+  },
+  "/cards/cleopatra/010.webp": {
+    "bytes": 156184,
+    "available": true
+  },
+  "/cards/cleopatra/027.webp": {
+    "bytes": 110998,
+    "available": true
+  },
+  "/cards/cleopatra/013.webp": {
+    "bytes": 155066,
+    "available": true
+  },
+  "/cards/cleopatra/018.webp": {
+    "bytes": 132256,
+    "available": true
+  },
+  "/cards/cleopatra/005.webp": {
+    "bytes": 160030,
+    "available": true
+  },
+  "/cards/osiris/009.webp": {
+    "bytes": 141748,
+    "available": true
+  },
+  "/cards/osiris/015.webp": {
+    "bytes": 142220,
+    "available": true
+  },
+  "/cards/osiris/006.webp": {
+    "bytes": 181530,
+    "available": true
+  },
+  "/cards/osiris/002.webp": {
+    "bytes": 180740,
+    "available": true
+  },
+  "/cards/osiris/014.webp": {
+    "bytes": 185332,
+    "available": true
+  },
+  "/cards/osiris/007.webp": {
+    "bytes": 138950,
+    "available": true
+  },
+  "/cards/osiris/003.webp": {
+    "bytes": 139482,
+    "available": true
+  },
+  "/cards/osiris/011.webp": {
+    "bytes": 105866,
+    "available": true
+  },
+  "/cards/osiris/008.webp": {
+    "bytes": 182062,
+    "available": true
+  },
+  "/cards/osiris/001.webp": {
+    "bytes": 158406,
+    "available": true
+  },
+  "/cards/osiris/012.webp": {
+    "bytes": 182018,
+    "available": true
+  },
+  "/cards/osiris/004.webp": {
+    "bytes": 179994,
+    "available": true
+  },
+  "/cards/osiris/017.webp": {
+    "bytes": 144534,
+    "available": true
+  },
+  "/cards/osiris/016.webp": {
+    "bytes": 180002,
+    "available": true
+  },
+  "/cards/osiris/010.webp": {
+    "bytes": 177752,
+    "available": true
+  },
+  "/cards/osiris/013.webp": {
+    "bytes": 140812,
+    "available": true
+  },
+  "/cards/osiris/018.webp": {
+    "bytes": 130272,
+    "available": true
+  },
+  "/cards/osiris/005.webp": {
+    "bytes": 142852,
+    "available": true
+  },
+  "/cards/living_lexicon/144.webp": {
+    "bytes": 82626,
+    "available": true
+  },
+  "/cards/living_lexicon/061.webp": {
+    "bytes": 75490,
+    "available": true
+  },
+  "/cards/living_lexicon/211.webp": {
+    "bytes": 51186,
+    "available": true
+  },
+  "/cards/living_lexicon/168.webp": {
+    "bytes": 77808,
+    "available": true
+  },
+  "/cards/living_lexicon/009.webp": {
+    "bytes": 39560,
+    "available": true
+  },
+  "/cards/living_lexicon/025.webp": {
+    "bytes": 72492,
+    "available": true
+  },
+  "/cards/living_lexicon/015.webp": {
+    "bytes": 65952,
+    "available": true
+  },
+  "/cards/living_lexicon/022.webp": {
+    "bytes": 71634,
+    "available": true
+  },
+  "/cards/living_lexicon/141.webp": {
+    "bytes": 79750,
+    "available": true
+  },
+  "/cards/living_lexicon/114.webp": {
+    "bytes": 80954,
+    "available": true
+  },
+  "/cards/living_lexicon/208.webp": {
+    "bytes": 32312,
+    "available": true
+  },
+  "/cards/living_lexicon/135.webp": {
+    "bytes": 87182,
+    "available": true
+  },
+  "/cards/living_lexicon/196.webp": {
+    "bytes": 34540,
+    "available": true
+  },
+  "/cards/living_lexicon/035.webp": {
+    "bytes": 68844,
+    "available": true
+  },
+  "/cards/living_lexicon/006.webp": {
+    "bytes": 40764,
+    "available": true
+  },
+  "/cards/living_lexicon/205.webp": {
+    "bytes": 30932,
+    "available": true
+  },
+  "/cards/living_lexicon/139.webp": {
+    "bytes": 83732,
+    "available": true
+  },
+  "/cards/living_lexicon/051.webp": {
+    "bytes": 64996,
+    "available": true
+  },
+  "/cards/living_lexicon/036.webp": {
+    "bytes": 60480,
+    "available": true
+  },
+  "/cards/living_lexicon/194.webp": {
+    "bytes": 32844,
+    "available": true
+  },
+  "/cards/living_lexicon/116.webp": {
+    "bytes": 65134,
+    "available": true
+  },
+  "/cards/living_lexicon/121.webp": {
+    "bytes": 76516,
+    "available": true
+  },
+  "/cards/living_lexicon/105.webp": {
+    "bytes": 69546,
+    "available": true
+  },
+  "/cards/living_lexicon/079.webp": {
+    "bytes": 69672,
+    "available": true
+  },
+  "/cards/living_lexicon/111.webp": {
+    "bytes": 66108,
+    "available": true
+  },
+  "/cards/living_lexicon/210.webp": {
+    "bytes": 41564,
+    "available": true
+  },
+  "/cards/living_lexicon/085.webp": {
+    "bytes": 73350,
+    "available": true
+  },
+  "/cards/living_lexicon/087.webp": {
+    "bytes": 70082,
+    "available": true
+  },
+  "/cards/living_lexicon/163.webp": {
+    "bytes": 81152,
+    "available": true
+  },
+  "/cards/living_lexicon/160.webp": {
+    "bytes": 84008,
+    "available": true
+  },
+  "/cards/living_lexicon/130.webp": {
+    "bytes": 32802,
+    "available": true
+  },
+  "/cards/living_lexicon/002.webp": {
+    "bytes": 130346,
+    "available": true
+  },
+  "/cards/living_lexicon/020.webp": {
+    "bytes": 75218,
+    "available": true
+  },
+  "/cards/living_lexicon/110.webp": {
+    "bytes": 76124,
+    "available": true
+  },
+  "/cards/living_lexicon/184.webp": {
+    "bytes": 86494,
+    "available": true
+  },
+  "/cards/living_lexicon/023.webp": {
+    "bytes": 64926,
+    "available": true
+  },
+  "/cards/living_lexicon/140.webp": {
+    "bytes": 80608,
+    "available": true
+  },
+  "/cards/living_lexicon/120.webp": {
+    "bytes": 63488,
+    "available": true
+  },
+  "/cards/living_lexicon/089.webp": {
+    "bytes": 74066,
+    "available": true
+  },
+  "/cards/living_lexicon/126.webp": {
+    "bytes": 63694,
+    "available": true
+  },
+  "/cards/living_lexicon/151.webp": {
+    "bytes": 86452,
+    "available": true
+  },
+  "/cards/living_lexicon/176.webp": {
+    "bytes": 85298,
+    "available": true
+  },
+  "/cards/living_lexicon/202.webp": {
+    "bytes": 32948,
+    "available": true
+  },
+  "/cards/living_lexicon/096.webp": {
+    "bytes": 61342,
+    "available": true
+  },
+  "/cards/living_lexicon/063.webp": {
+    "bytes": 66240,
+    "available": true
+  },
+  "/cards/living_lexicon/084.webp": {
+    "bytes": 82328,
+    "available": true
+  },
+  "/cards/living_lexicon/113.webp": {
+    "bytes": 70956,
+    "available": true
+  },
+  "/cards/living_lexicon/207.webp": {
+    "bytes": 32418,
+    "available": true
+  },
+  "/cards/living_lexicon/086.webp": {
+    "bytes": 72664,
+    "available": true
+  },
+  "/cards/living_lexicon/186.webp": {
+    "bytes": 75990,
+    "available": true
+  },
+  "/cards/living_lexicon/094.webp": {
+    "bytes": 70548,
+    "available": true
+  },
+  "/cards/living_lexicon/050.webp": {
+    "bytes": 75190,
+    "available": true
+  },
+  "/cards/living_lexicon/058.webp": {
+    "bytes": 72148,
+    "available": true
+  },
+  "/cards/living_lexicon/117.webp": {
+    "bytes": 65506,
+    "available": true
+  },
+  "/cards/living_lexicon/030.webp": {
+    "bytes": 68236,
+    "available": true
+  },
+  "/cards/living_lexicon/076.webp": {
+    "bytes": 71994,
+    "available": true
+  },
+  "/cards/living_lexicon/090.webp": {
+    "bytes": 69188,
+    "available": true
+  },
+  "/cards/living_lexicon/099.webp": {
+    "bytes": 71966,
+    "available": true
+  },
+  "/cards/living_lexicon/149.webp": {
+    "bytes": 78890,
+    "available": true
+  },
+  "/cards/living_lexicon/077.webp": {
+    "bytes": 72696,
+    "available": true
+  },
+  "/cards/living_lexicon/083.webp": {
+    "bytes": 65710,
+    "available": true
+  },
+  "/cards/living_lexicon/128.webp": {
+    "bytes": 72998,
+    "available": true
+  },
+  "/cards/living_lexicon/124.webp": {
+    "bytes": 69574,
+    "available": true
+  },
+  "/cards/living_lexicon/212.webp": {
+    "bytes": 67350,
+    "available": true
+  },
+  "/cards/living_lexicon/167.webp": {
+    "bytes": 72542,
+    "available": true
+  },
+  "/cards/living_lexicon/183.webp": {
+    "bytes": 78296,
+    "available": true
+  },
+  "/cards/living_lexicon/112.webp": {
+    "bytes": 67070,
+    "available": true
+  },
+  "/cards/living_lexicon/069.webp": {
+    "bytes": 69162,
+    "available": true
+  },
+  "/cards/living_lexicon/165.webp": {
+    "bytes": 76880,
+    "available": true
+  },
+  "/cards/living_lexicon/172.webp": {
+    "bytes": 77662,
+    "available": true
+  },
+  "/cards/living_lexicon/014.webp": {
+    "bytes": 52574,
+    "available": true
+  },
+  "/cards/living_lexicon/092.webp": {
+    "bytes": 73304,
+    "available": true
+  },
+  "/cards/living_lexicon/007.webp": {
+    "bytes": 34480,
+    "available": true
+  },
+  "/cards/living_lexicon/056.webp": {
+    "bytes": 63776,
+    "available": true
+  },
+  "/cards/living_lexicon/159.webp": {
+    "bytes": 80574,
+    "available": true
+  },
+  "/cards/living_lexicon/031.webp": {
+    "bytes": 67066,
+    "available": true
+  },
+  "/cards/living_lexicon/189.webp": {
+    "bytes": 71626,
+    "available": true
+  },
+  "/cards/living_lexicon/067.webp": {
+    "bytes": 66262,
+    "available": true
+  },
+  "/cards/living_lexicon/045.webp": {
+    "bytes": 68828,
+    "available": true
+  },
+  "/cards/living_lexicon/148.webp": {
+    "bytes": 78696,
+    "available": true
+  },
+  "/cards/living_lexicon/119.webp": {
+    "bytes": 70662,
+    "available": true
+  },
+  "/cards/living_lexicon/142.webp": {
+    "bytes": 77700,
+    "available": true
+  },
+  "/cards/living_lexicon/003.webp": {
+    "bytes": 158212,
+    "available": true
+  },
+  "/cards/living_lexicon/026.webp": {
+    "bytes": 72334,
+    "available": true
+  },
+  "/cards/living_lexicon/161.webp": {
+    "bytes": 82122,
+    "available": true
+  },
+  "/cards/living_lexicon/059.webp": {
+    "bytes": 69706,
+    "available": true
+  },
+  "/cards/living_lexicon/127.webp": {
+    "bytes": 67108,
+    "available": true
+  },
+  "/cards/living_lexicon/034.webp": {
+    "bytes": 69684,
+    "available": true
+  },
+  "/cards/living_lexicon/088.webp": {
+    "bytes": 69870,
+    "available": true
+  },
+  "/cards/living_lexicon/047.webp": {
+    "bytes": 74042,
+    "available": true
+  },
+  "/cards/living_lexicon/177.webp": {
+    "bytes": 77778,
+    "available": true
+  },
+  "/cards/living_lexicon/055.webp": {
+    "bytes": 68414,
+    "available": true
+  },
+  "/cards/living_lexicon/068.webp": {
+    "bytes": 72102,
+    "available": true
+  },
+  "/cards/living_lexicon/162.webp": {
+    "bytes": 79100,
+    "available": true
+  },
+  "/cards/living_lexicon/041.webp": {
+    "bytes": 75090,
+    "available": true
+  },
+  "/cards/living_lexicon/044.webp": {
+    "bytes": 78752,
+    "available": true
+  },
+  "/cards/living_lexicon/019.webp": {
+    "bytes": 68736,
+    "available": true
+  },
+  "/cards/living_lexicon/153.webp": {
+    "bytes": 75756,
+    "available": true
+  },
+  "/cards/living_lexicon/185.webp": {
+    "bytes": 73952,
+    "available": true
+  },
+  "/cards/living_lexicon/043.webp": {
+    "bytes": 71032,
+    "available": true
+  },
+  "/cards/living_lexicon/072.webp": {
+    "bytes": 77658,
+    "available": true
+  },
+  "/cards/living_lexicon/125.webp": {
+    "bytes": 70040,
+    "available": true
+  },
+  "/cards/living_lexicon/098.webp": {
+    "bytes": 72000,
+    "available": true
+  },
+  "/cards/living_lexicon/138.webp": {
+    "bytes": 83418,
+    "available": true
+  },
+  "/cards/living_lexicon/187.webp": {
+    "bytes": 78590,
+    "available": true
+  },
+  "/cards/living_lexicon/195.webp": {
+    "bytes": 35118,
+    "available": true
+  },
+  "/cards/living_lexicon/049.webp": {
+    "bytes": 68948,
+    "available": true
+  },
+  "/cards/living_lexicon/201.webp": {
+    "bytes": 28962,
+    "available": true
+  },
+  "/cards/living_lexicon/180.webp": {
+    "bytes": 84458,
+    "available": true
+  },
+  "/cards/living_lexicon/106.webp": {
+    "bytes": 69316,
+    "available": true
+  },
+  "/cards/living_lexicon/033.webp": {
+    "bytes": 71900,
+    "available": true
+  },
+  "/cards/living_lexicon/190.webp": {
+    "bytes": 84926,
+    "available": true
+  },
+  "/cards/living_lexicon/170.webp": {
+    "bytes": 96388,
+    "available": true
+  },
+  "/cards/living_lexicon/040.webp": {
+    "bytes": 67164,
+    "available": true
+  },
+  "/cards/living_lexicon/169.webp": {
+    "bytes": 86880,
+    "available": true
+  },
+  "/cards/living_lexicon/215.webp": {
+    "bytes": 42716,
+    "available": true
+  },
+  "/cards/living_lexicon/071.webp": {
+    "bytes": 69718,
+    "available": true
+  },
+  "/cards/living_lexicon/011.webp": {
+    "bytes": 127304,
+    "available": true
+  },
+  "/cards/living_lexicon/156.webp": {
+    "bytes": 79314,
+    "available": true
+  },
+  "/cards/living_lexicon/203.webp": {
+    "bytes": 32270,
+    "available": true
+  },
+  "/cards/living_lexicon/174.webp": {
+    "bytes": 76244,
+    "available": true
+  },
+  "/cards/living_lexicon/021.webp": {
+    "bytes": 73228,
+    "available": true
+  },
+  "/cards/living_lexicon/107.webp": {
+    "bytes": 74866,
+    "available": true
+  },
+  "/cards/living_lexicon/152.webp": {
+    "bytes": 77606,
+    "available": true
+  },
+  "/cards/living_lexicon/028.webp": {
+    "bytes": 69062,
+    "available": true
+  },
+  "/cards/living_lexicon/073.webp": {
+    "bytes": 74838,
+    "available": true
+  },
+  "/cards/living_lexicon/054.webp": {
+    "bytes": 80170,
+    "available": true
+  },
+  "/cards/living_lexicon/214.webp": {
+    "bytes": 44884,
+    "available": true
+  },
+  "/cards/living_lexicon/024.webp": {
+    "bytes": 81264,
+    "available": true
+  },
+  "/cards/living_lexicon/118.webp": {
+    "bytes": 73080,
+    "available": true
+  },
+  "/cards/living_lexicon/150.webp": {
+    "bytes": 80870,
+    "available": true
+  },
+  "/cards/living_lexicon/104.webp": {
+    "bytes": 79242,
+    "available": true
+  },
+  "/cards/living_lexicon/064.webp": {
+    "bytes": 69302,
+    "available": true
+  },
+  "/cards/living_lexicon/062.webp": {
+    "bytes": 60004,
+    "available": true
+  },
+  "/cards/living_lexicon/008.webp": {
+    "bytes": 139704,
+    "available": true
+  },
+  "/cards/living_lexicon/001.webp": {
+    "bytes": 129122,
+    "available": true
+  },
+  "/cards/living_lexicon/037.webp": {
+    "bytes": 70106,
+    "available": true
+  },
+  "/cards/living_lexicon/060.webp": {
+    "bytes": 62676,
+    "available": true
+  },
+  "/cards/living_lexicon/145.webp": {
+    "bytes": 72990,
+    "available": true
+  },
+  "/cards/living_lexicon/182.webp": {
+    "bytes": 71484,
+    "available": true
+  },
+  "/cards/living_lexicon/102.webp": {
+    "bytes": 65400,
+    "available": true
+  },
+  "/cards/living_lexicon/178.webp": {
+    "bytes": 67666,
+    "available": true
+  },
+  "/cards/living_lexicon/198.webp": {
+    "bytes": 30346,
+    "available": true
+  },
+  "/cards/living_lexicon/012.webp": {
+    "bytes": 76854,
+    "available": true
+  },
+  "/cards/living_lexicon/213.webp": {
+    "bytes": 43688,
+    "available": true
+  },
+  "/cards/living_lexicon/065.webp": {
+    "bytes": 69112,
+    "available": true
+  },
+  "/cards/living_lexicon/100.webp": {
+    "bytes": 68454,
+    "available": true
+  },
+  "/cards/living_lexicon/097.webp": {
+    "bytes": 69968,
+    "available": true
+  },
+  "/cards/living_lexicon/091.webp": {
+    "bytes": 66840,
+    "available": true
+  },
+  "/cards/living_lexicon/004.webp": {
+    "bytes": 152530,
+    "available": true
+  },
+  "/cards/living_lexicon/209.webp": {
+    "bytes": 35908,
+    "available": true
+  },
+  "/cards/living_lexicon/154.webp": {
+    "bytes": 78616,
+    "available": true
+  },
+  "/cards/living_lexicon/192.webp": {
+    "bytes": 47274,
+    "available": true
+  },
+  "/cards/living_lexicon/053.webp": {
+    "bytes": 70036,
+    "available": true
+  },
+  "/cards/living_lexicon/166.webp": {
+    "bytes": 83820,
+    "available": true
+  },
+  "/cards/living_lexicon/108.webp": {
+    "bytes": 81420,
+    "available": true
+  },
+  "/cards/living_lexicon/029.webp": {
+    "bytes": 73048,
+    "available": true
+  },
+  "/cards/living_lexicon/179.webp": {
+    "bytes": 72760,
+    "available": true
+  },
+  "/cards/living_lexicon/052.webp": {
+    "bytes": 66018,
+    "available": true
+  },
+  "/cards/living_lexicon/181.webp": {
+    "bytes": 79492,
+    "available": true
+  },
+  "/cards/living_lexicon/048.webp": {
+    "bytes": 80396,
+    "available": true
+  },
+  "/cards/living_lexicon/095.webp": {
+    "bytes": 69794,
+    "available": true
+  },
+  "/cards/living_lexicon/134.webp": {
+    "bytes": 90634,
+    "available": true
+  },
+  "/cards/living_lexicon/101.webp": {
+    "bytes": 76048,
+    "available": true
+  },
+  "/cards/living_lexicon/188.webp": {
+    "bytes": 69886,
+    "available": true
+  },
+  "/cards/living_lexicon/103.webp": {
+    "bytes": 71926,
+    "available": true
+  },
+  "/cards/living_lexicon/199.webp": {
+    "bytes": 29638,
+    "available": true
+  },
+  "/cards/living_lexicon/080.webp": {
+    "bytes": 76284,
+    "available": true
+  },
+  "/cards/living_lexicon/075.webp": {
+    "bytes": 66818,
+    "available": true
+  },
+  "/cards/living_lexicon/066.webp": {
+    "bytes": 62498,
+    "available": true
+  },
+  "/cards/living_lexicon/132.webp": {
+    "bytes": 54546,
+    "available": true
+  },
+  "/cards/living_lexicon/109.webp": {
+    "bytes": 69850,
+    "available": true
+  },
+  "/cards/living_lexicon/082.webp": {
+    "bytes": 71816,
+    "available": true
+  },
+  "/cards/living_lexicon/158.webp": {
+    "bytes": 65110,
+    "available": true
+  },
+  "/cards/living_lexicon/146.webp": {
+    "bytes": 97220,
+    "available": true
+  },
+  "/cards/living_lexicon/093.webp": {
+    "bytes": 72852,
+    "available": true
+  },
+  "/cards/living_lexicon/032.webp": {
+    "bytes": 73268,
+    "available": true
+  },
+  "/cards/living_lexicon/017.webp": {
+    "bytes": 71922,
+    "available": true
+  },
+  "/cards/living_lexicon/123.webp": {
+    "bytes": 67036,
+    "available": true
+  },
+  "/cards/living_lexicon/131.webp": {
+    "bytes": 53112,
+    "available": true
+  },
+  "/cards/living_lexicon/122.webp": {
+    "bytes": 75102,
+    "available": true
+  },
+  "/cards/living_lexicon/046.webp": {
+    "bytes": 68346,
+    "available": true
+  },
+  "/cards/living_lexicon/191.webp": {
+    "bytes": 64482,
+    "available": true
+  },
+  "/cards/living_lexicon/136.webp": {
+    "bytes": 72982,
+    "available": true
+  },
+  "/cards/living_lexicon/070.webp": {
+    "bytes": 26282,
+    "available": true
+  },
+  "/cards/living_lexicon/016.webp": {
+    "bytes": 71152,
+    "available": true
+  },
+  "/cards/living_lexicon/078.webp": {
+    "bytes": 69940,
+    "available": true
+  },
+  "/cards/living_lexicon/010.webp": {
+    "bytes": 26306,
+    "available": true
+  },
+  "/cards/living_lexicon/027.webp": {
+    "bytes": 69248,
+    "available": true
+  },
+  "/cards/living_lexicon/155.webp": {
+    "bytes": 74016,
+    "available": true
+  },
+  "/cards/living_lexicon/173.webp": {
+    "bytes": 68316,
+    "available": true
+  },
+  "/cards/living_lexicon/133.webp": {
+    "bytes": 79556,
+    "available": true
+  },
+  "/cards/living_lexicon/081.webp": {
+    "bytes": 73708,
+    "available": true
+  },
+  "/cards/living_lexicon/171.webp": {
+    "bytes": 79862,
+    "available": true
+  },
+  "/cards/living_lexicon/206.webp": {
+    "bytes": 21788,
+    "available": true
+  },
+  "/cards/living_lexicon/204.webp": {
+    "bytes": 30248,
+    "available": true
+  },
+  "/cards/living_lexicon/074.webp": {
+    "bytes": 66396,
+    "available": true
+  },
+  "/cards/living_lexicon/042.webp": {
+    "bytes": 132122,
+    "available": true
+  },
+  "/cards/living_lexicon/115.webp": {
+    "bytes": 69280,
+    "available": true
+  },
+  "/cards/living_lexicon/157.webp": {
+    "bytes": 76888,
+    "available": true
+  },
+  "/cards/living_lexicon/197.webp": {
+    "bytes": 32216,
+    "available": true
+  },
+  "/cards/living_lexicon/013.webp": {
+    "bytes": 74034,
+    "available": true
+  },
+  "/cards/living_lexicon/200.webp": {
+    "bytes": 31402,
+    "available": true
+  },
+  "/cards/living_lexicon/175.webp": {
+    "bytes": 80452,
+    "available": true
+  },
+  "/cards/living_lexicon/018.webp": {
+    "bytes": 69036,
+    "available": true
+  },
+  "/cards/living_lexicon/137.webp": {
+    "bytes": 75038,
+    "available": true
+  },
+  "/cards/living_lexicon/143.webp": {
+    "bytes": 80050,
+    "available": true
+  },
+  "/cards/living_lexicon/039.webp": {
+    "bytes": 71126,
+    "available": true
+  },
+  "/cards/living_lexicon/057.webp": {
+    "bytes": 64600,
+    "available": true
+  },
+  "/cards/living_lexicon/129.webp": {
+    "bytes": 69526,
+    "available": true
+  },
+  "/cards/living_lexicon/147.webp": {
+    "bytes": 77606,
+    "available": true
+  },
+  "/cards/living_lexicon/193.webp": {
+    "bytes": 44158,
+    "available": true
+  },
+  "/cards/living_lexicon/005.webp": {
+    "bytes": 170378,
+    "available": true
+  },
+  "/cards/living_lexicon/038.webp": {
+    "bytes": 71120,
+    "available": true
+  },
+  "/cards/living_lexicon/164.webp": {
+    "bytes": 68924,
+    "available": true
+  },
+  "/cards/thoth/009.webp": {
+    "bytes": 87526,
+    "available": true
+  },
+  "/cards/thoth/025.webp": {
+    "bytes": 106288,
+    "available": true
+  },
+  "/cards/thoth/015.webp": {
+    "bytes": 85264,
+    "available": true
+  },
+  "/cards/thoth/022.webp": {
+    "bytes": 124544,
+    "available": true
+  },
+  "/cards/thoth/035.webp": {
+    "bytes": 101348,
+    "available": true
+  },
+  "/cards/thoth/006.webp": {
+    "bytes": 92934,
+    "available": true
+  },
+  "/cards/thoth/036.webp": {
+    "bytes": 100404,
+    "available": true
+  },
+  "/cards/thoth/002.webp": {
+    "bytes": 112806,
+    "available": true
+  },
+  "/cards/thoth/020.webp": {
+    "bytes": 110266,
+    "available": true
+  },
+  "/cards/thoth/023.webp": {
+    "bytes": 115376,
+    "available": true
+  },
+  "/cards/thoth/030.webp": {
+    "bytes": 100258,
+    "available": true
+  },
+  "/cards/thoth/014.webp": {
+    "bytes": 105276,
+    "available": true
+  },
+  "/cards/thoth/007.webp": {
+    "bytes": 112962,
+    "available": true
+  },
+  "/cards/thoth/031.webp": {
+    "bytes": 118338,
+    "available": true
+  },
+  "/cards/thoth/003.webp": {
+    "bytes": 140024,
+    "available": true
+  },
+  "/cards/thoth/026.webp": {
+    "bytes": 108756,
+    "available": true
+  },
+  "/cards/thoth/034.webp": {
+    "bytes": 105440,
+    "available": true
+  },
+  "/cards/thoth/041.webp": {
+    "bytes": 83954,
+    "available": true
+  },
+  "/cards/thoth/019.webp": {
+    "bytes": 98842,
+    "available": true
+  },
+  "/cards/thoth/043.webp": {
+    "bytes": 73740,
+    "available": true
+  },
+  "/cards/thoth/033.webp": {
+    "bytes": 117418,
+    "available": true
+  },
+  "/cards/thoth/040.webp": {
+    "bytes": 112136,
+    "available": true
+  },
+  "/cards/thoth/011.webp": {
+    "bytes": 94704,
+    "available": true
+  },
+  "/cards/thoth/021.webp": {
+    "bytes": 156710,
+    "available": true
+  },
+  "/cards/thoth/028.webp": {
+    "bytes": 131690,
+    "available": true
+  },
+  "/cards/thoth/024.webp": {
+    "bytes": 91168,
+    "available": true
+  },
+  "/cards/thoth/008.webp": {
+    "bytes": 98200,
+    "available": true
+  },
+  "/cards/thoth/001.webp": {
+    "bytes": 200774,
+    "available": true
+  },
+  "/cards/thoth/037.webp": {
+    "bytes": 102734,
+    "available": true
+  },
+  "/cards/thoth/012.webp": {
+    "bytes": 125750,
+    "available": true
+  },
+  "/cards/thoth/004.webp": {
+    "bytes": 140090,
+    "available": true
+  },
+  "/cards/thoth/029.webp": {
+    "bytes": 106578,
+    "available": true
+  },
+  "/cards/thoth/032.webp": {
+    "bytes": 84528,
+    "available": true
+  },
+  "/cards/thoth/017.webp": {
+    "bytes": 114318,
+    "available": true
+  },
+  "/cards/thoth/016.webp": {
+    "bytes": 97884,
+    "available": true
+  },
+  "/cards/thoth/010.webp": {
+    "bytes": 95814,
+    "available": true
+  },
+  "/cards/thoth/027.webp": {
+    "bytes": 115322,
+    "available": true
+  },
+  "/cards/thoth/042.webp": {
+    "bytes": 72212,
+    "available": true
+  },
+  "/cards/thoth/013.webp": {
+    "bytes": 118814,
+    "available": true
+  },
+  "/cards/thoth/018.webp": {
+    "bytes": 110262,
+    "available": true
+  },
+  "/cards/thoth/039.webp": {
+    "bytes": 114714,
+    "available": true
+  },
+  "/cards/thoth/005.webp": {
+    "bytes": 105580,
+    "available": true
+  },
+  "/cards/thoth/038.webp": {
+    "bytes": 84444,
+    "available": true
+  },
+  "/vocab/cover.webp": {
+    "bytes": 192060,
+    "available": true
+  },
+  "/vocab/import_manifest.json": {
+    "bytes": 31683,
+    "available": true
+  },
+  "/vocab/README_IMPORT_FIRST.txt": {
+    "bytes": 661,
+    "available": true
+  },
+  "/vocab/study/VOC-001.webp": {
+    "bytes": 206848,
+    "available": true
+  },
+  "/vocab/study/VOC-002.webp": {
+    "bytes": 236942,
+    "available": true
+  },
+  "/vocab/study/VOC-003.webp": {
+    "bytes": 256840,
+    "available": true
+  },
+  "/vocab/study/VOC-004.webp": {
+    "bytes": 213944,
+    "available": true
+  },
+  "/vocab/study/VOC-005.webp": {
+    "bytes": 198906,
+    "available": true
+  },
+  "/vocab/study/VOC-006.webp": {
+    "bytes": 232268,
+    "available": true
+  },
+  "/vocab/study/VOC-007.webp": {
+    "bytes": 274302,
+    "available": true
+  },
+  "/vocab/study/VOC-008.webp": {
+    "bytes": 221966,
+    "available": true
+  },
+  "/vocab/study/VOC-009.webp": {
+    "bytes": 204666,
+    "available": true
+  },
+  "/vocab/study/VOC-010.webp": {
+    "bytes": 226544,
+    "available": true
+  },
+  "/vocab/study/VOC-011.webp": {
+    "bytes": 208052,
+    "available": true
+  },
+  "/vocab/study/VOC-012.webp": {
+    "bytes": 234992,
+    "available": true
+  },
+  "/vocab/study/VOC-013.webp": {
+    "bytes": 186142,
+    "available": true
+  },
+  "/vocab/study/VOC-014.webp": {
+    "bytes": 170432,
+    "available": true
+  },
+  "/vocab/study/VOC-015.webp": {
+    "bytes": 186298,
+    "available": true
+  },
+  "/vocab/study/VOC-016.webp": {
+    "bytes": 182224,
+    "available": true
+  },
+  "/vocab/study/VOC-017.webp": {
+    "bytes": 179888,
+    "available": true
+  },
+  "/vocab/study/VOC-018.webp": {
+    "bytes": 220300,
+    "available": true
+  },
+  "/vocab/study/VOC-019.webp": {
+    "bytes": 221306,
+    "available": true
+  },
+  "/vocab/study/VOC-020.webp": {
+    "bytes": 170452,
+    "available": true
+  },
+  "/vocab/study/VOC-021.webp": {
+    "bytes": 184476,
+    "available": true
+  },
+  "/vocab/study/VOC-022.webp": {
+    "bytes": 211916,
+    "available": true
+  },
+  "/vocab/study/VOC-023.webp": {
+    "bytes": 238822,
+    "available": true
+  },
+  "/vocab/study/VOC-024.webp": {
+    "bytes": 237050,
+    "available": true
+  },
+  "/vocab/study/VOC-025.webp": {
+    "bytes": 225962,
+    "available": true
+  },
+  "/vocab/study/VOC-026.webp": {
+    "bytes": 174128,
+    "available": true
+  },
+  "/vocab/study/VOC-027.webp": {
+    "bytes": 207584,
+    "available": true
+  },
+  "/vocab/study/VOC-028.webp": {
+    "bytes": 162018,
+    "available": true
+  },
+  "/vocab/study/VOC-029.webp": {
+    "bytes": 227978,
+    "available": true
+  },
+  "/vocab/study/VOC-030.webp": {
+    "bytes": 201870,
+    "available": true
+  },
+  "/vocab/study/VOC-031.webp": {
+    "bytes": 207344,
+    "available": true
+  },
+  "/vocab/study/VOC-032.webp": {
+    "bytes": 225288,
+    "available": true
+  },
+  "/vocab/study/VOC-033.webp": {
+    "bytes": 224322,
+    "available": true
+  },
+  "/vocab/study/VOC-034.webp": {
+    "bytes": 215450,
+    "available": true
+  },
+  "/vocab/study/VOC-035.webp": {
+    "bytes": 237400,
+    "available": true
+  },
+  "/vocab/study/VOC-036.webp": {
+    "bytes": 238604,
+    "available": true
+  },
+  "/vocab/study/VOC-037.webp": {
+    "bytes": 215484,
+    "available": true
+  },
+  "/vocab/study/VOC-038.webp": {
+    "bytes": 270408,
+    "available": true
+  },
+  "/vocab/study/VOC-039.webp": {
+    "bytes": 190158,
+    "available": true
+  },
+  "/vocab/study/VOC-040.webp": {
+    "bytes": 296732,
+    "available": true
+  },
+  "/vocab/study/VOC-041.webp": {
+    "bytes": 189482,
+    "available": true
+  },
+  "/vocab/study/VOC-042.webp": {
+    "bytes": 198838,
+    "available": true
+  },
+  "/vocab/study/VOC-043.webp": {
+    "bytes": 318730,
+    "available": true
+  },
+  "/vocab/study/VOC-044.webp": {
+    "bytes": 267704,
+    "available": true
+  },
+  "/vocab/study/VOC-045.webp": {
+    "bytes": 161232,
+    "available": true
+  },
+  "/vocab/study/VOC-046.webp": {
+    "bytes": 231974,
+    "available": true
+  },
+  "/vocab/study/VOC-047.webp": {
+    "bytes": 206550,
+    "available": true
+  },
+  "/vocab/study/VOC-048.webp": {
+    "bytes": 167336,
+    "available": true
+  },
+  "/vocab/study/VOC-049.webp": {
+    "bytes": 290492,
+    "available": true
+  },
+  "/vocab/study/VOC-050.webp": {
+    "bytes": 193758,
+    "available": true
+  },
+  "/vocab/study/VOC-051.webp": {
+    "bytes": 174170,
+    "available": true
+  },
+  "/vocab/study/VOC-052.webp": {
+    "bytes": 190448,
+    "available": true
+  },
+  "/vocab/study/VOC-053.webp": {
+    "bytes": 255954,
+    "available": true
+  },
+  "/vocab/study/VOC-054.webp": {
+    "bytes": 200172,
+    "available": true
+  },
+  "/vocab/study/VOC-055.webp": {
+    "bytes": 325662,
+    "available": true
+  },
+  "/vocab/study/VOC-056.webp": {
+    "bytes": 201380,
+    "available": true
+  },
+  "/vocab/study/VOC-057.webp": {
+    "bytes": 219220,
+    "available": true
+  },
+  "/vocab/study/VOC-058.webp": {
+    "bytes": 243174,
+    "available": true
+  },
+  "/vocab/study/VOC-059.webp": {
+    "bytes": 235604,
+    "available": true
+  },
+  "/vocab/study/VOC-060.webp": {
+    "bytes": 212250,
+    "available": true
+  },
+  "/vocab/study/VOC-061.webp": {
+    "bytes": 365622,
+    "available": true
+  },
+  "/vocab/study/VOC-062.webp": {
+    "bytes": 210686,
+    "available": true
+  },
+  "/vocab/study/VOC-063.webp": {
+    "bytes": 241974,
+    "available": true
+  },
+  "/vocab/study/VOC-064.webp": {
+    "bytes": 189876,
+    "available": true
+  },
+  "/vocab/study/VOC-065.webp": {
+    "bytes": 218338,
+    "available": true
+  },
+  "/vocab/study/VOC-066.webp": {
+    "bytes": 177942,
+    "available": true
+  },
+  "/vocab/alternatives/VOC-056-alt-1.webp": {
+    "bytes": 231562,
+    "available": true
+  },
+  "/vocab/alternatives/VOC-055-alt-1.webp": {
+    "bytes": 221640,
+    "available": true
+  },
+  "/vocab/alternatives/VOC-054-alt-1.webp": {
+    "bytes": 250492,
+    "available": true
+  },
+  "/vocab/alternatives/VOC-056-alt-2.webp": {
+    "bytes": 269716,
+    "available": true
+  },
+  "/vocab/alternatives/VOC-055-alt-2.webp": {
+    "bytes": 172564,
+    "available": true
+  },
+  "/vocab/alternatives/VOC-054-alt-2.webp": {
+    "bytes": 189834,
+    "available": true
+  }
+}

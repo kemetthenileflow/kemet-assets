@@ -1,0 +1,109 @@
+{
+  "capture": "Google AI Studio visible code editor via clipboard; not a full runtime filesystem export",
+  "app": "a4aa56b5-0977-4285-aa2b-436ff3f102c1",
+  "date": "2026-10-16",
+  "baseCommit": "4f310ccf7aa53840dc55a9fd80cc463b6ccd7786",
+  "inputCommit": "854c6b86e8481beeb0fc696dee1a9d4cfe0a3f9a",
+  "files": [
+    {
+      "path": "IMPLEMENTATION_REPORT_2026-10-16.md",
+      "bytes": 8745,
+      "sha256": "e800272c26853379273078a3b95686324b368bc1dd963d6d8c2364751100aba8"
+    },
+    {
+      "path": "acceptance-results.txt",
+      "bytes": 3143,
+      "sha256": "97103f525f846a296765dbef955f3a1687817eab1aadaaf8b80e77c404ccbc27"
+    },
+    {
+      "path": "index.html",
+      "bytes": 579,
+      "sha256": "b05f3744b58c5c872201ba65025af19910351a7b44284274cdefa7d1f5e40d3c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1116,
+      "sha256": "c5ed6f3295786af495211d957d9679d599a8f082bb4a2c26d9e8d843d6332968"
+    },
+    {
+      "path": "public/vocab/import_manifest.json",
+      "bytes": 31683,
+      "sha256": "62e7b366748e9997074d51e6aa8d15c7240a5132e1dc3456d0ba3d9b204fe299"
+    },
+    {
+      "path": "restore_work_assets.py",
+      "bytes": 2669,
+      "sha256": "d18242a5ea1d52dddb404c881df286a0829b87fe6ff99faa415896e6397f39d0"
+    },
+    {
+      "path": "src/App.tsx",
+      "bytes": 31809,
+      "sha256": "9fd72d7a09486d40fb823e0959882e22106067a20abc71f4cccae68f5b4c918f"
+    },
+    {
+      "path": "src/activities.tsx",
+      "bytes": 47145,
+      "sha256": "96432afb8d875696a3f49ffae85db29c48d847c04d2b2be531a828e0a1e514cc"
+    },
+    {
+      "path": "src/assets.ts",
+      "bytes": 3158,
+      "sha256": "1efbce13b66cdfadddc8ba40d481a0469aece022d34a9a5badcfd996148e2166"
+    },
+    {
+      "path": "src/data/available-assets.json",
+      "bytes": 54474,
+      "sha256": "9dabbe8946aa3a8d61ce71d82d310356d3ae7df05b438d89d7e916f38d0c8abf"
+    },
+    {
+      "path": "src/data/blueprint.json",
+      "bytes": 326289,
+      "sha256": "baea32539c42712198cf4c88aafd2302aac9d528338fd527bcc955b3823f044c"
+    },
+    {
+      "path": "src/data/catalog.json",
+      "bytes": 211155,
+      "sha256": "723c6915fed36dd4b1840beb9edf095167389204e505335870919cf8d85c1b4e"
+    },
+    {
+      "path": "src/data/core.json",
+      "bytes": 199538,
+      "sha256": "d9798081852007294e05209c4b88a77fdffccd8e4180b558bd4675e250374100"
+    },
+    {
+      "path": "src/engine.ts",
+      "bytes": 8125,
+      "sha256": "a3455dfa9f86a8d4760b9efc37153aaf0efea6d7f1f8d4f845a768f4b826a768"
+    },
+    {
+      "path": "src/main.tsx",
+      "bytes": 593,
+      "sha256": "62acb5088369a4e61454715564fb1279bf5de860dfeea59d308c0d775482fa32"
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 19951,
+      "sha256": "43f6d9e0de29d6b0d841fc0215a323890cd058c03b0124d76296b1c09ebe6062"
+    },
+    {
+      "path": "src/ui.tsx",
+      "bytes": 48641,
+      "sha256": "23b9e04b47a3ad5dbbc4b8987ee3600f5fc3881a065972d147648c2c5eec91ea"
+    },
+    {
+      "path": "tests/acceptance.tsx",
+      "bytes": 9366,
+      "sha256": "3f356b72f181a7174f688df9465e805ad83868b9ac488f098b9575e6409e46c1"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 580,
+      "sha256": "26d99aedd1087bd5c99444faab375b43e0101454e292f0a7a5b2baae46036b08"
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 213,
+      "sha256": "776deed028b575a195d2dd2b17af0fd519927feca2db149a7a695c8eb6ee92f7"
+    }
+  ]
+}

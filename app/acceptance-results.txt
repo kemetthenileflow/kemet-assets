@@ -22,8 +22,12 @@ PASS Story dashboard distinct
 PASS Challenge dashboard exposes V1/V2 routes
 PASS learner attempt histories isolated
 PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
 {
-  "passed": 24,
+  "passed": 28,
   "environment": "jsdom behavioral simulation; not a real browser visual/playback test",
   "tests": [
     "authoritative counts and grading preserved",
@@ -49,6 +53,11 @@ PASS storage denial falls back to explicitly volatile memory
     "Story dashboard distinct",
     "Challenge dashboard exposes V1/V2 routes",
     "learner attempt histories isolated",
-    "storage denial falls back to explicitly volatile memory"
+    "storage denial falls back to explicitly volatile memory",
+    "all 18 canonical PDFs cataloged with verified paths and positive page counts",
+    "RosettaDecoder and GrammarPyramid render playable interactive activities",
+    "SeshatEvidenceHunt validates verbatim quotes against source passages",
+    "registered videos and navigation events are stored locally without external telemetry"
   ]
 }
+Warning: Please use the `legacy` build in Node.js environments.
