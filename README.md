@@ -1,9 +1,9 @@
-# KEMET: The Nile Flow — verified assets and source checkpoint
+# KEMET: The Nile Flow — authorized review checkpoint
 
-Original owner assets are preserved in four packages split into small transfer parts. Run `python3 build-assets.py` to reassemble and SHA-256/CRC-check the packages, verify all 18 PDFs and prepare `_site` plus `app/public`. Fourteen empty preview images are restored faithfully from their corresponding original PDF pages in `asset-overrides`; PDF bytes remain unchanged.
+This branch preserves reviewed changes from the actual Google AI Studio app export on 16 October 2026. Main and the original app remain unchanged. This is not a published application.
 
-The existing publish workflow is manual only. No deployment has been triggered in this recovery session. GitHub source URLs are not student media-hosting URLs. No billing or messaging has been activated.
+See app/REVIEW_RUN.md, app/public/review-report.md and app/review-evidence for setup, 43 passing simulated checks, source PDF validation, and limitations. The original report records the previous upload rejection; the owner subsequently supplied explicit authorization for this repository and review branch.
 
-The newest governing instruction is `01_KEMET_FINAL_PROMPT.txt` (15 October 2026, version 2), which asks for a NEW project. The older update archive is a historical source package. The old app snapshot is preserved only as rollback history and is not imported into the new implementation.
+Large unchanged assets remain in the existing verified transfer packages. The complete runnable Work artifact contains all 18 PDFs, audio/video and the exact exported wallpaper; the 352 MB archive is not duplicated in GitHub. Run build-assets.py, then app/restore_work_assets.py, then app/scripts/restore-review-assets.py for repository asset recovery. Keep the current exported public/art/nile_sandstone.png for the exact wallpaper; CSS retains a sandstone fallback.
 
-See `IMPLEMENTATION_STATUS.md` for actual verification and outstanding release gates.
+Do not publish or merge main. AI Studio activation remains subject to actual preview/source verification.

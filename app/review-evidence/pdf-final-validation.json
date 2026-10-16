@@ -1,0 +1,113 @@
+{
+  "documents": [
+    {
+      "id": "read_story",
+      "pages": 31,
+      "sha256": "9fb08c0186d9dd0f9ae7dec720579eb853576aeb3f787e4c79215172c6244338",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "unit1_above_level",
+      "pages": 112,
+      "sha256": "500cc2ccc76e48cabc1d16762b58e8dbb454dd088b1045484a10c2b027992bb3",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "unit1_standard",
+      "pages": 108,
+      "sha256": "abac15c47667be0f819b5271425402e21016f2b16bddfc7862fd549f9c672afc",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "story_standard",
+      "pages": 7,
+      "sha256": "19809d2becdc5da6edb08b3c71f0c52410869b527be38cad992467e624cfbd91",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "unit1_below_level",
+      "pages": 110,
+      "sha256": "d15164506e07a2af49ece457898dc6806bb93c105dfa343c0361ef4ca2a3e84e",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "unit1_dyslexia_friendly",
+      "pages": 214,
+      "sha256": "e918e8269d384f9f13ea861d839478a3bc2ff9e2083e19bf877bd3c309cefc7d",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "unit1_source",
+      "pages": 172,
+      "sha256": "7168dc0ef9e324b2f429116f0010a2208fb8b393654a83df4c1b9ddeded5ffa9",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "cleopatra",
+      "pages": 35,
+      "sha256": "0bbad40ef75bf5748d7bf6dbcb3b4a3dae5247aa9656dfd7fd8a688d72635c30",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "living_lexicon",
+      "pages": 215,
+      "sha256": "70fdef2f4281552542495b298f6440d6f0ed508667e668d99e48713abb9a9939",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "osiris",
+      "pages": 18,
+      "sha256": "7891a0184a1e69e19573fdf4dcf36bdfd5c7fa1e3cf959e1c6a8f16217ff1792",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "characters",
+      "pages": 16,
+      "sha256": "adb425b54dbb6746dff8637cd84b09b9f01d4f09c86b466d999081680b146cf3",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "story_below_level",
+      "pages": 8,
+      "sha256": "d844cd082be6098e525153dd46c9380df52d541aabcb78800e2106a13609fb68",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "story_dyslexia_friendly",
+      "pages": 18,
+      "sha256": "ed78795e69afb8ada19583f0ade0d9a2ecfb2c2be60f11782d9de0c2fda7f6cf",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "thoth",
+      "pages": 43,
+      "sha256": "b642d00b711a8a33108e08ec8c8d3027a0a969c4ad98e1d750a881cac7669f7b",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "story_above_level",
+      "pages": 7,
+      "sha256": "088d423e7be2ee793dcb9237aa7bb2d0d7cef38b47526c100ca59f4031c21d77",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "relative_clauses",
+      "pages": 41,
+      "sha256": "1718fc762577a199791bfe0cb4ca007a79e2fe9d20399636ba14de484c54092a",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "conditionals",
+      "pages": 41,
+      "sha256": "f838997523ed1bed9eea98e2993909932ea5f066886122e0429190c0145d02cf",
+      "allPagesRasterized": true
+    },
+    {
+      "id": "participles",
+      "pages": 37,
+      "sha256": "8784bb7b68d7f6b59d9c179bcc29a182c1204d3c9c58036317cf354f7198ded9",
+      "allPagesRasterized": true
+    }
+  ],
+  "totalPages": 1233
+}

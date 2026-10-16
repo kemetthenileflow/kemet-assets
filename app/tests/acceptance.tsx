@@ -28,4 +28,20 @@ check('RosettaDecoder and GrammarPyramid render playable interactive activities'
 check('SeshatEvidenceHunt validates verbatim quotes against source passages',()=>{render(<SeshatEvidenceHunt close={()=>{}}/>);const p=core.READING_PASSAGES[0];const sentence=p.paragraphs[0].slice(0,25);fireEvent.change(screen.getByPlaceholderText(/Paste or type exact words/),{target:{value:sentence}});fireEvent.click(screen.getByText('Verify Evidence'));assert.ok(screen.getByText(/Valid source evidence span/));cleanup();});
 check('registered videos and navigation events are stored locally without external telemetry',()=>{const v=e.registerVideo({url:'https://example.com/video.mp4',title:'Lesson 1 Video',category:'Grammar'});assert.ok(v.id.startsWith('vid-'));assert.equal(e.getRegisteredVideos().some(x=>x.id===v.id),true);e.removeRegisteredVideo(v.id);assert.equal(e.getRegisteredVideos().some(x=>x.id===v.id),false);e.trackNavigation('vocabulary','home',{source:'test'});assert.ok(e.getNavigationEvents().some(ev=>ev.page==='vocabulary'));});
 
+const {CumulativeProgressChart}=(await import('../src/CumulativeProgressChart'));
+check('D3 cumulative progress chart renders across 330 questions tracking independent accuracy',()=>{
+  const testAttempts:any[]=[
+    {id:'a1',uid:'t',session:'s1',contentId:'V1-01',version:'1',mode:'source-bank',dataset:'source330',support:'independent',response:'B',firstResponse:'B',firstAttemptCorrect:true,attemptNumber:1,result:'correct',hints:0,reveal:false,transcript:false,replays:0,review:'none',durationMs:5000,timestamp:new Date(Date.now()-10000).toISOString()},
+    {id:'a2',uid:'t',session:'s1',contentId:'V1-02',version:'1',mode:'source-bank',dataset:'source330',support:'supported',response:'A',firstResponse:'A',firstAttemptCorrect:true,attemptNumber:1,result:'correct',hints:1,reveal:true,transcript:false,replays:0,review:'none',durationMs:4000,timestamp:new Date(Date.now()-5000).toISOString()}
+  ];
+  const {container}=render(<CumulativeProgressChart attempts={testAttempts}/>);
+  assert.ok(screen.getByText(/Cumulative Progress & Mastery Chart/));
+  assert.ok(screen.getByText(/Distinct Questions Covered/));
+  assert.ok(screen.getAllByText(/Independent Accuracy Trend/).length > 0);
+  assert.ok(screen.getByText(/All 330 Questions/));
+  assert.ok(container.querySelector('svg.d3-progress-svg'));
+  cleanup();
+});
+
 console.log(JSON.stringify({passed:results.length,environment:'jsdom behavioral simulation; not a real browser visual/playback test',tests:results},null,2));
+

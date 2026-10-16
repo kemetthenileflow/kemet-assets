@@ -25,6 +25,7 @@ export function BankPractice({
   bank,
   level = '',
   passage = '',
+  audioId = '',
   support = 'independent',
   size = 5,
   close,
@@ -33,13 +34,14 @@ export function BankPractice({
   bank: string;
   level?: string;
   passage?: string;
+  audioId?: string;
   support?: string;
   size?: number;
   close: () => void;
   timed?: boolean;
 }) {
   const pool = core.ALL_330_QUESTIONS.filter(
-    (q) => q.bankId === bank && (!level || q.level === level) && (!passage || q.relatedPassageId === passage)
+    (q) => q.bankId === bank && (!level || q.level === level) && (!passage || q.relatedPassageId === passage) && (!audioId || q.relatedAudioId === audioId)
   );
   const uid = profile().uid;
   const config: QueueConfig = {
@@ -47,6 +49,7 @@ export function BankPractice({
     bank,
     level,
     passage,
+    audioId,
     dataset: 'source330',
     version,
   };
@@ -861,19 +864,10 @@ export function SourceSequence({ id, close }: { id: string; close: () => void })
       <p>
         Source step {index + 1}/{pages.length} · {p.role || 'source page'} · pending source comparison
       </p>
-      {protects && !reveal ? (
-        <p>This source page reveals support or an answer. Record your response first.</p>
-      ) : (
-        <>
-          {p.imagePath && byPath(p.imagePath).available && (
-            <img loading="lazy" src={p.imagePath} alt={'Original source page ' + p.page} />
-          )}
-          <details>
-            <summary>Text alternative — OCR requires source review</summary>
-            <p>{p.hasMeaningfulText ? p.text : p.ocrText || p.text || 'Image-only source; text comparison pending.'}</p>
-          </details>
-        </>
-      )}
+      <Pdf key={id} id={id} page={p.page} />
+      <section className="source-activity panel" aria-label="Separate learning activity">
+      <h3>Reflect and practise</h3>
+      <p>Your response is separate from the original PDF. You can browse every PDF page freely.</p>
       <label>
         Your observation or response
         <textarea value={response} onChange={(e) => setResponse(e.target.value)} />
@@ -896,7 +890,7 @@ export function SourceSequence({ id, close }: { id: string; close: () => void })
       >
         Next source step
       </button>
-      <Pdf id={id} page={p.page} />
+      </section>
       <button onClick={close}>Save and return</button>
     </section>
   );

@@ -1,0 +1,82 @@
+[
+  {
+    "path": "acceptance-results.txt",
+    "same": true
+  },
+  {
+    "path": "build-results.txt",
+    "same": true
+  },
+  {
+    "path": "index.html",
+    "same": true
+  },
+  {
+    "path": "package-lock.json",
+    "same": false
+  },
+  {
+    "path": "package.json",
+    "same": false
+  },
+  {
+    "path": "public/vocab/import_manifest.json",
+    "same": true
+  },
+  {
+    "path": "src/App.tsx",
+    "same": false
+  },
+  {
+    "path": "src/activities.tsx",
+    "same": true
+  },
+  {
+    "path": "src/assets.ts",
+    "same": true
+  },
+  {
+    "path": "src/data/available-assets.json",
+    "same": true
+  },
+  {
+    "path": "src/data/blueprint.json",
+    "same": true
+  },
+  {
+    "path": "src/data/catalog.json",
+    "same": true
+  },
+  {
+    "path": "src/data/core.json",
+    "same": true
+  },
+  {
+    "path": "src/engine.ts",
+    "same": false
+  },
+  {
+    "path": "src/main.tsx",
+    "same": true
+  },
+  {
+    "path": "src/style.css",
+    "same": false
+  },
+  {
+    "path": "src/ui.tsx",
+    "same": true
+  },
+  {
+    "path": "tests/acceptance.tsx",
+    "same": false
+  },
+  {
+    "path": "tsconfig.json",
+    "same": true
+  },
+  {
+    "path": "vite.config.ts",
+    "same": false
+  }
+]

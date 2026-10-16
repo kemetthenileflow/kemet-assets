@@ -39,6 +39,7 @@ import {
   SeshatEvidenceHunt,
   NileQuest,
 } from './activities';
+import { CumulativeProgressChart } from './CumulativeProgressChart';
 
 type Route = {
   page: string;
@@ -53,6 +54,8 @@ type Route = {
   size?: number;
   tab?: string;
   pageNumber?: number;
+  category?: string;
+  audioId?: string;
 };
 
 const navigation = {
@@ -60,26 +63,7 @@ const navigation = {
   ar: ['الرئيسية', 'رحلتي', 'المكتبة', 'نتائجي'],
 };
 
-const REPORT_SUMMARY_TEXT = `# KEMET: THE NILE FLOW — IMPLEMENTATION REPORT
-Date: 16 October 2026
-Owner: Dr. Mai Abulfotouh
-Educational Concept & Direction: Dr. Mai Abulfotouh
-Review & Proofreading: Ms. Reham Khafagy
-Application: Egyptian Baccalaureate — Second Secondary — English (AI Language Assistant)
-
-## Implemented Work Summary
-- A: Architectural Learning Pyramid & Temple Sidewall Layout implemented with semantic responsive controls.
-- B: 73 Unit 1 vocabulary visuals imported and normalized (/vocab/study/VOC-001..066.webp).
-     Multi-facet observe mode with independent reveals for English, Arabic, IPA, Part of Speech, Example, Synonym, Contrast, Card.
-     Optional en-US browser voice fallback. Answer-bearing images strictly hidden in recall and scored quizzes.
-     Assisted flags preserved across observe/recall so freshly studied answers are not falsely credited as independent.
-- C: In-app PDF.js canvas reader operational with compatible pinned 3.11.174 engine and dedicated worker.
-     Supports page jumping, resume, zooming, fullscreen, and uncredited skip logging for all 18 canonical PDFs (1,233 pages total).
-- D: Media Library categorized into 5 navigable subscreens with single active player and local teacher video registration.
-- E: Genuinely playable educational games: Rosetta Decoder, Grammar Pyramid (Builder & Detective), Seshat Evidence Hunt, Nile Quest, Osiris 8 tasks.
-- F: Egyptian cultural heritage branding: Authoritative KEMET logo, Cairo-date Daily Symbol with 10 historic cards, non-gendered Learner Cartouche with local storage privacy.
-- G: Real-time consent-aware local navigation logging. Automated acceptance test suite expanded and fully passing.
-`;
+const REPORT_SUMMARY_TEXT = `KEMET review: see the detailed versioned review-report.md shipped with this revision. Automated tests are simulations unless explicitly labelled browser tests. Personal microphone and editorial source approval require owner review.`;
 
 export default function App() {
   const [route, setRoute] = useState<Route>({ page: 'home' });
@@ -97,7 +81,9 @@ export default function App() {
 
   const go = (r: Route) => {
     trackNavigation(r.page, route.page, r);
+    if (r.category) setCategory(r.category);
     setRoute(r);
+    window.scrollTo?.({ top: 0, behavior: "instant" as ScrollBehavior });
     if (!['home', 'results', 'audit'].includes(r.page)) {
       write('kemet_resume_' + profile().uid, r);
     }
@@ -209,11 +195,16 @@ export default function App() {
       <div className="temple-sidewall temple-sidewall-right" aria-hidden="true"></div>
 
       <header className="temple-header">
-        <div className="brand-group">
+        <div className="brand-group" style={{ justifyContent: "center" }}>
           <button className="brand-button" onClick={back} aria-label="Kemet Home">
             <Logo />
           </button>
-          <div className="header-identity">
+          <div className="header-identity" style={{ textAlign: "center" }}>
+            <div className="brand-wordmark" style={{ marginBottom: 8, lineHeight: 1.2 }}>
+              <div dir="ltr" style={{ fontSize: "clamp(20px, 2.3vw, 30px)", fontWeight: 800, color: "#553e18" }}>
+                KEMET: The Nile Flow
+              </div>
+            </div>
             <span className="app-subtitle">Egyptian Baccalaureate — Second Secondary — English</span>
             <span className="ai-assistant-badge">AI Language Assistant</span>
           </div>
@@ -231,18 +222,18 @@ export default function App() {
           >
             English / العربية
           </button>
-          <button onClick={() => go({ page: 'audit' })}>Import audit</button>
+          <details className="instructor-tools"><summary>Instructor tools</summary><button onClick={() => go({ page: 'audit' })}>Import audit</button><a href="/review-report.md" download>Review report</a></details>
         </div>
       </header>
 
       <div className="discovery-bar">
         <button className="discovery-link" onClick={() => go({ page: 'discover' })}>
-          Discover Kemet / اكتشف كيمت
+          Discover the KEMET Logo / اكتشف شعار كيمت
         </button>
       </div>
 
       <main>
-        <p className="status">{storageStatus()} · Instructor preview — source approval pending</p>
+        <p className="status">{storageStatus()}</p>
         {!['home'].includes(route.page) && (
           <button className="back-navigation-btn" onClick={back}>
             ← {lang === 'ar' ? 'الرئيسية' : 'Home'} / Back
@@ -252,15 +243,16 @@ export default function App() {
         {/* HOME VIEW: Hero, 3 Gateways, Stepped Pyramid, Daily Symbol, Library Chips */}
         {route.page === 'home' && (
           <>
-            <section className="hero">
-              <span className="eyebrow">KEMET: THE NILE FLOW</span>
-              <h1>{lang === 'ar' ? 'بمعرفتك تصنع أثرًا' : 'Let knowledge shape your legacy.'}</h1>
+            <section className="hero" style={{ textAlign: "center" }}>
+              <span className="eyebrow">LEARN · PRACTISE · DISCOVER</span>
+              <h1>{lang === 'ar' ? 'ابدأ رحلتك مع الوحدة الأولى' : 'Your Unit 1 learning journey'}</h1>
+              <p style={{ fontStyle: "italic", fontSize: 17 }}>{lang === 'ar' ? 'بمعرفتك تصنع أثرًا' : 'Let knowledge shape your legacy.'}</p>
               <p>
                 {lang === 'ar'
                   ? 'اختار طريقك، وخد خطوة صغيرة نحو فهم أوضح عبر لغة حية وأصيلة.'
                   : 'Choose your path through a living library of language grounded in authentic Egyptian heritage.'}
               </p>
-              <div className="hero-cta-group">
+              <div className="hero-cta-group" style={{ justifyContent: "center" }}>
                 <button
                   className="primary primary-hero"
                   onClick={() => go(read<Route>('kemet_resume_' + profile().uid, { page: 'journey' }))}
@@ -284,6 +276,15 @@ export default function App() {
               </div>
             </section>
 
+            <section className="panel start-here" aria-label="Start here">
+              <h2>{lang === 'ar' ? 'ابدأ من هنا' : 'Start here'}</h2>
+              <p>{lang === 'ar' ? 'افتح المنهج الأصلي، ثم اختر شرح كيمت أو التدريب. كل المسارات متاحة لك.' : 'Read the original curriculum, explore KEMET explanations, then practise. Every route is open to you.'}</p>
+              <div className="start-actions">
+                <button className="primary" onClick={() => go({page:'pdf_study',id:'unit1_source'})}>{lang === 'ar' ? 'كتاب الوزارة الأصلي · ١٧٢ صفحة' : 'Original Ministry textbook · 172 pages'}</button>
+                <button onClick={() => go({page:'documents'})}>{lang === 'ar' ? 'كل ملفات PDF · ١٨ ملفًا' : 'All 18 original PDFs'}</button>
+                <button onClick={() => go({page:'media',tab:'curriculum_listening'})}>{lang === 'ar' ? 'استمع إلى تسجيلات الوحدة' : 'Unit 1 listening'}</button>
+              </div>
+            </section>
             {/* Three Major Gateways */}
             <section className="gateway-grid">
               {[
@@ -334,6 +335,15 @@ export default function App() {
           </>
         )}
 
+        {route.page === 'documents' && <section className="documents-page">
+          <h1>{lang === 'ar' ? 'ملفات المنهج وكيمت الأصلية' : 'Original curriculum & KEMET PDFs'}</h1>
+          <p>Choose the source textbook or a KEMET edition. Each opens the supplied PDF unchanged; activities are separate.</p>
+          {['Original Ministry curriculum', 'Learn with KEMET'].map((group, i) => <section key={group}>
+            <h2>{group}</h2><div className="document-grid">{catalog.documents.filter(d => d.path.startsWith('/pdfs/') && (i === 0 ? d.id === 'unit1_source' : d.id !== 'unit1_source')).map(d => <article className="panel" key={d.id}>
+              <h3>{d.originalFilename}</h3><p>{d.pageCount} pages</p><button onClick={() => go({page:'pdf_study',id:d.id})}>Read original PDF</button><a className="download-btn" href={d.path} download={d.originalFilename}>Download original</a>
+            </article>)}</div>
+          </section>)}
+        </section>}
         {/* VOCABULARY VAULT */}
         {route.page === 'vocabulary' && (
           <section className="vault-page">
@@ -386,7 +396,7 @@ export default function App() {
             >
               Read vocabulary source entries
             </button>
-            <Pdf id="living_lexicon" />
+            <button onClick={() => go({page:"pdf_study",id:"living_lexicon"})}>Read The Living Lexicon original PDF</button>
           </section>
         )}
 
@@ -468,6 +478,7 @@ export default function App() {
           <BankPractice
             key={JSON.stringify(route)}
             bank={route.bank || 'V1'}
+            audioId={route.audioId}
             level={route.level}
             passage={route.passage}
             support={route.support}
@@ -509,14 +520,14 @@ export default function App() {
         {/* IN-APP PDF STUDY VIEWER */}
         {route.page === 'pdf_study' && (
           <section className="pdf-study-screen">
-            <Pdf id={route.id || 'unit1_standard'} page={route.pageNumber} />
+            <Pdf key={route.id} id={route.id || 'unit1_standard'} page={route.pageNumber} />
           </section>
         )}
 
         {/* ALEXANDRIAN LIBRARY */}
         {route.page === 'library' && (
           <section className="library-page">
-            <h1>Alexandrian Library</h1>
+            <h1>Alexandrian Library</h1><button className="primary" onClick={() => go({page:"documents"})}>All 18 original PDFs — choose a document</button>
             <div className="chips">
               {['Vocabulary', 'Reading', 'Grammar', 'Listening', 'Writing', 'Story'].map((c) => (
                 <button
@@ -550,7 +561,7 @@ export default function App() {
                     )}
                   </details>
                 ))}
-                <Pdf id="living_lexicon" />
+                <button onClick={() => go({page:"pdf_study",id:"living_lexicon"})}>Read The Living Lexicon original PDF</button>
               </>
             )}
 
@@ -571,7 +582,7 @@ export default function App() {
                     </button>
                   </article>
                 ))}
-                <Pdf id="unit1_standard" />
+                <button onClick={() => go({page:"pdf_study",id:"unit1_standard"})}>Read Unit 1 KEMET Standard PDF</button>
               </>
             )}
 
@@ -590,7 +601,7 @@ export default function App() {
                         Open in In-App PDF Reader
                       </button>
                     </div>
-                    <Pdf id={g.id} />
+                    
                   </article>
                 ))}
               </>
@@ -608,7 +619,7 @@ export default function App() {
                     </details>
                     <button
                       onClick={() =>
-                        go({ page: 'bank', bank: 'L1', support: 'independent', size: 5 })
+                        go({ page: 'bank', bank: 'L1', audioId: a.id, support: 'independent', size: 5 })
                       }
                     >
                       Echoes of the Nile — source tasks
@@ -629,7 +640,7 @@ export default function App() {
                     <p key={i}>{p}</p>
                   ))}
                 </article>
-                <Pdf id="read_story" />
+                <button onClick={() => go({page:"pdf_study",id:"read_story"})}>Read Your Story original PDF</button>
               </>
             )}
 
@@ -667,7 +678,11 @@ export default function App() {
         {/* RESULTS SCREEN */}
         {route.page === 'results' && (
           <section className="results-page">
-            <h1>Your Results & Learning Progress</h1>
+            <h1>{lang === 'ar' ? 'نتائجي ومخطط التقدم التعليمي' : 'Your Results & Learning Progress'}</h1>
+
+            {/* D3.js Cumulative Progress Chart across 330 Questions & Independent Accuracy Trend */}
+            <CumulativeProgressChart attempts={all} lang={lang} />
+
             <div className="panel results-metrics-panel">
               <p>Distinct source questions attempted: {new Set(source.map((a) => a.contentId)).size}/330</p>
               <p>

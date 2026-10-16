@@ -4,16 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0 --force",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
-    "test": "tsx tests/acceptance.tsx"
+    "test": "node --import tsx tests/acceptance.tsx",
+    "predev": "node scripts/prepare-pdf.mjs",
+    "prebuild": "node scripts/prepare-pdf.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "@vitejs/plugin-react": "^6.1.1",
+    "d3": "^7.9.0",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
     "lucide-react": "^0.546.0",
@@ -27,6 +30,7 @@
     "@playwright/test": "^1.64.1",
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.8",
+    "@types/d3": "^7.4.3",
     "@types/express": "^4.17.21",
     "@types/jsdom": "^30.0.0",
     "@types/node": "^22.14.0",

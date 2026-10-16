@@ -1,0 +1,238 @@
+{
+  "repository": "kemetthenileflow/kemet-assets",
+  "branch": "review/kemet-audit-2026-10-16",
+  "files": [
+    {
+      "source": "src/VoiceMirror.tsx",
+      "destination": "app/src/VoiceMirror.tsx",
+      "bytes": 7286,
+      "sha256": "e5685f9a44bc4215b4ad197b5a4fda47da7e7988a1942356ac73fdea6707276c"
+    },
+    {
+      "source": "src/CumulativeProgressChart.tsx",
+      "destination": "app/src/CumulativeProgressChart.tsx",
+      "bytes": 29978,
+      "sha256": "2ee0e8d532fa4290dd711e7d68bf4367d993413c94dc29ce28d602b3d8c4d9ee"
+    },
+    {
+      "source": "src/PdfReader.tsx",
+      "destination": "app/src/PdfReader.tsx",
+      "bytes": 7468,
+      "sha256": "c6a1d03c3e77d30ec1b239fcc6109a97456689e5680d49469272ccd1d1f35d79"
+    },
+    {
+      "source": "src/activities.tsx",
+      "destination": "app/src/activities.tsx",
+      "bytes": 46920,
+      "sha256": "fcf9a1c4ac0c916299389bf9e354196bcb0c131e17fddcac3f179c37f30b1ce9"
+    },
+    {
+      "source": "src/main.tsx",
+      "destination": "app/src/main.tsx",
+      "bytes": 593,
+      "sha256": "62acb5088369a4e61454715564fb1279bf5de860dfeea59d308c0d775482fa32"
+    },
+    {
+      "source": "src/App.tsx",
+      "destination": "app/src/App.tsx",
+      "bytes": 34109,
+      "sha256": "fe9f8896e08912b4a3e5abd4064a61182931c95d4eb1e496214b024fe3ea2157"
+    },
+    {
+      "source": "src/ui.tsx",
+      "destination": "app/src/ui.tsx",
+      "bytes": 36410,
+      "sha256": "0713e664039f505b7159fa5d7252583f4b6a80128ad67371265fe395dd28e659"
+    },
+    {
+      "source": "src/engine.ts",
+      "destination": "app/src/engine.ts",
+      "bytes": 8146,
+      "sha256": "366e7391920a9cfc93b2d0ede4a7ad184766fd7fbd9a8df6faaf99645581988b"
+    },
+    {
+      "source": "src/assets.ts",
+      "destination": "app/src/assets.ts",
+      "bytes": 3158,
+      "sha256": "1efbce13b66cdfadddc8ba40d481a0469aece022d34a9a5badcfd996148e2166"
+    },
+    {
+      "source": "scripts/restore-review-assets.py",
+      "destination": "app/scripts/restore-review-assets.py",
+      "bytes": 417,
+      "sha256": "309ebb6ce4ad932591ee0af457f98d53ea52ed687d98a58aed95ebd9a8c85351"
+    },
+    {
+      "source": "scripts/pdf-integrity.py",
+      "destination": "app/scripts/pdf-integrity.py",
+      "bytes": 716,
+      "sha256": "3d3396a93f7f07299f2ba1856d114151cd8e94e2a0c448cef7707937431f08c7"
+    },
+    {
+      "source": "scripts/prepare-pdf.mjs",
+      "destination": "app/scripts/prepare-pdf.mjs",
+      "bytes": 328,
+      "sha256": "a7a90b331f955f62c0b8729e304dbce90a9c8c20c4bd3cfd4ff29f0b89943794"
+    },
+    {
+      "source": "scripts/check-assets.py",
+      "destination": "app/scripts/check-assets.py",
+      "bytes": 660,
+      "sha256": "d3df8f1c02bc8a2dd4f01399a3b6757639d6abf3dfdbcd3aa4aaf177db0401e9"
+    },
+    {
+      "source": "scripts/check-pdfjs.mjs",
+      "destination": "app/scripts/check-pdfjs.mjs",
+      "bytes": 957,
+      "sha256": "c897a15ff2f233f26ab2a07f2f2ccff1cafcbf402139ec4fb743b9ee482f17ab"
+    },
+    {
+      "source": "tests/review.tsx",
+      "destination": "app/tests/review.tsx",
+      "bytes": 4940,
+      "sha256": "7d23cf48136cd8a59e2aebf70c706ddae3bbc83faba91fef3647f582478e437d"
+    },
+    {
+      "source": "tests/acceptance.tsx",
+      "destination": "app/tests/acceptance.tsx",
+      "bytes": 10687,
+      "sha256": "d826e20627caa8b7a751e871b20b7aad6d081e883419f678844a5cf72d4ad541"
+    },
+    {
+      "source": "package.json",
+      "destination": "app/package.json",
+      "bytes": 1236,
+      "sha256": "54bb1dd9c7d5708fdcc42c59940101fe43741e1cafd0ddfcc1dc5fbc293dead6"
+    },
+    {
+      "source": "package-lock.json",
+      "destination": "app/package-lock.json",
+      "bytes": 182844,
+      "sha256": "2239c393c6eaa6fffac014760a09d2fc5a9546a1e7ae12bdc55f92b69200349a"
+    },
+    {
+      "source": "vite.config.ts",
+      "destination": "app/vite.config.ts",
+      "bytes": 235,
+      "sha256": "3c1ad2f154e56c1e3174a994693b9bdea7c2513448a4b565c1a8f3af95bf069d"
+    },
+    {
+      "source": "REVIEW_RUN.md",
+      "destination": "app/REVIEW_RUN.md",
+      "bytes": 1441,
+      "sha256": "13491598e8a117df29de365e078d277b71eafb3b6b745b034d58d9d479c39472"
+    },
+    {
+      "source": "public/review-report.md",
+      "destination": "app/public/review-report.md",
+      "bytes": 20682,
+      "sha256": "5821b92f018c8b62670f95f5443702c8c63d9836359ec839813e887d86bf129f"
+    },
+    {
+      "source": "review-evidence/review-lint.txt",
+      "destination": "app/review-evidence/review-lint.txt",
+      "bytes": 149,
+      "sha256": "492732624257b32cb39384dc0c7dc2c99d28c1290a40ae27661b686e5c8bdccf"
+    },
+    {
+      "source": "review-evidence/pdf-final-validation.json",
+      "destination": "app/review-evidence/pdf-final-validation.json",
+      "bytes": 3266,
+      "sha256": "db7b24f226ff2fa4050c4c12aa769baa44bd2acbaff6eaee085de5094125bb1d"
+    },
+    {
+      "source": "review-evidence/pdfjs-validation.txt",
+      "destination": "app/review-evidence/pdfjs-validation.txt",
+      "bytes": 1799,
+      "sha256": "bc44d9ba7947148ab95d0f93e9be8ea1825052c170f8b7347d04f1b19b8515d8"
+    },
+    {
+      "source": "review-evidence/review-tests.txt",
+      "destination": "app/review-evidence/review-tests.txt",
+      "bytes": 3662,
+      "sha256": "916e1b3475d7d096ba37ae12d52c897f0c76833c38b53e8e501957bdaa4916b1"
+    },
+    {
+      "source": "review-evidence/clean-install.txt",
+      "destination": "app/review-evidence/clean-install.txt",
+      "bytes": 125,
+      "sha256": "1ea98f71e494fa73865d5fb76aa04594f8b06e0c8517a72220b62532ca996ef5"
+    },
+    {
+      "source": "review-evidence/comparison.json",
+      "destination": "app/review-evidence/comparison.json",
+      "bytes": 1189,
+      "sha256": "92bed90d927279c5f6cc82820b344fb8e9ebd13d5dfe777b482f73e287cf7c54"
+    },
+    {
+      "source": "review-evidence/final-build.txt",
+      "destination": "app/review-evidence/final-build.txt",
+      "bytes": 1000,
+      "sha256": "3acf925aca79635170cb866f617858835101e067b5283cc9e47b9cdc13b0b04e"
+    },
+    {
+      "source": "review-evidence/pdf-integrity.json",
+      "destination": "app/review-evidence/pdf-integrity.json",
+      "bytes": 7689,
+      "sha256": "42c612945fd3477e5247ce5ca515fad9ee3e85099c21d91a0e3a156c089a5975"
+    },
+    {
+      "source": "review-evidence/review-build.txt",
+      "destination": "app/review-evidence/review-build.txt",
+      "bytes": 1000,
+      "sha256": "27692b08ae482f82d16b4c093fba929f736f6af98c6a37968eec430d9c054baa"
+    },
+    {
+      "source": "review-evidence/review-extended-tests.txt",
+      "destination": "app/review-evidence/review-extended-tests.txt",
+      "bytes": 4343,
+      "sha256": "47d4ee221d8e3ec46cef8d78e34909eec896c1f7a20acf4a3db2e12bf7e07a1e"
+    },
+    {
+      "source": "review-evidence/asset-integrity.json",
+      "destination": "app/review-evidence/asset-integrity.json",
+      "bytes": 71,
+      "sha256": "99e35b5e39de43510dc1a16bebabef11db4baccf5b60c0683ca7c914f0e3f780"
+    },
+    {
+      "source": "review-evidence/ai-studio-status.json",
+      "destination": "app/review-evidence/ai-studio-status.json",
+      "bytes": 455,
+      "sha256": "d450eae1ad99a6d0d642e69734f35f920e1af4ccf02500ca89910b417e1da1e4"
+    },
+    {
+      "source": "review-evidence/final-lint.txt",
+      "destination": "app/review-evidence/final-lint.txt",
+      "bytes": 149,
+      "sha256": "492732624257b32cb39384dc0c7dc2c99d28c1290a40ae27661b686e5c8bdccf"
+    },
+    {
+      "source": "review-evidence/checkpoint.json",
+      "destination": "app/review-evidence/checkpoint.json",
+      "bytes": 294,
+      "sha256": "b5eae159973c9ab9ee62c7a033ab0065e16124b600efbdd128ba96464c2c6a4f"
+    },
+    {
+      "source": "review-evidence/final-tests.txt",
+      "destination": "app/review-evidence/final-tests.txt",
+      "bytes": 4343,
+      "sha256": "47d4ee221d8e3ec46cef8d78e34909eec896c1f7a20acf4a3db2e12bf7e07a1e"
+    },
+    {
+      "source": "review-evidence/github-status.json",
+      "destination": "app/review-evidence/github-status.json",
+      "bytes": 332,
+      "sha256": "df025f3bab2a40e11bf5aacd6131bd1a1a8d323aaab4244e21e34c220ce1337c"
+    }
+  ],
+  "totalBytes": 429077,
+  "excluded": [
+    "credentials and environment files",
+    "student data",
+    "node_modules",
+    "caches",
+    "352 MB complete archive",
+    "unchanged existing binary asset packages"
+  ],
+  "sensitivePatternMatches": []
+}

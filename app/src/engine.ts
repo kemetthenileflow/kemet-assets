@@ -4,6 +4,7 @@ export type QueueConfig = {
   bank?: string;
   level?: string;
   passage?: string;
+  audioId?: string;
   group?: number;
   version: string;
 };
@@ -53,7 +54,7 @@ export type RegisteredVideo = {
   id: string;
   title: string;
   category: string;
-  lesson: string;
+  lesson?: string;
   url: string;
   caption?: string;
   addedAt: string;
