@@ -36,3 +36,10 @@ Use the full-asset review copy c10ce5ee-badd-4774-bdd8-6155e1272588 for continua
 
 ## Current Studio blocker
 After restart, AI Studio's agent reported the gzip/source additions absent from runtime disk. A separate attempt to extract KEMET_MINISTRY_TRANSPORT.zip reported the ZIP absent too. Editor/history success is therefore insufficient evidence of live synchronization. The public GitHub repository was verified accessible without credentials; next approach is exact-commit runtime retrieval, preserving existing original assets and avoiding editor ZIP transport. Do not report Ministry PDF playback as verified yet.
+
+## Browser PDF verification after runtime recovery
+Direct runtime retrieval succeeded: reviewed source was hash-validated, runtime acceptance/review tests and build passed. The PDF restoration helper recovered 17 original raw PDFs and the Ministry gzip, verifying all original PDF fingerprints. Actual Work browser checks then opened and rendered first and last pages of all 17 KEMET documents; page totals 31,112,108,7,110,214,35,215,18,16,8,18,43,7,41,41,37. Browser Ministry loading still failed at that point, so its transport was extended to accept a server-decoded PDF response as well as gzip, always retaining original SHA validation. This compatibility change is tested locally; final browser Ministry retest is pending.
+
+Found and fixed contextual Back navigation: PDF Back now returns to its previous document list instead of always Home. Brand control continues to go Home. Added a real interaction regression test and adjusted the old acceptance label accordingly.
+
+Non-PDF assets were also missing after the Studio workspace reset. A pinned recovery helper now restores only missing/empty approved runtime assets. Existing heritage SVGs and exact image repairs were persisted as overrides; the previously zero-byte Thoth 028 override is now repaired. Runtime non-PDF restoration has been requested, not yet certified complete in this entry.

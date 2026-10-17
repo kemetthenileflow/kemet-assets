@@ -117,6 +117,7 @@ export function Media({
     ref: ref as any,
     src: a.path,
     controls: true,
+    'aria-label': a.name || id,
     preload: 'none' as const,
     onLoadedMetadata: () => {
       if (ref.current) ref.current.currentTime = Math.min(read(key, 0), ref.current.duration || 0);
@@ -321,7 +322,7 @@ export function MediaLibrary({
                 {m.id === 'REC-01' && (
                   <button
                     className="btn-small link-btn"
-                    onClick={() => go({ page: 'bank', bank: 'L1', support: 'independent', size: 5 })}
+                    onClick={() => go({ page: 'bank', bank: 'L1', audioId: 'REC-01', support: 'independent', size: 5 })}
                   >
                     Open Echoes of the Nile Listening Tasks (REC-01)
                   </button>
@@ -329,7 +330,7 @@ export function MediaLibrary({
                 {m.id === 'REC-04' && (
                   <button
                     className="btn-small link-btn"
-                    onClick={() => go({ page: 'bank', bank: 'L1', support: 'supported', size: 5 })}
+                    onClick={() => go({ page: 'bank', bank: 'L1', audioId: 'REC-04', support: 'supported', size: 5 })}
                   >
                     Open Echoes of the Nile Tasks (REC-04)
                   </button>
