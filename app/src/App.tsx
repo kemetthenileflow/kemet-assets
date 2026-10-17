@@ -1,5 +1,6 @@
 import { AnkhHelp } from './AnkhHelp';
 import React, { useState, useEffect, useRef } from 'react';
+import { SymbolDiscover } from './SymbolDiscover';
 import core from './data/core.json';
 import blueprint from './data/blueprint.json';
 import catalog from './data/catalog.json';
@@ -17,7 +18,7 @@ import {
   getNavigationEvents,
 } from './engine';
 import {
-  Logo,
+  Banner,
   Intro,
   DailySymbol,
   Discover,
@@ -41,6 +42,7 @@ import {
   NileQuest,
 } from './activities';
 import { CumulativeProgressChart } from './CumulativeProgressChart';
+import { KemetIcon } from './components/KemetIcon';
 
 type Route = {
   page: string;
@@ -198,48 +200,63 @@ export default function App() {
       <div className="temple-sidewall temple-sidewall-right" aria-hidden="true"></div>
 
       <header className="temple-header">
-        <div className="brand-group" style={{ justifyContent: "center" }}>
-          <button className="brand-button" onClick={() => go({page: 'home'})} aria-label="Kemet Home">
-            <Logo />
+        <div className="kemet-banner-wrapper">
+          <button
+            className="brand-button kemet-banner-btn"
+            onClick={() => go({ page: 'home' })}
+            aria-label="Kemet Home"
+          >
+            <Banner />
           </button>
-          <div className="header-identity" style={{ textAlign: "center" }}>
-            <div className="brand-wordmark" style={{ marginBottom: 8, lineHeight: 1.2 }}>
-              <div dir="ltr" style={{ fontSize: "clamp(20px, 2.3vw, 30px)", fontWeight: 800, color: "#553e18" }}>
-                KEMET: The Nile Flow
-              </div>
-            </div>
-            <span className="app-subtitle">Egyptian Baccalaureate | Secondary 2 | English</span>
-            <span className="ai-assistant-badge">AI Language Assistant</span>
-          </div>
         </div>
 
-        <LearnerCartouche lang={lang} />
+        <div className="temple-header-toolbar">
+          <div className="header-identity">
+            <span className="app-subtitle">Egyptian Baccalaureate | Secondary 2 | English</span>
+          </div>
 
-        <div className="header-actions">
-          <button
-            onClick={() => {
-              const next = lang === 'en' ? 'ar' : 'en';
-              setLang(next);
-              write('kemet_ui_language', next);
-            }}
-          >
-            English / العربية
-          </button>
-          <details className="instructor-tools"><summary>Instructor tools</summary><button onClick={() => go({ page: 'audit' })}>Import audit</button><a href="/review-report.md" download>Review report</a></details>
+          <LearnerCartouche lang={lang} />
+
+          <div className="header-actions">
+            <button
+              onClick={() => {
+                const next = lang === 'en' ? 'ar' : 'en';
+                setLang(next);
+                write('kemet_ui_language', next);
+              }}
+            >
+              English / العربية
+            </button>
+            <details className="instructor-tools">
+              <summary>Instructor tools</summary>
+              <button onClick={() => go({ page: 'audit' })}>Import audit</button>
+              <a href="/review-report.md" download>Review report</a>
+            </details>
+          </div>
         </div>
       </header>
 
       <div className="discovery-bar">
+        <button
+          className="discovery-link"
+          onClick={() => go({ page: 'symbol_discover' })}
+          style={{ fontWeight: 'bold', color: '#00535b' }}
+        >
+          <KemetIcon name="scarab" size={18} />
+          <span>{lang === 'ar' ? '✨ اكتشف رمزك المصري (٣١ بطاقة)' : '✨ Discover Your Egyptian Symbol (31 Cards)'}</span>
+        </button>
         <button className="discovery-link" onClick={() => go({ page: 'discover' })}>
-          Discover the KEMET Logo / اكتشف شعار كيمت
+          <KemetIcon name="cartouche" size={18} />
+          <span>Discover the KEMET Logo / اكتشف شعار كيمت</span>
         </button>
       </div>
 
       <main>
         <p className="status">{storageStatus()}</p>
         {!['home'].includes(route.page) && (
-          <button className="back-navigation-btn" onClick={back}>
-            ← {lang === 'ar' ? 'رجوع' : 'Back'}
+          <button className="back-navigation-btn" onClick={back} aria-label={lang === 'ar' ? '← رجوع' : '← Back'}>
+            <KemetIcon name="back" size={16} />
+            <span>← {lang === 'ar' ? 'رجوع' : 'Back'}</span>
           </button>
         )}
 
@@ -260,7 +277,8 @@ export default function App() {
                   className="primary primary-hero"
                   onClick={() => go(read<Route>('kemet_resume_' + profile().uid, { page: 'journey' }))}
                 >
-                  {lang === 'ar' ? 'واصل التعلم' : 'Continue learning'}
+                  <KemetIcon name="journey" size={18} />
+                  <span>{lang === 'ar' ? 'واصل التعلم' : 'Continue learning'}</span>
                 </button>
                 <div className="quick-support-toggle">
                   <label>
@@ -283,19 +301,22 @@ export default function App() {
               <h2>{lang === 'ar' ? 'ابدأ من هنا' : 'Start here'}</h2>
               <p>{lang === 'ar' ? 'افتح المنهج الأصلي، ثم اختر شرح كيمت أو التدريب. كل المسارات متاحة لك.' : 'Read the original curriculum, explore KEMET explanations, then practise. Every route is open to you.'}</p>
               <div className="start-actions">
-                <button className="primary" onClick={() => go({page:'pdf_study',id:'unit1_source'})}>{lang === 'ar' ? 'كتاب الوزارة · الجزء الأول · ١٧٢ صفحة' : 'Ministry textbook · Part 1 · 172 pages'}</button>
-                <button onClick={() => go({page:'documents'})}>{lang === 'ar' ? 'كل ملفات PDF · ١٨ ملفًا' : 'All 18 original PDFs'}</button>
-                <button onClick={() => go({page:'media',tab:'curriculum_listening'})}>{lang === 'ar' ? 'استمع إلى تسجيلات الوحدة' : 'Unit 1 listening'}</button>
+                <button className="primary" onClick={() => go({page:'pdf_study',id:'unit1_source'})}><KemetIcon name="pdf" size={18} /> {lang === 'ar' ? 'كتاب الوزارة · الجزء الأول · ١٧٢ صفحة' : 'Ministry textbook · Part 1 · 172 pages'}</button>
+                <button onClick={() => go({page:'documents'})}><KemetIcon name="library" size={18} /> {lang === 'ar' ? 'كل ملفات PDF · ١٨ ملفًا' : 'All 18 original PDFs'}</button>
+                <button onClick={() => go({page:'media',tab:'curriculum_listening'})}><KemetIcon name="listening" size={18} /> {lang === 'ar' ? 'استمع إلى تسجيلات الوحدة' : 'Unit 1 listening'}</button>
               </div>
             </section>
             {/* Three Major Gateways */}
             <section className="gateway-grid">
               {[
-                ['vocabulary', 'Vocabulary Vault', 'Words, meanings and independent recall'],
-                ['story', 'Story Quest', 'A Dream of Adventure · Chapter 1'],
-                ['challenge', 'Challenge Arena', 'Choose a source bank and support'],
-              ].map(([page, title, sub]) => (
+                ['vocabulary', 'Vocabulary Vault', 'Words, meanings and independent recall', 'vocabulary'],
+                ['story', 'Story Quest', 'A Dream of Adventure · Chapter 1', 'story'],
+                ['challenge', 'Challenge Arena', 'Choose a source bank and support', 'challenge'],
+              ].map(([page, title, sub, iconName]) => (
                 <button className="gateway" key={page} onClick={() => go({ page })}>
+                  <div className="gateway-icon-header">
+                    <KemetIcon name={iconName as any} size={32} />
+                  </div>
                   <strong>{title}</strong>
                   <span>{sub}</span>
                 </button>
@@ -312,10 +333,40 @@ export default function App() {
 
             <DailySymbol lang={lang} />
 
+            <section className="panel symbol-discover-home-card" style={{ border: '2px solid #b8892d', background: '#fff9ec' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
+                <div>
+                  <h3 style={{ margin: '0 0 4px', color: '#553e18' }}>
+                    {lang === 'ar' ? 'بطاقات الرموز والشخصيات المصرية (٣١ بطاقة)' : 'Egyptian Symbol & Character Cards (31 Cards)'}
+                  </h3>
+                  <p style={{ margin: 0, fontSize: '0.92rem', color: '#3a2d13' }}>
+                    {lang === 'ar'
+                      ? 'استكشف بطاقات التراث والأعلام الوطنية من توت عنخ آمون وحتشبسوت إلى رموز العدالة والعلم وقناة السويس.'
+                      : 'Explore authentic heritage cards and national icons, from Tutankhamun and Hatshepsut to justice, science, and the Suez Canal.'}
+                  </p>
+                </div>
+                <button
+                  className="primary"
+                  onClick={() => go({ page: 'symbol_discover' })}
+                  style={{ minWidth: 200, margin: 0 }}
+                >
+                  <KemetIcon name="scarab" size={18} />
+                  <span>{lang === 'ar' ? 'استكشف الـ ٣١ رمزًا' : 'Explore All 31 Symbols'} →</span>
+                </button>
+              </div>
+            </section>
+
             <section className="panel library-summary-panel">
               <h2>{lang === 'ar' ? 'المكتبة السكندرية' : 'Alexandrian Library'}</h2>
               <div className="chips">
-                {['Vocabulary', 'Reading', 'Grammar', 'Listening', 'Writing', 'Story'].map((c) => (
+                {[
+                  ['Vocabulary', 'vocabulary'],
+                  ['Reading', 'reading'],
+                  ['Grammar', 'grammar'],
+                  ['Listening', 'listening'],
+                  ['Writing', 'writing'],
+                  ['Story', 'story'],
+                ].map(([c, icon]) => (
                   <button
                     key={c}
                     onClick={() => {
@@ -323,15 +374,23 @@ export default function App() {
                       go({ page: 'library' });
                     }}
                   >
-                    {c}
+                    <KemetIcon name={icon as any} size={15} />
+                    <span>{c}</span>
                   </button>
                 ))}
               </div>
               <div className="library-quick-links">
-                <button onClick={() => go({ page: 'media' })}>Open Media Library (5 Categories)</button>
-                <button onClick={() => go({ page: 'voice' })}>Spoken Voice Mirror</button>
+                <button onClick={() => go({ page: 'media' })}>
+                  <KemetIcon name="video" size={16} />
+                  <span>Open Media Library (5 Categories)</span>
+                </button>
+                <button onClick={() => go({ page: 'voice' })}>
+                  <KemetIcon name="mic" size={16} />
+                  <span>Spoken Voice Mirror</span>
+                </button>
                 <button onClick={() => go({ page: 'pdf_study', id: 'unit1_standard' })}>
-                  Study Unit 1 Standard in App
+                  <KemetIcon name="reading" size={16} />
+                  <span>Study Unit 1 Standard in App</span>
                 </button>
               </div>
             </section>
@@ -342,8 +401,18 @@ export default function App() {
           <h1>{lang === 'ar' ? 'ملفات المنهج وكيمت الأصلية' : 'Original curriculum & KEMET PDFs'}</h1>
           <p>Choose the source textbook or a KEMET edition. Each opens the supplied PDF unchanged; activities are separate.</p>
           {['Original Ministry curriculum', 'Learn with KEMET'].map((group, i) => <section key={group}>
-            <h2>{group}</h2><div className="document-grid">{catalog.documents.filter(d => d.path.startsWith('/pdfs/') && (i === 0 ? d.id === 'unit1_source' : d.id !== 'unit1_source')).map(d => <article className="panel" key={d.id}>
-              <h3>{d.originalFilename}</h3><p>{d.pageCount} pages</p><button onClick={() => go({page:'pdf_study',id:d.id})}>Read original PDF</button>{d.id === 'unit1_source' ? <button onClick={() => go({page:'pdf_study',id:d.id})}>Open original to download</button> : <a className="download-btn" href={d.path} download={d.originalFilename}>Download original</a>}
+            <h2>{group}</h2><div className="document-grid">{catalog.documents.filter(d => d.path.startsWith('/pdfs/') && (i === 0 ? d.id === 'unit1_source' : d.id !== 'unit1_source')).map(d => <article className="panel document-card" key={d.id}>
+              <div className="document-card-top">
+                <KemetIcon name="pdf" size={26} />
+                <div>
+                  <h3>{d.originalFilename}</h3>
+                  <span className="doc-page-count">{d.pageCount} pages · Original PDF</span>
+                </div>
+              </div>
+              <div className="document-card-actions">
+                <button onClick={() => go({page:'pdf_study',id:d.id})}><KemetIcon name="reading" size={16} /> Read original PDF</button>
+                {d.id === 'unit1_source' ? <button onClick={() => go({page:'pdf_study',id:d.id})}><KemetIcon name="download" size={16} /> Open original to download</button> : <a className="download-btn" href={d.path} download={d.originalFilename}><KemetIcon name="download" size={16} /> Download original</a>}
+              </div>
             </article>)}</div>
           </section>)}
         </section>}
@@ -380,14 +449,15 @@ export default function App() {
                 </select>
               </label>
               {[
-                ['learn', 'Nile Memory — Multi-Facet Study & Reveal'],
-                ['match', 'Rosetta Match — Match Meanings'],
-                ['spelling', 'Lost Inscription — Spell from a Clue'],
-                ['dictation', 'Listen and Spell'],
-                ['review', 'My Spaced Review'],
-              ].map(([mode, label]) => (
+                ['learn', 'Nile Memory — Multi-Facet Study & Reveal', 'eye'],
+                ['match', 'Rosetta Match — Match Meanings', 'rosetta'],
+                ['spelling', 'Lost Inscription — Spell from a Clue', 'cartouche'],
+                ['dictation', 'Listen and Spell', 'listening'],
+                ['review', 'My Spaced Review', 'star'],
+              ].map(([mode, label, icon]) => (
                 <button key={mode} onClick={() => wordLaunch(mode)}>
-                  {label}
+                  <KemetIcon name={icon as any} size={16} />
+                  <span>{label}</span>
                 </button>
               ))}
             </div>
@@ -397,9 +467,13 @@ export default function App() {
                 go({ page: 'library' });
               }}
             >
-              Read vocabulary source entries
+              <KemetIcon name="reading" size={16} />
+              <span>Read vocabulary source entries</span>
             </button>
-            <button onClick={() => go({page:"pdf_study",id:"living_lexicon"})}>Read The Living Lexicon original PDF</button>
+            <button onClick={() => go({page:"pdf_study",id:"living_lexicon"})}>
+              <KemetIcon name="pdf" size={16} />
+              <span>Read The Living Lexicon original PDF</span>
+            </button>
           </section>
         )}
 
@@ -410,17 +484,24 @@ export default function App() {
             <p>A Dream of Adventure · Chapter 1 ends in Challenger’s study.</p>
             <div className="panel story-actions-panel">
               {[
-                ['read_story', 'Read Your Story with Seshat'],
-                ['thoth', 'Read and Think with Thoth'],
-                ['cleopatra', 'Review with Cleopatra'],
-                ['characters', 'Character gallery'],
-              ].map(([id, label]) => (
+                ['read_story', 'Read Your Story with Seshat', 'story'],
+                ['thoth', 'Read and Think with Thoth', 'thoth'],
+                ['cleopatra', 'Review with Cleopatra', 'cartouche'],
+                ['characters', 'Character gallery', 'wedjat'],
+              ].map(([id, label, icon]) => (
                 <button key={id} onClick={() => go({ page: 'sequence', id })}>
-                  {label}
+                  <KemetIcon name={icon as any} size={16} />
+                  <span>{label}</span>
                 </button>
               ))}
-              <button onClick={() => go({ page: 'osiris' })}>Who said or did with Osiris — 8 tasks</button>
-              <button onClick={() => go({ page: 'nile_quest' })}>Nile Quest Narrative Adventure</button>
+              <button onClick={() => go({ page: 'osiris' })}>
+                <KemetIcon name="quiz" size={16} />
+                <span>Who said or did with Osiris — 8 tasks</span>
+              </button>
+              <button onClick={() => go({ page: 'nile_quest' })}>
+                <KemetIcon name="journey" size={16} />
+                <span>Nile Quest Narrative Adventure</span>
+              </button>
               <button
                 onClick={() => {
                   setDataset('story59');
@@ -428,21 +509,52 @@ export default function App() {
                   go({ page: 'vocabulary' });
                 }}
               >
-                Story words (59 audio & cards)
+                <KemetIcon name="vocabulary" size={16} />
+                <span>Story words (59 audio & cards)</span>
               </button>
               <button onClick={() => go({ page: 'bank', bank: 'N1', support: 'independent', size: 5 })}>
-                Chapter source bank — N1
+                <KemetIcon name="challenge" size={16} />
+                <span>Chapter source bank — N1</span>
               </button>
               <button onClick={() => go({ page: 'media', tab: 'story_inspired_audio' })}>
-                Story Audio Library
+                <KemetIcon name="audio" size={16} />
+                <span>Story Audio Library</span>
               </button>
-              <button onClick={() => go({ page: 'writing' })}>Explain your view (Writing)</button>
-              <a href={catalog.youtube.url} target="_blank" rel="noreferrer" className="btn-link">
-                Watch Chapter 1 on YouTube
-              </a>
-              <p className="disclaimer">
-                Owner-labelled video; transcript, captions and timestamps not verified. No autoplay.
-              </p>
+              <button onClick={() => go({ page: 'writing' })}>
+                <KemetIcon name="writing" size={16} />
+                <span>Explain your view (Writing)</span>
+              </button>
+
+              {/* YouTube Video Resource Card */}
+              <div className="youtube-video-card" style={{ marginTop: 16 }}>
+                <div className="video-card-badge-row">
+                  <span className="video-provider-tag">
+                    <KemetIcon name="youtube" size={20} />
+                    <span>YouTube Video Narrative</span>
+                  </span>
+                  <span className="video-topic-tag">A Dream of Adventure · Chapter 1</span>
+                </div>
+                <div className="video-card-body">
+                  <div className="video-preview-standin">
+                    <KemetIcon name="video" size={38} />
+                    <span className="video-preview-title">The Lost World Adaptation</span>
+                  </div>
+                  <div className="video-details">
+                    <h4>Watch Chapter 1 on YouTube</h4>
+                    <p className="video-desc">
+                      Explore the audiovisual adaptation of Arthur Conan Doyle's <em>The Lost World</em> Chapter 1, covering Malone's journey.
+                    </p>
+                    <a href={catalog.youtube.url} target="_blank" rel="noreferrer" className="btn-youtube-watch">
+                      <KemetIcon name="play" size={18} />
+                      <span>Watch Chapter 1 on YouTube</span>
+                    </a>
+                    <p className="disclaimer">
+                      <KemetIcon name="cartouche" size={14} />
+                      <span>Owner-labelled video; transcript, captions and timestamps not verified. No autoplay.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
         )}
@@ -454,24 +566,39 @@ export default function App() {
             <p>Context → notice → explain → guided try → independent response → feedback → later review.</p>
             {selector()}
             <div className="challenge-shortcuts">
-              <button onClick={() => go({ page: 'rosetta_decoder' })}>Play Rosetta Decoder</button>
+              <button onClick={() => go({ page: 'rosetta_decoder' })}>
+                <KemetIcon name="rosetta" size={16} />
+                <span>Play Rosetta Decoder</span>
+              </button>
               <button onClick={() => go({ page: 'grammar_pyramid', mode: 'builder' })}>
-                Grammar Sentence Builder
+                <KemetIcon name="grammar" size={16} />
+                <span>Grammar Sentence Builder</span>
               </button>
               <button onClick={() => go({ page: 'grammar_pyramid', mode: 'detective' })}>
-                Grammar Error Detective
+                <KemetIcon name="search" size={16} />
+                <span>Grammar Error Detective</span>
               </button>
-              <button onClick={() => go({ page: 'evidence_hunt' })}>Seshat Evidence Hunt</button>
-              <button onClick={() => go({ page: 'vocabulary' })}>Choose vocabulary group</button>
+              <button onClick={() => go({ page: 'evidence_hunt' })}>
+                <KemetIcon name="reading" size={16} />
+                <span>Seshat Evidence Hunt</span>
+              </button>
+              <button onClick={() => go({ page: 'vocabulary' })}>
+                <KemetIcon name="vocabulary" size={16} />
+                <span>Choose vocabulary group</span>
+              </button>
               <button
                 onClick={() => {
                   setCategory('Grammar');
                   go({ page: 'library' });
                 }}
               >
-                Learn grammar step by step
+                <KemetIcon name="grammar" size={16} />
+                <span>Learn grammar step by step</span>
               </button>
-              <button onClick={() => go({ page: 'writing' })}>Writer’s Papyrus</button>
+              <button onClick={() => go({ page: 'writing' })}>
+                <KemetIcon name="writing" size={16} />
+                <span>Writer’s Papyrus</span>
+              </button>
             </div>
           </section>
         )}
@@ -530,23 +657,41 @@ export default function App() {
         {/* ALEXANDRIAN LIBRARY */}
         {route.page === 'library' && (
           <section className="library-page">
-            <h1>Alexandrian Library</h1><button className="primary" onClick={() => go({page:"documents"})}>All 18 original PDFs — choose a document</button>
+            <h1>Alexandrian Library</h1>
+            <button className="primary" onClick={() => go({page:"documents"})}>
+              <KemetIcon name="pdf" size={16} />
+              <span>All 18 original PDFs — choose a document</span>
+            </button>
             <div className="chips">
-              {['Vocabulary', 'Reading', 'Grammar', 'Listening', 'Writing', 'Story'].map((c) => (
+              {[
+                ['Vocabulary', 'vocabulary'],
+                ['Reading', 'reading'],
+                ['Grammar', 'grammar'],
+                ['Listening', 'listening'],
+                ['Writing', 'writing'],
+                ['Story', 'story'],
+              ].map(([c, icon]) => (
                 <button
                   key={c}
                   className={category === c ? 'chosen' : ''}
                   onClick={() => setCategory(c)}
                 >
-                  {c}
+                  <KemetIcon name={icon as any} size={15} />
+                  <span>{c}</span>
                 </button>
               ))}
             </div>
-            <button onClick={() => go({ page: 'media' })}>Open Media Library</button>
+            <button onClick={() => go({ page: 'media' })}>
+              <KemetIcon name="video" size={16} />
+              <span>Open Media Library</span>
+            </button>
 
             {category === 'Vocabulary' && (
               <>
-                <button onClick={() => go({ page: 'vocabulary' })}>Practise words in Vocabulary Vault</button>
+                <button onClick={() => go({ page: 'vocabulary' })}>
+                  <KemetIcon name="vocabulary" size={16} />
+                  <span>Practise words in Vocabulary Vault</span>
+                </button>
                 {core.UNIT_1_VOCABULARY.map((w) => (
                   <details className="panel" key={w.id}>
                     <summary>
@@ -564,7 +709,10 @@ export default function App() {
                     )}
                   </details>
                 ))}
-                <button onClick={() => go({page:"pdf_study",id:"living_lexicon"})}>Read The Living Lexicon original PDF</button>
+                <button onClick={() => go({page:"pdf_study",id:"living_lexicon"})}>
+                  <KemetIcon name="pdf" size={16} />
+                  <span>Read The Living Lexicon original PDF</span>
+                </button>
               </>
             )}
 
@@ -581,11 +729,15 @@ export default function App() {
                         go({ page: 'bank', bank: 'S1', passage: p.id, support: 'supported', size: 3 })
                       }
                     >
-                      Evidence Explorer — practise this passage
+                      <KemetIcon name="challenge" size={16} />
+                      <span>Evidence Explorer — practise this passage</span>
                     </button>
                   </article>
                 ))}
-                <button onClick={() => go({page:"pdf_study",id:"unit1_standard"})}>Read Unit 1 KEMET Standard PDF</button>
+                <button onClick={() => go({page:"pdf_study",id:"unit1_standard"})}>
+                  <KemetIcon name="pdf" size={16} />
+                  <span>Read Unit 1 KEMET Standard PDF</span>
+                </button>
               </>
             )}
 
@@ -599,12 +751,15 @@ export default function App() {
                       feedback.
                     </p>
                     <div className="grammar-card-actions">
-                      <button onClick={() => go({ page: 'sequence', id: g.id })}>Learn step by step</button>
+                      <button onClick={() => go({ page: 'sequence', id: g.id })}>
+                        <KemetIcon name="grammar" size={16} />
+                        <span>Learn step by step</span>
+                      </button>
                       <button onClick={() => go({ page: 'pdf_study', id: g.id })}>
-                        Open in In-App PDF Reader
+                        <KemetIcon name="pdf" size={16} />
+                        <span>Open in In-App PDF Reader</span>
                       </button>
                     </div>
-                    
                   </article>
                 ))}
               </>
@@ -625,7 +780,8 @@ export default function App() {
                         go({ page: 'bank', bank: 'L1', audioId: a.id, support: 'independent', size: 5 })
                       }
                     >
-                      Echoes of the Nile — source tasks
+                      <KemetIcon name="listening" size={16} />
+                      <span>Echoes of the Nile — source tasks</span>
                     </button>
                   </article>
                 ))}
@@ -636,14 +792,20 @@ export default function App() {
 
             {category === 'Story' && (
               <>
-                <button onClick={() => go({ page: 'story' })}>Open Story Quest</button>
+                <button onClick={() => go({ page: 'story' })}>
+                  <KemetIcon name="story" size={16} />
+                  <span>Open Story Quest</span>
+                </button>
                 <article className="panel story-text-panel">
                   <h3>The Lost World · Chapter 1: A Dream of Adventure</h3>
                   {core.READING_PASSAGES.find((p) => p.id === 'STORY-CH1')?.paragraphs.map((p, i) => (
                     <p key={i}>{p}</p>
                   ))}
                 </article>
-                <button onClick={() => go({page:"pdf_study",id:"read_story"})}>Read Your Story original PDF</button>
+                <button onClick={() => go({page:"pdf_study",id:"read_story"})}>
+                  <KemetIcon name="pdf" size={16} />
+                  <span>Read Your Story original PDF</span>
+                </button>
               </>
             )}
 
@@ -660,10 +822,12 @@ export default function App() {
                     </p>
                     <div className="doc-buttons">
                       <button onClick={() => go({ page: 'pdf_study', id: d.id })}>
-                        Study In-App Canvas Reader
+                        <KemetIcon name="pdf" size={16} />
+                        <span>Study In-App Canvas Reader</span>
                       </button>
                       <a href={d.path} download={d.originalFilename} className="download-btn">
-                        Download untouched original
+                        <KemetIcon name="download" size={16} />
+                        <span>Download untouched original</span>
                       </a>
                     </div>
                   </article>
@@ -674,6 +838,9 @@ export default function App() {
 
         {/* MEDIA LIBRARY (5 HUBS + 59 STORY WORD AUDIO + TEACHER REGISTRATION) */}
         {route.page === 'media' && <MediaLibrary initialCategory={route.tab} go={go} />}
+
+        {/* DISCOVER YOUR EGYPTIAN SYMBOL */}
+        {route.page === 'symbol_discover' && <SymbolDiscover lang={lang} go={go} />}
 
         {/* DISCOVER KEMET */}
         {route.page === 'discover' && <Discover lang={lang} />}
@@ -706,12 +873,14 @@ export default function App() {
               ))}
               <div className="export-actions">
                 <button onClick={() => download('KEMET_attempts.json', JSON.stringify(all, null, 2))}>
-                  Export JSON
+                  <KemetIcon name="download" size={16} />
+                  <span>Export JSON</span>
                 </button>
                 <button
                   onClick={() => download('KEMET_attempts.csv', csv(all), 'text/csv;charset=utf-8')}
                 >
-                  Export UTF-8 CSV
+                  <KemetIcon name="download" size={16} />
+                  <span>Export UTF-8 CSV</span>
                 </button>
               </div>
             </div>
@@ -798,18 +967,20 @@ export default function App() {
         </footer>
       </main>
 
-      <button className="thoth" onClick={() => setThoth(true)}>
-        Ask Thoth
+      <button className="thoth" onClick={() => setThoth(true)} aria-label="Ask Thoth">
+        <KemetIcon name="thoth" size={24} />
+        <span>Ask Thoth</span>
       </button>
 
       <nav aria-label="Main navigation">
-        {['home', 'journey', 'library', 'results'].map((page, i) => (
+        {(['home', 'journey', 'library', 'results'] as const).map((page, i) => (
           <button
             key={page}
             className={route.page === page ? 'selected' : ''}
             onClick={() => go({ page })}
           >
-            {navigation[lang][i]}
+            <KemetIcon name={page} size={18} />
+            <span>{navigation[lang][i]}</span>
           </button>
         ))}
       </nav>

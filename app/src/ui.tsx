@@ -3,6 +3,7 @@ import core from './data/core.json';
 import blueprint from './data/blueprint.json';
 import catalog from './data/catalog.json';
 import { asset, byPath, wordAsset } from './assets';
+import { KemetIcon, KemetIconName } from './components/KemetIcon';
 import {
   read,
   write,
@@ -25,6 +26,20 @@ export function Logo({ large = false }: { large?: boolean }) {
       className={'logo ' + (large ? 'large' : '')}
       src={a.path}
       alt="KEMET: The Nile Flow — original authoritative logo"
+      onError={() => setError(true)}
+    />
+  ) : (
+    <span className="brand-fallback">KEMET: The Nile Flow</span>
+  );
+}
+
+export function Banner() {
+  const [error, setError] = useState(false);
+  return !error ? (
+    <img
+      className="kemet-banner-img"
+      src="/brand/Kemet_%20Nile%20Gold%20and%20Hieroglyphs.png"
+      alt="KEMET: The Nile Flow — AI Language Assistant"
       onError={() => setError(true)}
     />
   ) : (
@@ -139,7 +154,7 @@ export function Media({
     <div className="media">
       {kind === 'video' ? <video {...props} playsInline /> : <audio {...props} />}
       <label>
-        Speed{' '}
+        <KemetIcon name="audio" size={14} /> Speed{' '}
         <select
           defaultValue="1"
           onChange={(e) => {
@@ -155,7 +170,7 @@ export function Media({
         <p role="alert">
           Playback failed.{' '}
           <a href={a.path} target="_blank" rel="noreferrer">
-            Open original file
+            <KemetIcon name="download" size={14} /> Open original file
           </a>
           <button
             onClick={() => {
@@ -189,35 +204,46 @@ export function MediaLibrary({
   const [vCaption, setVCaption] = useState('');
   const [vMessage, setVMessage] = useState('');
 
-  const hubs = [
+  const hubs: {
+    id: string;
+    title: string;
+    subtitle: string;
+    icon: KemetIconName;
+    items: any[];
+  }[] = [
     {
       id: 'general_english_songs',
       title: 'English with Music | راجع إنجليزيتك بالأغاني',
       subtitle: 'Grammar review songs and pronunciation recordings',
+      icon: 'audio',
       items: catalog.media.filter((m) => m.category === 'general_english_songs'),
     },
     {
       id: 'curriculum_listening',
       title: 'Unit 1 Curriculum Listening | الاستماع المنهجي',
       subtitle: 'REC-01 and REC-04 linked to Ministry listening texts',
+      icon: 'listening',
       items: catalog.media.filter((m) => m.category === 'curriculum_listening'),
     },
     {
       id: 'story_inspired_audio',
       title: 'A Dream of Adventure / Story Audio | صوتيات القصة',
       subtitle: 'Chapter 1 story atmosphere + 59 individual word recordings',
+      icon: 'story',
       items: catalog.media.filter((m) => m.category === 'story_inspired_audio'),
     },
     {
       id: 'entertainment_identity',
       title: 'Enjoy Kemet | الهوية المصرية والتحفيز',
       subtitle: 'Cultural motivation, Egyptian student pride & heritage music',
+      icon: 'lotus',
       items: catalog.media.filter((m) => m.category === 'entertainment_identity'),
     },
     {
       id: 'archive_unclassified',
       title: 'Instructor Archive | أرشيف المعلم',
       subtitle: 'MEDIA-10 kemet.mp3 unclassified pending teacher review',
+      icon: 'cartouche',
       items: catalog.media.filter((m) => m.id === 'MEDIA-10'),
     },
   ];
@@ -263,6 +289,9 @@ export function MediaLibrary({
             className={`category-tile ${cat === h.id ? 'active' : ''}`}
             onClick={() => setCat(h.id)}
           >
+            <div className="tile-icon-row">
+              <KemetIcon name={h.icon} size={24} />
+            </div>
             <strong>{h.title}</strong>
             <span>{h.subtitle}</span>
           </button>
@@ -308,12 +337,17 @@ export function MediaLibrary({
             .map((m) => (
               <article className="media-card panel" key={m.id}>
                 <div className="media-card-header">
-                  <span className="badge">{m.id}</span>
-                  <h3>{m.originalFilename.replace(/\.mp3$/, '')}</h3>
-                  <span className="duration">
-                    {Math.floor(m.durationSeconds / 60)}:
-                    {String(Math.floor(m.durationSeconds % 60)).padStart(2, '0')}
-                  </span>
+                  <div className="media-title-group">
+                    <KemetIcon name="audio" size={20} />
+                    <h3>{m.originalFilename.replace(/\.mp3$/, '')}</h3>
+                  </div>
+                  <div className="media-badge-group">
+                    <span className="badge">{m.id}</span>
+                    <span className="duration">
+                      {Math.floor(m.durationSeconds / 60)}:
+                      {String(Math.floor(m.durationSeconds % 60)).padStart(2, '0')}
+                    </span>
+                  </div>
                 </div>
                 <p className="media-note">
                   {m.curriculumAligned ? 'Curriculum aligned · listening review pending' : 'General enrichment audio'}
@@ -324,7 +358,7 @@ export function MediaLibrary({
                     className="btn-small link-btn"
                     onClick={() => go({ page: 'bank', bank: 'L1', audioId: 'REC-01', support: 'independent', size: 5 })}
                   >
-                    Open Echoes of the Nile Listening Tasks (REC-01)
+                    <KemetIcon name="listening" size={16} /> Open Echoes of the Nile Listening Tasks (REC-01)
                   </button>
                 )}
                 {m.id === 'REC-04' && (
@@ -332,7 +366,7 @@ export function MediaLibrary({
                     className="btn-small link-btn"
                     onClick={() => go({ page: 'bank', bank: 'L1', audioId: 'REC-04', support: 'supported', size: 5 })}
                   >
-                    Open Echoes of the Nile Tasks (REC-04)
+                    <KemetIcon name="listening" size={16} /> Open Echoes of the Nile Tasks (REC-04)
                   </button>
                 )}
               </article>
@@ -373,11 +407,34 @@ export function MediaLibrary({
             {storyAudioEntries.length > 18 && (
               <p className="note">Showing first 18 of {storyAudioEntries.length} matching story word audio files.</p>
             )}
-            <div className="youtube-advisory">
-              <a href={catalog.youtube.url} target="_blank" rel="noreferrer" className="btn-link">
-                Watch Chapter 1 on YouTube (Owner-supplied link)
-              </a>
-              <p className="disclaimer">Owner advisory: Transcript, captions and timestamps not verified. No autoplay.</p>
+            <div className="youtube-video-card panel">
+              <div className="video-card-badge-row">
+                <span className="video-provider-tag">
+                  <KemetIcon name="youtube" size={22} />
+                  <span>YouTube Educational Resource</span>
+                </span>
+                <span className="video-topic-tag">The Lost World · Chapter 1</span>
+              </div>
+              <div className="video-card-body">
+                <div className="video-preview-standin">
+                  <KemetIcon name="video" size={44} />
+                  <span className="video-preview-title">A Dream of Adventure — Chapter 1 Video Adaptation</span>
+                </div>
+                <div className="video-details">
+                  <h4>Watch Chapter 1 Video Narrative</h4>
+                  <p className="video-desc">
+                    Explore the audiovisual adaptation of Arthur Conan Doyle's <em>The Lost World</em> Chapter 1, covering Malone's ambitious journey to South America.
+                  </p>
+                  <a href={catalog.youtube.url} target="_blank" rel="noreferrer" className="btn-youtube-watch">
+                    <KemetIcon name="play" size={18} />
+                    <span>Watch Chapter 1 on YouTube (Owner-supplied link)</span>
+                  </a>
+                  <p className="disclaimer">
+                    <KemetIcon name="cartouche" size={14} />
+                    <span>Owner advisory: External link opens in new tab. Transcript, captions and timestamps not verified. No autoplay.</span>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         )}

@@ -18,6 +18,7 @@ import {
 } from './engine';
 import { Media, Pdf, VoiceMirror } from './ui';
 import { wordAsset, byPath, unit1CardAsset, unit1AlternativeAssets } from './assets';
+import { KemetIcon } from './components/KemetIcon';
 
 const version = 'source-2026-10-15';
 
@@ -84,7 +85,10 @@ export function BankPractice({
       <section className="panel">
         <h2>No eligible source items</h2>
         <p>This filter has no supplied questions. Choose a different source level or passage.</p>
-        <button onClick={close}>Back</button>
+        <button onClick={close}>
+          <KemetIcon name="back" size={16} />
+          <span>Back</span>
+        </button>
       </section>
     );
   }
@@ -149,8 +153,14 @@ export function BankPractice({
           {count < size ? 'This pool is smaller than the requested round.' : ''}
         </p>
         <p>Instructor preview results; source approval remains pending.</p>
-        <button onClick={() => setRound(0)}>Continue from saved queue</button>
-        <button onClick={close}>Save and return</button>
+        <button onClick={() => setRound(0)}>
+          <KemetIcon name="reset" size={16} />
+          <span>Continue from saved queue</span>
+        </button>
+        <button onClick={close}>
+          <KemetIcon name="check" size={16} />
+          <span>Save and return</span>
+        </button>
       </section>
     );
   }
@@ -167,7 +177,10 @@ export function BankPractice({
       {timed && (
         <p>
           Optional timer: {seconds}s · no penalty when it reaches zero{' '}
-          <button onClick={() => setSeconds(60)}>Reset timer</button>
+          <button onClick={() => setSeconds(60)}>
+            <KemetIcon name="timer" size={16} />
+            <span>Reset timer</span>
+          </button>
         </p>
       )}
       {reading && (
@@ -190,7 +203,8 @@ export function BankPractice({
               if (reading.paragraphs.join('\n').includes(selected)) setQuote(selected);
             }}
           >
-            Use my selected text
+            <KemetIcon name="reading" size={16} />
+            <span>Use my selected text</span>
           </button>
           {quote && !reading.paragraphs.join('\n').includes(quote) && (
             <p>That span is not in this passage. Copy an exact source span.</p>
@@ -209,7 +223,10 @@ export function BankPractice({
               if (e === 'replay') setReplays(replays + 1);
             }}
           />
-          <button onClick={() => setTranscript(!transcript)}>Transcript (support)</button>
+          <button onClick={() => setTranscript(!transcript)}>
+            <KemetIcon name="transcript" size={16} />
+            <span>Transcript (support)</span>
+          </button>
           {transcript && <p>{audio.transcript} · alignment unverified</p>}
         </>
       )}
@@ -233,7 +250,10 @@ export function BankPractice({
           <textarea value={response} disabled={!!result} onChange={(e) => setResponse(e.target.value)} />
         </label>
       )}
-      <button onClick={() => setHint(true)}>Procedural hint</button>
+      <button onClick={() => setHint(true)}>
+        <KemetIcon name="hint" size={16} />
+        <span>Procedural hint</span>
+      </button>
       {hint && (
         <p>
           {grammar?.englishRules[0] ||
@@ -244,7 +264,8 @@ export function BankPractice({
         disabled={!response.trim() || !!result || (!!quote && !reading?.paragraphs.join('\n').includes(quote))}
         onClick={submit}
       >
-        Submit response
+        <KemetIcon name="check" size={16} />
+        <span>Submit response</span>
       </button>
       {result && (
         <div role="status">
@@ -258,10 +279,16 @@ export function BankPractice({
           <p>Source model — awaiting approval: {q.sourceAnswer}</p>
           <p>{q.explanation}</p>
           <p>{hint || transcript ? 'Support was used; this is not unassisted evidence.' : ''}</p>
-          <button onClick={next}>Next source item</button>
+          <button onClick={next}>
+            <KemetIcon name="next" size={16} />
+            <span>Next source item</span>
+          </button>
         </div>
       )}
-      <button onClick={close}>Save and exit</button>
+      <button onClick={close}>
+        <KemetIcon name="check" size={16} />
+        <span>Save and exit</span>
+      </button>
     </section>
   );
 }
@@ -572,38 +599,44 @@ export function WordActivity({
               className={showEng ? 'chosen' : ''}
               onClick={toggleEng}
             >
-              {showEng ? 'Hide English Meaning' : 'Reveal English Meaning'}
+              <KemetIcon name="eye" size={14} />
+              <span>{showEng ? 'Hide English Meaning' : 'Reveal English Meaning'}</span>
             </button>
             <button
               className={showAr ? 'chosen' : ''}
               onClick={toggleAr}
             >
-              {showAr ? 'Hide Arabic Meaning' : 'Reveal Arabic Meaning (عربي)'}
+              <KemetIcon name="eye" size={14} />
+              <span>{showAr ? 'Hide Arabic Meaning' : 'Reveal Arabic Meaning (عربي)'}</span>
             </button>
             <button
               className={showIpa ? 'chosen' : ''}
               onClick={toggleIpa}
             >
-              {showIpa ? 'Hide IPA' : 'Reveal IPA Pronunciation'}
+              <KemetIcon name="eye" size={14} />
+              <span>{showIpa ? 'Hide IPA' : 'Reveal IPA Pronunciation'}</span>
             </button>
             <button
               className={showPos ? 'chosen' : ''}
               onClick={togglePos}
             >
-              {showPos ? 'Hide Part of Speech' : 'Reveal Part of Speech'}
+              <KemetIcon name="eye" size={14} />
+              <span>{showPos ? 'Hide Part of Speech' : 'Reveal Part of Speech'}</span>
             </button>
             <button
               className={showEx ? 'chosen' : ''}
               onClick={toggleEx}
             >
-              {showEx ? 'Hide Example' : 'Reveal Full Example'}
+              <KemetIcon name="eye" size={14} />
+              <span>{showEx ? 'Hide Example' : 'Reveal Full Example'}</span>
             </button>
             {w.synonym && (
               <button
                 className={showSyn ? 'chosen' : ''}
                 onClick={toggleSyn}
               >
-                {showSyn ? 'Hide Synonym' : 'Reveal Vetted Synonym'}
+                <KemetIcon name="eye" size={14} />
+                <span>{showSyn ? 'Hide Synonym' : 'Reveal Vetted Synonym'}</span>
               </button>
             )}
             {w.antonymContrast && (
@@ -611,7 +644,8 @@ export function WordActivity({
                 className={showAnt ? 'chosen' : ''}
                 onClick={toggleAnt}
               >
-                {showAnt ? 'Hide Contrast' : 'Reveal Contrast / Antonym'}
+                <KemetIcon name="eye" size={14} />
+                <span>{showAnt ? 'Hide Contrast' : 'Reveal Contrast / Antonym'}</span>
               </button>
             )}
             {cardPath && cardAvailable && (
@@ -619,7 +653,8 @@ export function WordActivity({
                 className={showCard ? 'chosen' : ''}
                 onClick={toggleCard}
               >
-                {showCard ? 'Hide Learning Card' : 'Reveal Approved Learning Card'}
+                <KemetIcon name="cartouche" size={14} />
+                <span>{showCard ? 'Hide Learning Card' : 'Reveal Approved Learning Card'}</span>
               </button>
             )}
           </div>
@@ -704,7 +739,8 @@ export function WordActivity({
               resetVisibilities();
             }}
           >
-            Hide and recall
+            <KemetIcon name="eye" size={16} />
+            <span>Hide and recall</span>
           </button>
         </div>
       ) : (
@@ -951,9 +987,13 @@ export function Writer({ close }: { close: () => void }) {
         review.
       </p>
       <button disabled={!draft.trim()} onClick={submit}>
-        Submit for review
+        <KemetIcon name="check" size={16} />
+        <span>Submit for review</span>
       </button>
-      <button onClick={() => setShow(!show)}>Show source model (support)</button>
+      <button onClick={() => setShow(!show)}>
+        <KemetIcon name="eye" size={16} />
+        <span>Show source model (support)</span>
+      </button>
       {show && <p>{core.SHARED_TASKS.modelParagraph}</p>}
       <p role="status">{message}</p>
       <details>
@@ -966,7 +1006,10 @@ export function Writer({ close }: { close: () => void }) {
         ))}
       </details>
       <VoiceMirror prompt={draft || 'Explain one reason from your response.'} />
-      <button onClick={close}>Save and return</button>
+      <button onClick={close}>
+        <KemetIcon name="check" size={16} />
+        <span>Save and return</span>
+      </button>
     </section>
   );
 }

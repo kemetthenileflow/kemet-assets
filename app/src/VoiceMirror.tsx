@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { wordAsset } from './assets';
 import { Media } from './ui';
+import { KemetIcon } from './components/KemetIcon';
 
 type Phase = 'ready' | 'requesting' | 'recording' | 'stopping' | 'recorded' | 'error';
 export function microphoneMessage(error: any) {
@@ -92,14 +93,31 @@ export function VoiceMirror({ prompt, word }: { prompt: string; word?: string })
     <h3>Voice Mirror</h3><p>{prompt}</p>
     {model?.available ? <Media id={model.id} /> : <p>Read the prompt aloud, then listen to your own recording.</p>}
     <div className="voice-actions">
-      <button disabled={['requesting','recording','stopping'].includes(phase)} onClick={start}>{url ? 'Record again' : 'Record my voice'}</button>
-      <button disabled={phase !== 'recording'} onClick={stop}>Stop recording</button>
-      {phase === 'requesting' && <button onClick={cancel}>Cancel permission request</button>}
+      <button disabled={['requesting','recording','stopping'].includes(phase)} onClick={start}>
+        <KemetIcon name="mic" size={16} />
+        <span>{url ? 'Record again' : 'Record my voice'}</span>
+      </button>
+      <button disabled={phase !== 'recording'} onClick={stop}>
+        <KemetIcon name="pause" size={16} />
+        <span>Stop recording</span>
+      </button>
+      {phase === 'requesting' && (
+        <button onClick={cancel}>
+          <KemetIcon name="close" size={16} />
+          <span>Cancel permission request</span>
+        </button>
+      )}
     </div>
     {phase === 'recording' && <p className="recording-live">● Recording · {seconds}s / 120s</p>}
     {url && <div className="voice-playback"><audio ref={playback} aria-label="Your voice recording" controls src={url} />
-      <button onClick={() => { if (playback.current) { playback.current.currentTime = 0; playback.current.play().catch(() => setMessage('Use the audio player’s Play button to listen.')); } }}>Replay recording</button>
-      <button disabled={['requesting','recording','stopping'].includes(phase)} onClick={() => { playback.current?.pause(); clearUrl(); setPhase('ready'); setMessage('Recording deleted. Ready for another try.'); }}>Delete recording</button></div>}
+      <button onClick={() => { if (playback.current) { playback.current.currentTime = 0; playback.current.play().catch(() => setMessage('Use the audio player’s Play button to listen.')); } }}>
+        <KemetIcon name="play" size={16} />
+        <span>Replay recording</span>
+      </button>
+      <button disabled={['requesting','recording','stopping'].includes(phase)} onClick={() => { playback.current?.pause(); clearUrl(); setPhase('ready'); setMessage('Recording deleted. Ready for another try.'); }}>
+        <KemetIcon name="close" size={16} />
+        <span>Delete recording</span>
+      </button></div>}
     <p role="status" aria-live="polite" data-phase={phase}>{message}</p>
     {embeddedBlocked && <p><a href={window.location.origin + '/?practice=voice'} target="_blank" rel="noopener noreferrer">Open Voice Mirror in a separate tab / افتح التدريب الصوتي في تبويب مستقل</a></p>}
     <p>No automatic pronunciation score. Listen for clear meaning, sounds and rhythm; choose one improvement for your next try.</p>

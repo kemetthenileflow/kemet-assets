@@ -1,0 +1,661 @@
+{
+  "source": "ChatGPT Library /KEMET",
+  "originals": [
+    {
+      "name": "Students writing Egypt’s next chapter-20.png",
+      "sha256": "c617986d1159e383988cdef0714b2d6260c3ace28dac96a66199777bbb510ac7",
+      "size": 3466705,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Egyptian Scribe-8.png",
+      "sha256": "bf8201992f0cb532fa22d39dfb72d8f68aef365752f6f4df54156cbfdb2f89b1",
+      "size": 3368217,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Narmer Palette_ Unity in Stone-10.png",
+      "sha256": "b1c863cae3100d43fd4cc78e23e065fd4ce4bc0938145a6534a32387488f2ba7",
+      "size": 3652374,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Bulaq Press-18.png",
+      "sha256": "0ff78c3ae838880dbef52a0585276bfdd22882025d74a9304ea33fa989a2ae7e",
+      "size": 3647876,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Ramesses II_ Monuments and peace.png",
+      "sha256": "e9e45a001e2ff71884ab8b7ef9e2f9f72c45bc30307af0a2f9f364d1db06252b",
+      "size": 3750910,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Pyramids at Sunrise-4-2.png",
+      "sha256": "db5100b667973cf2183d135b3f9edc8a2ec66cb928df6c93c2165319cc199050",
+      "size": 3501593,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Egyptian Police Heritage in Ismailia.png",
+      "sha256": "d2a966571d321b0e137cd21384ef56d41be9596665270a62867e4f75ebed70f1",
+      "size": 3418694,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Ramesses II's Colossi at Abu Simbel-12.png",
+      "sha256": "f32f25170b56f12820b632e28e56e264b4f5e78e6bb3ae8bd9372de14d86652a",
+      "size": 3563745,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Anwar Sadat at a Historic Turning Point.png",
+      "sha256": "2461232d91662611cf6a048e9d52fd5d4484a9e9aa87c7783506c7797d323d0e",
+      "size": 3319706,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Royal Cartouche.png",
+      "sha256": "e6573d462cdf93bc3f1bfc0865f021ab93f56b7f0605d985cd527863a5eae799",
+      "size": 3580476,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Tutankhamun’s Golden Mask.png",
+      "sha256": "66523d1488e3bde757beade838241a4e76c9f7a6530d6a097fac293d5c5be45d",
+      "size": 3594674,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Naguib Mahfouz and Cairo’s stories-14.png",
+      "sha256": "d212fae1dfd46eb87f3cc92c9feae9eade80bac59b74c90dde2299a4abf5a2bd",
+      "size": 3551389,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Old Cairo’s Sacred Heritage.png",
+      "sha256": "20b864ade5d52bf67d6ae97e852a00bb199ff6b42bd2d66897c076899e0d164d",
+      "size": 3635544,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Cleopatra VII_ queen of languages.png",
+      "sha256": "f6ba6b74d8a2ffd961f305ae75a65f4ff25b2c5c1db8e4b5c0621623db5711b3",
+      "size": 3425362,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Egyptian Army Engineers Build the Crossing.png",
+      "sha256": "e712fad2a4056382d16b564b5bcd71cb86eaaac5dd412dcf0f7423790a65d835",
+      "size": 3489863,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Mount Sinai at sunrise.png",
+      "sha256": "967ddea2c9fdf7febf844e76c19db4226c25c5e56a2ae981336a3047adda50ad",
+      "size": 3616214,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Eye of Horus-1.png",
+      "sha256": "6476f9edaba09f7894b5835795a6a347dcd25c808b2ed48421ab12388b82382a",
+      "size": 3894153,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Egyptian Justice.png",
+      "sha256": "1f45f4217c74974bf56051b0d1a615d9da708adab10e8d9f0f61c58ca615fa13",
+      "size": 3512368,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Ankh-3.png",
+      "sha256": "6b206b1cc2ed31fe24b4a776a6980bd82e0ea9a0be59de01bb4677e2878078e6",
+      "size": 3596847,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Scarab-5.png",
+      "sha256": "3948dc9ee651530f90d26bc9418a16ae85af3cf34cd7195c75fdad99ac9ae6a0",
+      "size": 3373123,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Suez Canal-16.png",
+      "sha256": "3f614496f19673f8b0340e112f383ac5a6f3945798b9cbab615bffb98e6a0c0e",
+      "size": 3595806,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Ahmed Zewail_ Light of Discovery-13.png",
+      "sha256": "a541970a985db5babf0770f9cb0e766b1da488bb3af5e47189cba4fd9c406dc8",
+      "size": 3358066,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "The Rosetta Stone-6.png",
+      "sha256": "b6518d014c7d390278638397ed11456b494a5fcf58c8f90e6bcdc11e01a7b82c",
+      "size": 3624745,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Saint Catherine’s Monastery and Manuscripts.png",
+      "sha256": "3f8258e52f846106e11666e98e9cc9477460a295001dace1eb231ff36bc3caf6",
+      "size": 3662902,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Egyptian radio in a golden studio-19.png",
+      "sha256": "a5633078f0a5240d8e789fe6ef7995e453936454cc43aadf7fb63906f2663be5",
+      "size": 3332297,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Djoser and the Step Pyramid-9.png",
+      "sha256": "7bf4ab63f03844b9e2c00d20e354b3e8fb6026ca4cb2f8256a2913efcdf0e1f1",
+      "size": 3695029,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Hieroglyphs-17.png",
+      "sha256": "15022a15dee4fc5e95cedcb39be097250d81701063e1fbab40eae79bf09a1de8",
+      "size": 3472914,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Isis_ Guardian of Ancient Egypt.png",
+      "sha256": "91aa3d8ac656f0e669f8804e48bf18f5cf38f4f7b1865919c979e209de9b15ff",
+      "size": 3826146,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Hatshepsut_ builder of horizons-11.png",
+      "sha256": "0f0775fa3432c578b8da74ff7cb82cad0763fbdb216c60482f2b2aa8b6713c1b",
+      "size": 3641599,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Papyrus, Where Ideas Take Root-7.png",
+      "sha256": "3fcb7e1eba96a2afd890bca9c8b2c9e1871e92f8e53b510562ff96305b984501",
+      "size": 3578887,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Magdi Yacoub, healing with heart-15.png",
+      "sha256": "6c316439cbe7d77dc37d263b56056c225ad73cbca965e15312f05b565b1f2656",
+      "size": 3473129,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Egyptian Lotus-2.png",
+      "sha256": "d197959366572c4f253bbd701903d4932bf241d4471dc37acd4cd294c7a8d8c4",
+      "size": 3379791,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "catalogMapping": [
+    {
+      "name": "Tutankhamun’s Golden Mask.png",
+      "sha256": "66523d1488e3bde757beade838241a4e76c9f7a6530d6a097fac293d5c5be45d",
+      "size": 3594674,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 1,
+      "path": "public/brand/symbol-cards/card-01.png"
+    },
+    {
+      "name": "The Egyptian Scribe-8.png",
+      "sha256": "bf8201992f0cb532fa22d39dfb72d8f68aef365752f6f4df54156cbfdb2f89b1",
+      "size": 3368217,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 2,
+      "path": "public/brand/symbol-cards/card-02.png"
+    },
+    {
+      "name": "The Pyramids at Sunrise-4-2.png",
+      "sha256": "db5100b667973cf2183d135b3f9edc8a2ec66cb928df6c93c2165319cc199050",
+      "size": 3501593,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 3,
+      "path": "public/brand/symbol-cards/card-03.png"
+    },
+    {
+      "name": "The Royal Cartouche.png",
+      "sha256": "e6573d462cdf93bc3f1bfc0865f021ab93f56b7f0605d985cd527863a5eae799",
+      "size": 3580476,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 4,
+      "path": "public/brand/symbol-cards/card-04.png"
+    },
+    {
+      "name": "Ramesses II_ Monuments and peace.png",
+      "sha256": "e9e45a001e2ff71884ab8b7ef9e2f9f72c45bc30307af0a2f9f364d1db06252b",
+      "size": 3750910,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 5,
+      "path": "public/brand/symbol-cards/card-05.png"
+    },
+    {
+      "name": "Ramesses II's Colossi at Abu Simbel-12.png",
+      "sha256": "f32f25170b56f12820b632e28e56e264b4f5e78e6bb3ae8bd9372de14d86652a",
+      "size": 3563745,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 6,
+      "path": "public/brand/symbol-cards/card-06.png"
+    },
+    {
+      "name": "Old Cairo’s Sacred Heritage.png",
+      "sha256": "20b864ade5d52bf67d6ae97e852a00bb199ff6b42bd2d66897c076899e0d164d",
+      "size": 3635544,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 7,
+      "path": "public/brand/symbol-cards/card-07.png"
+    },
+    {
+      "name": "Isis_ Guardian of Ancient Egypt.png",
+      "sha256": "91aa3d8ac656f0e669f8804e48bf18f5cf38f4f7b1865919c979e209de9b15ff",
+      "size": 3826146,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 8,
+      "path": "public/brand/symbol-cards/card-08.png"
+    },
+    {
+      "name": "Anwar Sadat at a Historic Turning Point.png",
+      "sha256": "2461232d91662611cf6a048e9d52fd5d4484a9e9aa87c7783506c7797d323d0e",
+      "size": 3319706,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 9,
+      "path": "public/brand/symbol-cards/card-09.png"
+    },
+    {
+      "name": "Cleopatra VII_ queen of languages.png",
+      "sha256": "f6ba6b74d8a2ffd961f305ae75a65f4ff25b2c5c1db8e4b5c0621623db5711b3",
+      "size": 3425362,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 10,
+      "path": "public/brand/symbol-cards/card-10.png"
+    },
+    {
+      "name": "Egyptian Justice.png",
+      "sha256": "1f45f4217c74974bf56051b0d1a615d9da708adab10e8d9f0f61c58ca615fa13",
+      "size": 3512368,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 11,
+      "path": "public/brand/symbol-cards/card-11.png"
+    },
+    {
+      "name": "Egyptian Police Heritage in Ismailia.png",
+      "sha256": "d2a966571d321b0e137cd21384ef56d41be9596665270a62867e4f75ebed70f1",
+      "size": 3418694,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 12,
+      "path": "public/brand/symbol-cards/card-12.png"
+    },
+    {
+      "name": "Egyptian radio in a golden studio-19.png",
+      "sha256": "a5633078f0a5240d8e789fe6ef7995e453936454cc43aadf7fb63906f2663be5",
+      "size": 3332297,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 13,
+      "path": "public/brand/symbol-cards/card-13.png"
+    },
+    {
+      "name": "Hatshepsut_ builder of horizons-11.png",
+      "sha256": "0f0775fa3432c578b8da74ff7cb82cad0763fbdb216c60482f2b2aa8b6713c1b",
+      "size": 3641599,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 14,
+      "path": "public/brand/symbol-cards/card-14.png"
+    },
+    {
+      "name": "Saint Catherine’s Monastery and Manuscripts.png",
+      "sha256": "3f8258e52f846106e11666e98e9cc9477460a295001dace1eb231ff36bc3caf6",
+      "size": 3662902,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 15,
+      "path": "public/brand/symbol-cards/card-15.png"
+    },
+    {
+      "name": "Students writing Egypt’s next chapter-20.png",
+      "sha256": "c617986d1159e383988cdef0714b2d6260c3ace28dac96a66199777bbb510ac7",
+      "size": 3466705,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 16,
+      "path": "public/brand/symbol-cards/card-16.png"
+    },
+    {
+      "name": "The Bulaq Press-18.png",
+      "sha256": "0ff78c3ae838880dbef52a0585276bfdd22882025d74a9304ea33fa989a2ae7e",
+      "size": 3647876,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 17,
+      "path": "public/brand/symbol-cards/card-17.png"
+    },
+    {
+      "name": "Hieroglyphs-17.png",
+      "sha256": "15022a15dee4fc5e95cedcb39be097250d81701063e1fbab40eae79bf09a1de8",
+      "size": 3472914,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 18,
+      "path": "public/brand/symbol-cards/card-18.png"
+    },
+    {
+      "name": "The Suez Canal-16.png",
+      "sha256": "3f614496f19673f8b0340e112f383ac5a6f3945798b9cbab615bffb98e6a0c0e",
+      "size": 3595806,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 19,
+      "path": "public/brand/symbol-cards/card-19.png"
+    },
+    {
+      "name": "Magdi Yacoub, healing with heart-15.png",
+      "sha256": "6c316439cbe7d77dc37d263b56056c225ad73cbca965e15312f05b565b1f2656",
+      "size": 3473129,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 20,
+      "path": "public/brand/symbol-cards/card-20.png"
+    },
+    {
+      "name": "Naguib Mahfouz and Cairo’s stories-14.png",
+      "sha256": "d212fae1dfd46eb87f3cc92c9feae9eade80bac59b74c90dde2299a4abf5a2bd",
+      "size": 3551389,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 21,
+      "path": "public/brand/symbol-cards/card-21.png"
+    },
+    {
+      "name": "Ahmed Zewail_ Light of Discovery-13.png",
+      "sha256": "a541970a985db5babf0770f9cb0e766b1da488bb3af5e47189cba4fd9c406dc8",
+      "size": 3358066,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 22,
+      "path": "public/brand/symbol-cards/card-22.png"
+    },
+    {
+      "name": "Narmer Palette_ Unity in Stone-10.png",
+      "sha256": "b1c863cae3100d43fd4cc78e23e065fd4ce4bc0938145a6534a32387488f2ba7",
+      "size": 3652374,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 23,
+      "path": "public/brand/symbol-cards/card-23.png"
+    },
+    {
+      "name": "Djoser and the Step Pyramid-9.png",
+      "sha256": "7bf4ab63f03844b9e2c00d20e354b3e8fb6026ca4cb2f8256a2913efcdf0e1f1",
+      "size": 3695029,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 24,
+      "path": "public/brand/symbol-cards/card-24.png"
+    },
+    {
+      "name": "Papyrus, Where Ideas Take Root-7.png",
+      "sha256": "3fcb7e1eba96a2afd890bca9c8b2c9e1871e92f8e53b510562ff96305b984501",
+      "size": 3578887,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 25,
+      "path": "public/brand/symbol-cards/card-25.png"
+    },
+    {
+      "name": "The Rosetta Stone-6.png",
+      "sha256": "b6518d014c7d390278638397ed11456b494a5fcf58c8f90e6bcdc11e01a7b82c",
+      "size": 3624745,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 26,
+      "path": "public/brand/symbol-cards/card-26.png"
+    },
+    {
+      "name": "The Scarab-5.png",
+      "sha256": "3948dc9ee651530f90d26bc9418a16ae85af3cf34cd7195c75fdad99ac9ae6a0",
+      "size": 3373123,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 27,
+      "path": "public/brand/symbol-cards/card-27.png"
+    },
+    {
+      "name": "The Pyramids at Sunrise-4-2.png",
+      "sha256": "db5100b667973cf2183d135b3f9edc8a2ec66cb928df6c93c2165319cc199050",
+      "size": 3501593,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 28,
+      "path": "public/brand/symbol-cards/card-28.png"
+    },
+    {
+      "name": "The Ankh-3.png",
+      "sha256": "6b206b1cc2ed31fe24b4a776a6980bd82e0ea9a0be59de01bb4677e2878078e6",
+      "size": 3596847,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 29,
+      "path": "public/brand/symbol-cards/card-29.png"
+    },
+    {
+      "name": "Egyptian Lotus-2.png",
+      "sha256": "d197959366572c4f253bbd701903d4932bf241d4471dc37acd4cd294c7a8d8c4",
+      "size": 3379791,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 30,
+      "path": "public/brand/symbol-cards/card-30.png"
+    },
+    {
+      "name": "Eye of Horus-1.png",
+      "sha256": "6476f9edaba09f7894b5835795a6a347dcd25c808b2ed48421ab12388b82382a",
+      "size": 3894153,
+      "dimensions": [
+        1024,
+        1536
+      ],
+      "cardNumber": 31,
+      "path": "public/brand/symbol-cards/card-31.png"
+    }
+  ],
+  "unmatched": [
+    {
+      "name": "Egyptian Army Engineers Build the Crossing.png",
+      "sha256": "e712fad2a4056382d16b564b5bcd71cb86eaaac5dd412dcf0f7423790a65d835",
+      "size": 3489863,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "Mount Sinai at sunrise.png",
+      "sha256": "967ddea2c9fdf7febf844e76c19db4226c25c5e56a2ae981336a3047adda50ad",
+      "size": 3616214,
+      "dimensions": [
+        1024,
+        1536
+      ]
+    }
+  ],
+  "notes": [
+    "Catalog slots 03 and 28 both name The Pyramids. Both use the single supplied original Pyramids PNG; no artwork regenerated.",
+    "32 unique source PNGs preserved by original filename. 30 unique originals map to 31 existing slots. Army Engineers and Mount Sinai remain preserved, not silently substituted."
+  ],
+  "masterAppId": "c10ce5ee-badd-4774-bdd8-6155e1272588"
+}

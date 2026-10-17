@@ -10,8 +10,8 @@
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "test": "node --import tsx tests/acceptance.tsx",
-    "predev": "node scripts/prepare-pdf.mjs",
-    "prebuild": "node scripts/prepare-pdf.mjs"
+    "predev": "node scripts/prepare-pdf.mjs && node scripts/sync-symbol-cards.mjs",
+    "prebuild": "node scripts/prepare-pdf.mjs && node scripts/sync-symbol-cards.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

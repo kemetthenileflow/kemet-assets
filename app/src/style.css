@@ -13,8 +13,9 @@
 
 body {
   margin: 0;
-  background: #e9d7b7 url('/art/nile_sandstone.png') repeat;
+  background: radial-gradient(circle at 50% 15%, #f6ecce 0%, #ebd8a7 50%, #cbaf74 100%);
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 button, input, select, textarea {
@@ -101,12 +102,59 @@ h3 {
 /* Header & Identity */
 .temple-header {
   display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-bottom: 2px solid #b8892d55;
+  background: #fff9ecf8;
+}
+
+.kemet-banner-wrapper {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #110d06;
+  line-height: 0;
+  border-bottom: 2px solid #b8892d;
+}
+
+.kemet-banner-btn {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  line-height: 0;
+  min-width: 0;
+}
+.kemet-banner-btn:hover {
+  background: transparent;
+  border-color: transparent;
+}
+.kemet-banner-btn:active {
+  transform: none;
+}
+
+.kemet-banner-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.temple-header-toolbar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 14px;
-  padding: 14px 24px;
-  border-bottom: 2px solid #b8892d55;
-  background: #fff9ecf8;
+  padding: 10px 24px;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .brand-group {
@@ -1382,13 +1430,28 @@ audio, video {
 .thoth {
   position: fixed;
   bottom: 85px;
-  inset-inline-end: max(18px, calc((100vw - 1050px) / 2));
-  background: #007a83;
-  color: white;
-  box-shadow: 0 4px 14px #172a2e33;
+  inset-inline-end: max(18px, calc((100vw - 1100px) / 2));
+  background: linear-gradient(135deg, #0e858f 0%, #005a61 60%, #00373c 100%);
+  color: #fffdf8;
+  border: 2px solid #d4af37;
+  box-shadow: 0 4px 16px rgba(13, 19, 26, 0.35), 0 0 10px rgba(212, 175, 55, 0.4);
   z-index: 50;
-  border-radius: 24px;
-  padding: 10px 18px;
+  border-radius: 28px;
+  padding: 8px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.thoth:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 19, 26, 0.45), 0 0 16px rgba(212, 175, 55, 0.6);
+  border-color: #f7e199;
 }
 
 nav {
@@ -1399,17 +1462,36 @@ nav {
   width: min(1120px, 100%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 8px 8px max(8px, env(safe-area-inset-bottom));
-  background: #fff9ecfa;
+  padding: 6px 8px max(8px, env(safe-area-inset-bottom));
+  background: #fffcf5f5;
   border-top: 2px solid #b8892d;
+  box-shadow: 0 -4px 16px rgba(13, 19, 26, 0.1);
   z-index: 50;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
 }
 
 nav button {
-  padding: 9px 4px;
-  font-size: 0.84rem;
-  margin: 0 2px;
+  padding: 6px 4px;
+  font-size: 0.82rem;
+  margin: 0 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 8px;
+  border: 1px solid #d4af37;
+  background: linear-gradient(180deg, #fffdf8 0%, #f6edd7 100%);
+  color: #1a2528;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(13, 19, 26, 0.06);
+}
+
+nav button.selected {
+  background: linear-gradient(180deg, #ecd69f 0%, #caa452 100%);
+  border-color: #8b6508;
+  color: #0b1a1c;
+  box-shadow: inset 0 2px 4px rgba(13, 19, 26, 0.12), 0 2px 6px rgba(184, 137, 45, 0.3);
 }
 
 footer {
@@ -1435,6 +1517,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 /* RESPONSIVE DESIGN: 360px, 390px, 430px up to Desktop */
 @media (max-width: 768px) {
   .temple-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    gap: 0;
+  }
+  .temple-header-toolbar {
     flex-direction: column;
     align-items: stretch;
     padding: 10px 14px;
@@ -1524,3 +1612,699 @@ main { padding-bottom: 130px; }
 .ankh-help{position:fixed;bottom:88px;left:18px;z-index:80;max-width:min(370px,calc(100vw - 36px))}.ankh-help>button{display:flex;align-items:center;gap:8px;background:#fff8e8;border:2px solid #9c7425;color:#243735}.ankh-help img{width:23px;height:30px}.ankh-guide,.ankh-card{background:#fffaf0;border:2px solid #9c7425;padding:16px;border-radius:14px;box-shadow:0 8px 30px #0003;margin-top:8px}.ankh-card small{display:block;margin:12px 0}.ankh-guide button,.ankh-card button{margin:4px}.ankh-card:focus{outline:3px solid #007e83}
 
 .temple-path{padding:24px;border:1px solid #b28a3d;border-radius:20px;background:linear-gradient(110deg,#fffaf0ee,#f0dfbbee);margin:24px 0}.temple-path-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:center}.stone-steps{display:flex;flex-direction:column-reverse;align-items:center;gap:7px}.stone-steps button{min-height:64px;border-radius:6px 6px 2px 2px;border:2px solid #ad8338;background:linear-gradient(#f3dc9a,#dfbb6b);color:#33280f;box-shadow:0 4px 0 #927039;font-weight:bold}.stone-steps button[aria-pressed=true]{border-color:#00777d;background:#006c73;color:white;box-shadow:0 4px 0 #00474b}.stone-paths{background:#fffaf0;padding:20px;border-radius:14px;border:1px solid #c8ac70}.stone-paths>div,.all-paths{display:grid;gap:8px}.stone-paths button{text-align:start;min-height:46px}.stone-paths label{display:grid;gap:7px;margin-top:16px}.all-paths{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));padding-top:16px}.temple-path summary{padding:14px;cursor:pointer}.stone-steps button:focus-visible{outline:3px solid #00777d;outline-offset:4px}@media(max-width:700px){.temple-path-grid{grid-template-columns:1fr}.temple-path{padding:16px}.stone-steps button{font-size:14px}}
+
+/* Discover Your Egyptian Symbol Experience */
+.symbol-discover-page {
+  padding: 18px 24px 60px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.symbol-discover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 2px solid #ab843e44;
+  padding-bottom: 12px;
+}
+
+.symbol-header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.symbol-home-btn {
+  background: #fff9ec;
+  border: 1px solid #ab843e;
+  color: #172a2e;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.symbol-counter {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #553e18;
+}
+
+.symbol-grid-toggle-btn {
+  background: #007a83;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 9px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.symbol-grid-toggle-btn:hover {
+  background: #005f66;
+}
+
+.symbol-grid-toggle-btn.active {
+  background: #a51c28;
+}
+
+.symbol-card-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.symbol-card-frame {
+  width: 100%;
+  max-width: 680px;
+  background: #fffdf8;
+  border: 3px solid #b8892d;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 32px #172a2e1f;
+  transition: transform 0.2s ease;
+}
+
+.symbol-card-art-container {
+  width: 100%;
+  background: #110d06;
+  min-height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.symbol-card-original-img {
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  display: block;
+}
+
+.symbol-card-placeholder {
+  width: 100%;
+  padding: 36px 28px;
+  background: #fff8e8;
+  color: #172a2e;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #b8892d88;
+  margin: 12px;
+  border-radius: 12px;
+}
+
+.placeholder-watermark {
+  font-size: 3rem;
+  opacity: 0.15;
+  margin-bottom: 8px;
+  color: #ab843e;
+}
+
+.placeholder-card-number {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #007a83;
+  letter-spacing: 2px;
+}
+
+.placeholder-title {
+  font-size: 1.8rem;
+  margin: 6px 0 2px;
+  color: #4a3411;
+}
+
+.placeholder-arabic-title {
+  font-size: 1.4rem;
+  margin: 0 0 12px;
+  color: #007a83;
+}
+
+.placeholder-category-pill {
+  display: inline-block;
+  background: #ede2c8;
+  color: #553e18;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.placeholder-education-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 0 20px;
+  color: #2b2316;
+}
+
+.placeholder-checksum-note {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #7a633a;
+}
+
+.placeholder-awaiting-badge {
+  background: #fff0d4;
+  border: 1px solid #d4a755;
+  color: #7a4e0a;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.symbol-card-meta-panel {
+  padding: 20px 24px;
+  background: #fffcf5;
+  border-top: 2px solid #b8892d44;
+}
+
+.symbol-category-badge {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #007a83;
+  font-weight: bold;
+}
+
+.symbol-title {
+  font-size: 1.6rem;
+  margin: 6px 0 2px;
+  color: #44300f;
+}
+
+.symbol-arabic-title {
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+  color: #007a83;
+}
+
+.symbol-educational-text {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #282116;
+  margin: 0;
+}
+
+.symbol-controls-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 680px;
+  flex-wrap: wrap;
+}
+
+.symbol-nav-btn {
+  background: #fff9ec;
+  border: 2px solid #ab843e;
+  color: #172a2e;
+  font-weight: 600;
+  padding: 11px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.symbol-discover-btn {
+  background: linear-gradient(135deg, #007a83, #005a61);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1.08rem;
+  padding: 13px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px #007a8344;
+  transition: transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.symbol-discover-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px #007a8366;
+}
+
+.symbol-recent-discoveries {
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  padding: 14px 20px;
+  background: #fff9ec;
+  border: 1px solid #ab843e44;
+  border-radius: 12px;
+}
+
+.symbol-recent-discoveries h4 {
+  margin: 0 0 10px;
+  font-size: 0.95rem;
+  color: #553e18;
+}
+
+.symbol-history-chips {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.symbol-history-chip {
+  font-size: 0.84rem;
+  padding: 4px 10px;
+  border-radius: 14px;
+  background: #ede4d1;
+  border: 1px solid #ab843e66;
+  color: #4a3411;
+  cursor: pointer;
+  min-height: 28px;
+  margin: 2px;
+}
+
+.symbol-history-chip.current {
+  background: #007a83;
+  color: #fff;
+  border-color: #005a61;
+}
+
+/* 31 Cards Gallery Grid */
+.symbol-cards-grid-view {
+  width: 100%;
+}
+
+.symbol-grid-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-weight: bold;
+  color: #553e18;
+}
+
+.symbol-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.symbol-grid-item {
+  background: #fffdf8;
+  border: 2px solid #ab843e66;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.symbol-grid-item:hover {
+  transform: translateY(-2px);
+  border-color: #007a83;
+  box-shadow: 0 6px 16px #00000014;
+}
+
+.symbol-grid-item.selected {
+  border-color: #007a83;
+  background: #f0fbfb;
+  box-shadow: 0 0 0 2px #007a83;
+}
+
+.grid-item-thumbnail {
+  background: #172a2e;
+  border-radius: 8px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 10px;
+  color: #ab843e;
+}
+
+.grid-item-num {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #ede2c8;
+}
+
+.grid-item-symbol-icon {
+  font-size: 2rem;
+}
+
+.grid-item-info h5 {
+  margin: 0 0 2px;
+  font-size: 0.95rem;
+  color: #44300f;
+  line-height: 1.25;
+}
+
+.grid-item-ar {
+  display: block;
+  font-size: 0.85rem;
+  color: #007a83;
+  margin-bottom: 4px;
+}
+
+.grid-item-cat {
+  display: block;
+  font-size: 0.72rem;
+  color: #7a633a;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .symbol-discover-page {
+    padding: 12px 14px 40px;
+  }
+  .symbol-card-art-container {
+    min-height: 320px;
+  }
+  .symbol-controls-bar {
+    gap: 8px;
+  }
+  .symbol-nav-btn {
+    min-width: 90px;
+    padding: 9px 14px;
+  }
+  .symbol-discover-btn {
+    padding: 11px 18px;
+    font-size: 0.98rem;
+  }
+  .symbol-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* ==========================================================================
+   EGYPTIAN 3D ICONOGRAPHY, BACKGROUNDS & FUNCTIONAL MEDIA UX
+   ========================================================================== */
+
+/* Universal Kemet Icon Alignment & Lighting */
+.kemet-icon-wrapper {
+  flex-shrink: 0;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+button:hover .kemet-icon-wrapper {
+  transform: scale(1.06);
+}
+
+/* Discovery Bar Enhanced with 3D Accents */
+.discovery-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 10px 16px;
+  background: linear-gradient(180deg, #fbf5e5 0%, #f1e0be 100%);
+  border-bottom: 2px solid #b8860b;
+  box-shadow: 0 2px 8px rgba(13, 19, 26, 0.06);
+}
+
+.discovery-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #fffcf6;
+  border: 1px solid #d4af37;
+  color: #00535b;
+  font-weight: 600;
+  font-size: 0.92rem;
+  box-shadow: 0 2px 4px rgba(13, 19, 26, 0.06);
+  transition: all 0.15s ease;
+}
+
+.discovery-link:hover {
+  background: #fff8e8;
+  border-color: #8b6508;
+  box-shadow: 0 3px 8px rgba(184, 134, 11, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Gateway Grid & Icon Headers */
+.gateway-icon-header {
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #fffcf5 0%, #faecd2 100%);
+  border: 1px solid #d4af37;
+  box-shadow: 0 3px 6px rgba(13, 19, 26, 0.08), inset 0 1px 0 #ffffff;
+}
+
+/* Stepped Pyramid Buttons & Path Controls */
+.pyramid-step-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%);
+  color: #172a2e;
+  font-weight: bold;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.path-route-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #c9a552;
+  background: linear-gradient(180deg, #fffcf5 0%, #f6ebd2 100%);
+  color: #172a2e;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(13, 19, 26, 0.06);
+  transition: all 0.15s ease;
+}
+
+.path-route-btn:hover {
+  background: #fbf0d8;
+  border-color: #8b6508;
+  transform: translateX(3px);
+}
+
+/* Document Cards with Egyptian Seals */
+.document-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid #d4af37;
+  background: linear-gradient(160deg, #fffdf8 0%, #fcf6ea 100%);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(13, 19, 26, 0.08);
+}
+
+.document-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.document-card-top h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+  color: #172a2e;
+  line-height: 1.3;
+}
+
+.doc-page-count {
+  font-size: 0.82rem;
+  color: #00535b;
+  font-weight: 500;
+}
+
+.document-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.document-card-actions button,
+.document-card-actions a.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+}
+
+/* Media Library Tiles & Playback Cards */
+.tile-icon-row {
+  margin-bottom: 6px;
+}
+
+.media-title-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.media-badge-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Authentic Egyptian Video Resource Card (Replacing Raw YouTube Link) */
+.youtube-video-card {
+  margin-top: 24px;
+  border: 2px solid #b8860b;
+  border-radius: 14px;
+  background: linear-gradient(160deg, #fffef9 0%, #faf3e2 100%);
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(13, 19, 26, 0.1);
+}
+
+.video-card-badge-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.video-provider-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffebeb;
+  border: 1px solid #ff8080;
+  color: #cc0000;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.video-topic-tag {
+  font-size: 0.84rem;
+  color: #554425;
+  font-weight: 600;
+  background: #f4e8c1;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #d4af37;
+}
+
+.video-card-body {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 680px) {
+  .video-card-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-preview-standin {
+  background: linear-gradient(135deg, #1c2b36 0%, #0d161d 100%);
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.video-preview-title {
+  color: #f7e199;
+  font-size: 0.74rem;
+  line-height: 1.2;
+}
+
+.video-details h4 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  color: #172a2e;
+}
+
+.video-desc {
+  margin: 0 0 14px;
+  font-size: 0.92rem;
+  color: #4a3e28;
+  line-height: 1.45;
+}
+
+.btn-youtube-watch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #cc0000 0%, #990000 100%);
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 10px 18px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(204, 0, 0, 0.35);
+  transition: all 0.15s ease;
+}
+
+.btn-youtube-watch:hover {
+  background: linear-gradient(135deg, #e60000 0%, #b30000 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(204, 0, 0, 0.5);
+}
+
+.video-details .disclaimer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: #6d5b3d;
+  font-style: normal;
+}
+
