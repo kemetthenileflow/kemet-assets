@@ -1,0 +1,2 @@
+PASS TRANSPORT: gzip restores every byte of original 172-page PDF and browser-stream SHA verification passes
+PASS TRANSPORT: corrupt transport is rejected

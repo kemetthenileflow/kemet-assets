@@ -69,7 +69,7 @@ const REPORT_SUMMARY_TEXT = `KEMET review: see the detailed versioned review-rep
 export default function App() {
   const [route, setRoute] = useState<Route>(() => ({ page: new URLSearchParams(window.location.search).get('practice') === 'voice' ? 'voice' : 'home' }));
   const [lang, setLang] = useState<'en' | 'ar'>(read('kemet_ui_language', 'en'));
-  const [intro, setIntro] = useState(true);
+  const [intro, setIntro] = useState(() => new URLSearchParams(window.location.search).get('practice') !== 'voice');
   const [thoth, setThoth] = useState(false);
   const [dataset, setDataset] = useState('unit1');
   const [group, setGroup] = useState(0);
