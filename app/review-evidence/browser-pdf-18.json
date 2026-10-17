@@ -1,0 +1,118 @@
+{
+  "app": "c10ce5ee-badd-4774-bdd8-6155e1272588",
+  "method": "Actual Work browser interaction: open reader, first page rendered status, last page rendered status",
+  "documents": [
+    {
+      "documentsListIndex": 0,
+      "pageCount": 172,
+      "firstPageRendered": true,
+      "lastPageRendered": true,
+      "unit1Page12ShortcutRendered": true
+    },
+    {
+      "documentsListIndex": 1,
+      "pageCount": 31,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 2,
+      "pageCount": 112,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 3,
+      "pageCount": 108,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 4,
+      "pageCount": 7,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 5,
+      "pageCount": 110,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 6,
+      "pageCount": 214,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 7,
+      "pageCount": 35,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 8,
+      "pageCount": 215,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 9,
+      "pageCount": 18,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 10,
+      "pageCount": 16,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 11,
+      "pageCount": 8,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 12,
+      "pageCount": 18,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 13,
+      "pageCount": 43,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 14,
+      "pageCount": 7,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 15,
+      "pageCount": 41,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 16,
+      "pageCount": 41,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    },
+    {
+      "documentsListIndex": 17,
+      "pageCount": 37,
+      "firstPageRendered": true,
+      "lastPageRendered": true
+    }
+  ],
+  "ministryPart1": "Browser-rendered first and last pages after verified transport compatibility update",
+  "limitations": "This is first/last browser rendering, not visual comparison of every page or a microphone test.",
+  "microphoneBrowserCheck": "Actual iframe recording action returned policy-block message and standalone practice link; no personal hardware recording"
+}
