@@ -1,0 +1,10 @@
+import './acceptance';
+import React from 'react';
+import assert from 'node:assert/strict';
+import {render,screen,fireEvent,cleanup} from '@testing-library/react';
+import App from '../src/App';
+cleanup();window.scrollTo=()=>{};render(<App/>);
+fireEvent.click(screen.getAllByText('All 18 original PDFs')[0]);assert.ok(screen.getByRole('heading',{name:'Original curriculum & KEMET PDFs'}));
+fireEvent.click(screen.getAllByRole('button',{name:'Read original PDF'})[0]);assert.ok(screen.getByRole('region',{name:'Original PDF reader'}));
+fireEvent.click(screen.getByRole('button',{name:'← Back'}));assert.ok(screen.getByRole('heading',{name:'Original curriculum & KEMET PDFs'}));
+fireEvent.click(screen.getByRole('button',{name:'Kemet Home'}));assert.ok(screen.getByRole('heading',{name:'Your Unit 1 learning journey'}));cleanup();console.log('PASS NAVIGATION: PDF Back returns to its document list and brand control returns Home');

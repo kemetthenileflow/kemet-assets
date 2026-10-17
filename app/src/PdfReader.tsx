@@ -55,7 +55,7 @@ export function Pdf({ id, page = 1, onSkip }: { id: string; page?: number; onSki
         const loaded = await task.promise;
         if (disposed) return;
         setTotal(loaded.numPages); setCurrent(p => Math.min(Math.max(1, p), loaded.numPages)); setPdf(loaded);
-      } catch (e: any) { if (!disposed) { setError('The original PDF could not be opened. Retry, or download the original below.'); setLoading(false); } }
+      } catch (e: any) { if (!disposed) { console.warn('Original PDF load failed:', e?.name, e?.message); setError('The original PDF could not be opened. Retry, or download the original below.'); setLoading(false); } }
     })();
     return () => { disposed = true; rendering.current?.cancel(); task?.destroy()?.catch(() => {}); };
   }, [file?.path, retry]);

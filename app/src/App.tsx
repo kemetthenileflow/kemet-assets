@@ -1,5 +1,5 @@
 import { AnkhHelp } from './AnkhHelp';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import core from './data/core.json';
 import blueprint from './data/blueprint.json';
 import catalog from './data/catalog.json';
@@ -80,7 +80,9 @@ export default function App() {
   const [size, setSize] = useState(5);
   const [category, setCategory] = useState('Vocabulary');
 
-  const go = (r: Route) => {
+  const routeHistory = useRef<Route[]>([]);
+  const go = (r: Route, remember = true) => {
+    if (remember && JSON.stringify(r) !== JSON.stringify(route)) routeHistory.current.push({...route, category});
     trackNavigation(r.page, route.page, r);
     if (r.category) setCategory(r.category);
     setRoute(r);
@@ -90,7 +92,7 @@ export default function App() {
     }
   };
 
-  const back = () => go({ page: 'home' });
+  const back = () => go(routeHistory.current.pop() || {page:'home'}, false);
 
   useEffect(() => {
     const stop = (e: Event) => {
@@ -197,7 +199,7 @@ export default function App() {
 
       <header className="temple-header">
         <div className="brand-group" style={{ justifyContent: "center" }}>
-          <button className="brand-button" onClick={back} aria-label="Kemet Home">
+          <button className="brand-button" onClick={() => go({page: 'home'})} aria-label="Kemet Home">
             <Logo />
           </button>
           <div className="header-identity" style={{ textAlign: "center" }}>
@@ -237,7 +239,7 @@ export default function App() {
         <p className="status">{storageStatus()}</p>
         {!['home'].includes(route.page) && (
           <button className="back-navigation-btn" onClick={back}>
-            ← {lang === 'ar' ? 'الرئيسية' : 'Home'} / Back
+            ← {lang === 'ar' ? 'رجوع' : 'Back'}
           </button>
         )}
 
