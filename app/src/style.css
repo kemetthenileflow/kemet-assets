@@ -2308,3 +2308,11 @@ button:hover .kemet-icon-wrapper {
   font-style: normal;
 }
 
+
+/* Original artwork gallery: preserve full card, visible focus and touch targets. */
+.symbol-grid-item { width:100%; min-width:0; text-align:start; font:inherit; }
+.symbol-grid-item:focus-visible { outline:3px solid #007a83; outline-offset:3px; }
+.grid-item-thumbnail { width:100%; height:auto; aspect-ratio:2/3; overflow:hidden; background:#eee2c6; }
+.grid-item-num { z-index:1; padding:2px 6px; border-radius:4px; background:#172a2ee6; }
+.video-preview-standin img { width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px; }
+@media(max-width:420px){ .symbol-controls-bar { flex-wrap:wrap; } .symbol-grid-item {padding:7px;} }

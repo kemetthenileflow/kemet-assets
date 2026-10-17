@@ -1,0 +1,160 @@
+{
+  "commit": "a260b0b37d05189ea66d558f60abf67e0715c339",
+  "cards": [
+    {
+      "cardNumber": 1,
+      "path": "public/brand/symbol-cards/card-01.png",
+      "sha256": "66523d1488e3bde757beade838241a4e76c9f7a6530d6a097fac293d5c5be45d"
+    },
+    {
+      "cardNumber": 2,
+      "path": "public/brand/symbol-cards/card-02.png",
+      "sha256": "bf8201992f0cb532fa22d39dfb72d8f68aef365752f6f4df54156cbfdb2f89b1"
+    },
+    {
+      "cardNumber": 3,
+      "path": "public/brand/symbol-cards/card-03.png",
+      "sha256": "db5100b667973cf2183d135b3f9edc8a2ec66cb928df6c93c2165319cc199050"
+    },
+    {
+      "cardNumber": 4,
+      "path": "public/brand/symbol-cards/card-04.png",
+      "sha256": "e6573d462cdf93bc3f1bfc0865f021ab93f56b7f0605d985cd527863a5eae799"
+    },
+    {
+      "cardNumber": 5,
+      "path": "public/brand/symbol-cards/card-05.png",
+      "sha256": "e9e45a001e2ff71884ab8b7ef9e2f9f72c45bc30307af0a2f9f364d1db06252b"
+    },
+    {
+      "cardNumber": 6,
+      "path": "public/brand/symbol-cards/card-06.png",
+      "sha256": "f32f25170b56f12820b632e28e56e264b4f5e78e6bb3ae8bd9372de14d86652a"
+    },
+    {
+      "cardNumber": 7,
+      "path": "public/brand/symbol-cards/card-07.png",
+      "sha256": "20b864ade5d52bf67d6ae97e852a00bb199ff6b42bd2d66897c076899e0d164d"
+    },
+    {
+      "cardNumber": 8,
+      "path": "public/brand/symbol-cards/card-08.png",
+      "sha256": "91aa3d8ac656f0e669f8804e48bf18f5cf38f4f7b1865919c979e209de9b15ff"
+    },
+    {
+      "cardNumber": 9,
+      "path": "public/brand/symbol-cards/card-09.png",
+      "sha256": "2461232d91662611cf6a048e9d52fd5d4484a9e9aa87c7783506c7797d323d0e"
+    },
+    {
+      "cardNumber": 10,
+      "path": "public/brand/symbol-cards/card-10.png",
+      "sha256": "f6ba6b74d8a2ffd961f305ae75a65f4ff25b2c5c1db8e4b5c0621623db5711b3"
+    },
+    {
+      "cardNumber": 11,
+      "path": "public/brand/symbol-cards/card-11.png",
+      "sha256": "1f45f4217c74974bf56051b0d1a615d9da708adab10e8d9f0f61c58ca615fa13"
+    },
+    {
+      "cardNumber": 12,
+      "path": "public/brand/symbol-cards/card-12.png",
+      "sha256": "d2a966571d321b0e137cd21384ef56d41be9596665270a62867e4f75ebed70f1"
+    },
+    {
+      "cardNumber": 13,
+      "path": "public/brand/symbol-cards/card-13.png",
+      "sha256": "a5633078f0a5240d8e789fe6ef7995e453936454cc43aadf7fb63906f2663be5"
+    },
+    {
+      "cardNumber": 14,
+      "path": "public/brand/symbol-cards/card-14.png",
+      "sha256": "0f0775fa3432c578b8da74ff7cb82cad0763fbdb216c60482f2b2aa8b6713c1b"
+    },
+    {
+      "cardNumber": 15,
+      "path": "public/brand/symbol-cards/card-15.png",
+      "sha256": "3f8258e52f846106e11666e98e9cc9477460a295001dace1eb231ff36bc3caf6"
+    },
+    {
+      "cardNumber": 16,
+      "path": "public/brand/symbol-cards/card-16.png",
+      "sha256": "c617986d1159e383988cdef0714b2d6260c3ace28dac96a66199777bbb510ac7"
+    },
+    {
+      "cardNumber": 17,
+      "path": "public/brand/symbol-cards/card-17.png",
+      "sha256": "0ff78c3ae838880dbef52a0585276bfdd22882025d74a9304ea33fa989a2ae7e"
+    },
+    {
+      "cardNumber": 18,
+      "path": "public/brand/symbol-cards/card-18.png",
+      "sha256": "15022a15dee4fc5e95cedcb39be097250d81701063e1fbab40eae79bf09a1de8"
+    },
+    {
+      "cardNumber": 19,
+      "path": "public/brand/symbol-cards/card-19.png",
+      "sha256": "3f614496f19673f8b0340e112f383ac5a6f3945798b9cbab615bffb98e6a0c0e"
+    },
+    {
+      "cardNumber": 20,
+      "path": "public/brand/symbol-cards/card-20.png",
+      "sha256": "6c316439cbe7d77dc37d263b56056c225ad73cbca965e15312f05b565b1f2656"
+    },
+    {
+      "cardNumber": 21,
+      "path": "public/brand/symbol-cards/card-21.png",
+      "sha256": "d212fae1dfd46eb87f3cc92c9feae9eade80bac59b74c90dde2299a4abf5a2bd"
+    },
+    {
+      "cardNumber": 22,
+      "path": "public/brand/symbol-cards/card-22.png",
+      "sha256": "a541970a985db5babf0770f9cb0e766b1da488bb3af5e47189cba4fd9c406dc8"
+    },
+    {
+      "cardNumber": 23,
+      "path": "public/brand/symbol-cards/card-23.png",
+      "sha256": "b1c863cae3100d43fd4cc78e23e065fd4ce4bc0938145a6534a32387488f2ba7"
+    },
+    {
+      "cardNumber": 24,
+      "path": "public/brand/symbol-cards/card-24.png",
+      "sha256": "7bf4ab63f03844b9e2c00d20e354b3e8fb6026ca4cb2f8256a2913efcdf0e1f1"
+    },
+    {
+      "cardNumber": 25,
+      "path": "public/brand/symbol-cards/card-25.png",
+      "sha256": "3fcb7e1eba96a2afd890bca9c8b2c9e1871e92f8e53b510562ff96305b984501"
+    },
+    {
+      "cardNumber": 26,
+      "path": "public/brand/symbol-cards/card-26.png",
+      "sha256": "b6518d014c7d390278638397ed11456b494a5fcf58c8f90e6bcdc11e01a7b82c"
+    },
+    {
+      "cardNumber": 27,
+      "path": "public/brand/symbol-cards/card-27.png",
+      "sha256": "3948dc9ee651530f90d26bc9418a16ae85af3cf34cd7195c75fdad99ac9ae6a0"
+    },
+    {
+      "cardNumber": 28,
+      "path": "public/brand/symbol-cards/card-28.png",
+      "sha256": "db5100b667973cf2183d135b3f9edc8a2ec66cb928df6c93c2165319cc199050"
+    },
+    {
+      "cardNumber": 29,
+      "path": "public/brand/symbol-cards/card-29.png",
+      "sha256": "6b206b1cc2ed31fe24b4a776a6980bd82e0ea9a0be59de01bb4677e2878078e6"
+    },
+    {
+      "cardNumber": 30,
+      "path": "public/brand/symbol-cards/card-30.png",
+      "sha256": "d197959366572c4f253bbd701903d4932bf241d4471dc37acd4cd294c7a8d8c4"
+    },
+    {
+      "cardNumber": 31,
+      "path": "public/brand/symbol-cards/card-31.png",
+      "sha256": "6476f9edaba09f7894b5835795a6a347dcd25c808b2ed48421ab12388b82382a"
+    }
+  ]
+}

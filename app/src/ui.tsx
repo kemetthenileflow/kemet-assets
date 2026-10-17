@@ -388,7 +388,7 @@ export function MediaLibrary({
               />
             </div>
             <div className="story-words-grid">
-              {storyAudioEntries.slice(0, 18).map((w) => {
+              {storyAudioEntries.map((w) => {
                 const clip = wordAsset(w.word);
                 return (
                   <div className="story-word-card panel" key={w.id}>
@@ -405,7 +405,7 @@ export function MediaLibrary({
               })}
             </div>
             {storyAudioEntries.length > 18 && (
-              <p className="note">Showing first 18 of {storyAudioEntries.length} matching story word audio files.</p>
+              <p className="note">All {storyAudioEntries.length} matching story word audio files are available below.</p>
             )}
             <div className="youtube-video-card panel">
               <div className="video-card-badge-row">
@@ -417,13 +417,14 @@ export function MediaLibrary({
               </div>
               <div className="video-card-body">
                 <div className="video-preview-standin">
+                  <img src="https://i.ytimg.com/vi/m-ORDDluvco/hqdefault.jpg" alt="Chapter 1 video thumbnail" loading="lazy" />
                   <KemetIcon name="video" size={44} />
                   <span className="video-preview-title">A Dream of Adventure — Chapter 1 Video Adaptation</span>
                 </div>
                 <div className="video-details">
                   <h4>Watch Chapter 1 Video Narrative</h4>
                   <p className="video-desc">
-                    Explore the audiovisual adaptation of Arthur Conan Doyle's <em>The Lost World</em> Chapter 1, covering Malone's ambitious journey to South America.
+                    Explore the owner-supplied video for <em>The Lost World</em>, Chapter 1. Open the original video to check its captions and content.
                   </p>
                   <a href={catalog.youtube.url} target="_blank" rel="noreferrer" className="btn-youtube-watch">
                     <KemetIcon name="play" size={18} />
