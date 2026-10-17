@@ -2316,3 +2316,12 @@ button:hover .kemet-icon-wrapper {
 .grid-item-num { z-index:1; padding:2px 6px; border-radius:4px; background:#172a2ee6; }
 .video-preview-standin img { width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:10px; }
 @media(max-width:420px){ .symbol-controls-bar { flex-wrap:wrap; } .symbol-grid-item {padding:7px;} }
+
+/* Intro: original video, responsive accessible sound controls. */
+.intro { gap: .5rem; }
+.intro video { flex-shrink: 1; min-height: 0; max-height: 60dvh; }
+.intro-status { margin: 0; text-align: center; max-width: 65ch; }
+.intro-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
+.intro button, .intro select { min-height: 44px; }
+.intro button:focus-visible, .intro select:focus-visible { outline: 3px solid #e6c46e; outline-offset: 3px; }
+@media (max-height: 500px) { .intro { justify-content: flex-start; } .intro video { max-height: 45dvh; } }

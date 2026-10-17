@@ -539,8 +539,8 @@ export function MediaLibrary({
 
 export function Intro({ close, replay = false }: { close: () => void; replay?: boolean }) {
   const ref = useRef<HTMLVideoElement>(null);
-  const [manual, setManual] = useState(false);
-  const [muted, setMuted] = useState(true);
+  const [playback, setPlayback] = useState<'starting' | 'playing' | 'paused' | 'blocked' | 'error'>('starting');
+  const [muted, setMuted] = useState(false);
   const a = asset('intro');
 
   useEffect(() => {
@@ -565,28 +565,55 @@ export function Intro({ close, replay = false }: { close: () => void; replay?: b
       sessionStorage.setItem('kemet_intro_seen', 'yes');
     } catch {}
     write('kemet_intro_once', true);
-    if (replay && ref.current) { ref.current.muted = false; setMuted(false); }
-    ref.current?.play().catch(() => setManual(true));
+    let disposed = false;
+    const video = ref.current;
+    if (video) {
+      video.muted = false;
+      // Never fall back to silent autoplay: a blocked attempt needs a gesture.
+      video.play().catch(() => { if (!disposed) setPlayback('blocked'); });
+    }
+    return () => { disposed = true; };
   }, []);
 
   return (
-    <div role="dialog" aria-modal="true" aria-label="Kemet introduction" className="intro">
+    <div role="dialog" aria-modal="true" aria-label="Kemet introduction" className="intro" onKeyDown={event => { if (event.key === 'Escape') close(); }}>
       <button autoFocus onClick={close}>
         Skip — Enter Home
       </button>
-      <video ref={ref} src={a?.path} muted={muted} playsInline onEnded={close} onError={close} />
-      {manual && <button onClick={() => ref.current?.play().catch(() => setManual(true))}>Play</button>}
-      <button
-        onClick={() => {
-          if (ref.current) {
-            ref.current.muted = false; setMuted(false);
-            ref.current.play().catch(() => setManual(true));
-          }
-        }}
-      >
-        Play with sound
-      </button>
-      <button onClick={() => { const next=!muted;setMuted(next);if(ref.current)ref.current.muted=next; }}>{muted?'Unmute / تشغيل الصوت':'Mute / كتم الصوت'}</button>
+      <video
+        id="kemet-intro-video" ref={ref} src={a?.path} muted={muted} playsInline
+        aria-label="KEMET introductory video" onEnded={close}
+        onPlaying={() => setPlayback('playing')}
+        onPause={() => setPlayback(current => current === 'blocked' || current === 'error' ? current : 'paused')}
+        onWaiting={() => setPlayback(current => current === 'playing' ? 'starting' : current)}
+        onVolumeChange={() => { if (ref.current) setMuted(ref.current.muted || ref.current.volume === 0); }}
+        onError={() => setPlayback('error')}
+      />
+      <p role="status" className="intro-status">
+        {playback === 'blocked' ? 'Autoplay with sound was blocked. Choose Play with Sound to begin.' :
+          playback === 'error' ? 'The introduction could not load. Retry playback or enter Home.' :
+          playback === 'paused' ? 'Video paused.' :
+          playback === 'playing' ? (muted ? 'Playing · Sound off' : 'Playing · Sound on') : 'Starting video…'}
+      </p>
+      <div className="intro-controls">
+        {playback !== 'playing' && <button aria-controls="kemet-intro-video" onClick={() => {
+          const video = ref.current;
+          if (!video) return;
+          video.muted = false;
+          if (video.volume === 0) video.volume = 1;
+          setMuted(false);
+          setPlayback('starting');
+          video.play().catch(() => setPlayback(video.error ? 'error' : 'blocked'));
+        }}>Play with Sound / تشغيل بالصوت</button>}
+        {playback === 'playing' && <button aria-controls="kemet-intro-video" onClick={() => ref.current?.pause()}>Pause / إيقاف مؤقت</button>}
+        <button aria-controls="kemet-intro-video" onClick={() => {
+          const video = ref.current;
+          if (!video) return;
+          video.muted = !(video.muted || video.volume === 0);
+          if (!video.muted && video.volume === 0) video.volume = 1;
+          setMuted(video.muted);
+        }}>{muted ? 'Unmute / تشغيل الصوت' : 'Mute / Turn Sound Off / كتم الصوت'}</button>
+      </div>
       <label>
         Introduction{' '}
         <select

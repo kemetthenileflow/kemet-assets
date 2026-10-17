@@ -34,3 +34,7 @@ MASTER: https://aistudio.google.com/apps/c10ce5ee-badd-4774-bdd8-6155e1272588?sh
 
 ## Limitations
 Startup asset restoration requires access to the pinned public GitHub files only when local images are missing or fail checksum. Original PNGs are around 3.3–3.9 MB each; byte preservation was prioritized over recompression. Gallery uses lazy loading.
+
+
+## UX requirement 11: introductory video with sound
+Implemented and verified in Chrome MASTER Preview. See `intro-sound-2026-10-17.md` for actual media state evidence, responsive checks, and pending Safari/mobile-device validation. Original video/audio preserved.
