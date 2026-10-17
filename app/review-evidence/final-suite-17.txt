@@ -1,0 +1,269 @@
+acceptance: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+review: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+PASS REVIEW unit1 all words reachable without repetition
+PASS REVIEW story all words reachable without repetition
+PASS REVIEW recording has stop enabled
+PASS REVIEW recording produces playable local URL and releases track
+PASS REVIEW record again revokes previous object URL
+PASS REVIEW delete removes recording and revokes URL
+PASS REVIEW NotAllowedError explicit recovery
+PASS REVIEW NotFoundError explicit recovery
+PASS REVIEW NotReadableError explicit recovery
+PASS REVIEW late stream after cancellation is closed
+PASS REVIEW leaving recording screen releases microphone
+PASS REVIEW all 18 documents have an accessible reader action
+PASS REVIEW reading route selects Reading instead of stale category
+PASS REVIEW listening shortcut opens curriculum recordings
+games: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+PASS GAME 4 pairs: all 66 matched, partial final set completed, replay returned to set 1
+PASS GAME 6 pairs: all 66 matched, partial final set completed, replay returned to set 1
+PASS GAME 8 pairs: all 66 matched, partial final set completed, replay returned to set 1
+activity-replay: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+PASS REPLAY: all three detective repairs and restart
+PASS REPLAY: story wrong/correct feedback and replay
+PASS EVIDENCE: verbatim span does not earn an automatic correctness grade or enter source330
+PASS BUILDER: reset clears stale success; next round resets tokens and feedback together
+mic-policy: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+PASS MICROPHONE POLICY: blocked frame does not request hardware and offers standalone practice
+navigation: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+PASS NAVIGATION: PDF Back returns to its document list and brand control returns Home
+listening: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+PASS LISTENING: each media shortcut preserves its selected recording and correct 16/14-question pool
+help: exit 0
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+PASS HELP: tap intercept, Arabic explanation, unknown controls not stored, Escape restores navigation
+pdf-transport: exit 0
+PASS TRANSPORT: gzip restores every byte of original 172-page PDF and browser-stream SHA verification passes
+PASS TRANSPORT: already-decoded server response is verified without double decompression
+PASS TRANSPORT: corrupt transport is rejected

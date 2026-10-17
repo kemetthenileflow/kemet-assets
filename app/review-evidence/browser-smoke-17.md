@@ -13,3 +13,9 @@ Remaining: final full Studio source-byte comparison/export and exhaustive UI/lin
 Source verification at7b27a35: Studio read-only report23/23 runtime src/package/lock/index/Vite Git blobs match,0extra/missing/mismatch. Canonical18/18 PDF SHA256 match in runtime after decompressing Ministry. Final ZIP reexport remains separate pending work.
 
 Sentence builder real browser: round1 correct construction and next toConditionals. A transient render showed previous tokens until effect; reset also retained success. Follow-up change derives shuffled tokens from current round and batches round resets; regression verifies reset clears success and next removes prior tokens.
+
+Reading live check: six passage headings rendered; B3 practice opened S1-16, B3 source text and procedural hint; response remained unsubmitted.
+
+Final local suite after grammar fix: all9 entrypoints exit0 (acceptance/review/games/activity-replay/mic-policy/navigation/listening/help/pdf-transport). Imported baseline assertions repeat across scripts; do not sum repeated PASS lines as unique tests. TypeScript and production build passed; build warns about a chunk above500KB.
+
+Post-fix live browser: constructed correct GP01, Reset Construction removed feedback and restored selectable tokens. Next Grammar Challenge immediately showed GP02 conditional tokens with empty construction and no stale success.
