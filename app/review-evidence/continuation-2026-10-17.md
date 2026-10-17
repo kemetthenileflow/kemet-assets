@@ -19,3 +19,10 @@ Added a separate tested Ankh help control, compact five-stage responsive pyramid
 
 ## Export audit
 An exported verification-workspace ZIP contained 727 entries; CRC passed. All intended public files were present and matched the local originals except an unrelated temporary hidden PDF copy. The revised activities source matched exactly. Export proves editor contents, not durable server save: the large PDF batch returned to Unsaved changes twice. The original full-asset review copy c10ce5ee-badd-4774-bdd8-6155e1272588 subsequently loaded and received a 30-file source update; its runtime validation is in progress.
+
+## Confirmed live checks and transport fix
+The full original review copy opened successfully and saved the updated source. In its Preview, PDF.js rendered Standard page 108/108 (canvas accessible name and visible original page checked). Ankh help on First page displayed Arabic help while keeping the PDF on page 108; Close exited help. Ask Thoth remained present.
+
+AI Studio explicitly rejected the 35,522,435-byte Ministry PDF: `33.9 MB exceeds the 30 MB limit`. A gzip transport is 27,181,046 bytes. Node's browser-compatible DecompressionStream test reconstructed every original PDF byte and passed SHA-256 `7168dc0ef9e324b2f429116f0010a2208fb8b393654a83df4c1b9ddeded5ffa9`; corrupt data was rejected. The reader and untouched-original download both reconstruct and verify the original, never OCR/retype it. The gzip asset/code import was submitted to the full-asset review copy; final live Ministry rendering still needs confirmation. Native Compression Streams reference: https://developer.mozilla.org/en-US/docs/Web/API/Compression_Streams_API .
+
+Use the full-asset review copy c10ce5ee-badd-4774-bdd8-6155e1272588 for continuation. Workspace 0cf8a4ba-db07-451f-b51d-931a52a0e261 is diagnostic and has a rejected oversized-file batch; do not mistake that workspace for the final preview.

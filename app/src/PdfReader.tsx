@@ -1,3 +1,4 @@
+import { originalMinistryBytes } from './pdfTransport';
 import React, { useEffect, useRef, useState } from 'react';
 import catalog from './data/catalog.json';
 import { asset } from './assets';
@@ -48,7 +49,9 @@ export function Pdf({ id, page = 1, onSkip }: { id: string; page?: number; onSki
       try {
         const api = await import('pdfjs-dist');
         api.GlobalWorkerOptions.workerSrc = '/vendor/pdfjs/pdf.worker.min.mjs';
-        task = api.getDocument({ url: file!.path, cMapUrl: '/vendor/pdfjs/cmaps/', cMapPacked: true, standardFontDataUrl: '/vendor/pdfjs/standard_fonts/' });
+        const source = id === 'unit1_source' ? { data: await originalMinistryBytes() } : { url: file!.path };
+        if (disposed) return;
+        task = api.getDocument({ ...source, cMapUrl: '/vendor/pdfjs/cmaps/', cMapPacked: true, standardFontDataUrl: '/vendor/pdfjs/standard_fonts/' });
         const loaded = await task.promise;
         if (disposed) return;
         setTotal(loaded.numPages); setCurrent(p => Math.min(Math.max(1, p), loaded.numPages)); setPdf(loaded);
@@ -88,7 +91,7 @@ export function Pdf({ id, page = 1, onSkip }: { id: string; page?: number; onSki
   if (!file?.available) return <p role="status">Original PDF unavailable: {id}</p>;
   return <section ref={shell} className={`pdf-study-viewer panel ${landscape ? 'orientation-landscape' : 'orientation-portrait'} ${fullscreen ? 'fullscreen' : ''}`} aria-label="Original PDF reader">
     <div className="pdf-header"><div><h3>{entry?.originalFilename || id}</h3><p>Original document · {total} pages · Text, artwork and fonts rendered directly from the PDF.</p></div>
-      <div className="pdf-actions"><a href={file.path} download={entry?.originalFilename} className="download-btn">Download untouched original PDF</a><button onClick={toggleFullscreen}>{fullscreen ? 'Exit Fullscreen' : 'Fullscreen'}</button></div></div>
+      <div className="pdf-actions">{id === 'unit1_source' ? <button className="download-btn" onClick={async()=>{try{const bytes=await originalMinistryBytes();const url=URL.createObjectURL(new Blob([bytes.buffer as ArrayBuffer],{type:'application/pdf'}));const link=document.createElement('a');link.href=url;link.download=entry?.originalFilename||'unit1_original.pdf';link.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}catch{setError('Download could not be prepared. Please retry.');}}}>Download untouched original PDF</button> : <a href={file.path} download={entry?.originalFilename} className="download-btn">Download untouched original PDF</a>}<button onClick={toggleFullscreen}>{fullscreen ? 'Exit Fullscreen' : 'Fullscreen'}</button></div></div>
     <div className="pdf-toolbar"><div className="pagination-controls">
       <button disabled={current <= 1} onClick={() => jump(1)}>First page</button><button disabled={current <= 1} onClick={() => jump(current - 1)}>← Previous</button>
       <label>Page <input aria-label="PDF page number" type="number" min="1" max={total} value={current} onChange={e => jump(e.target.valueAsNumber)} className="page-input" /> of {total}</label>
