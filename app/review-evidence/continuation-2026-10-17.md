@@ -13,3 +13,9 @@ Clean npm ci --ignore-scripts, TypeScript, Vite production build, existing 43 ac
 
 ## Remaining work
 Transfer and verify all runtime assets in AI Studio; re-export source and compare hashes; full browser route/button/media/PDF checks; personal-device microphone check; Ankh translation, complete localization, compact pyramid, approved logo-detail artwork and documentation expansion. No deployment, main merge, billing or secret changes.
+
+## Additional local implementation
+Added a separate tested Ankh help control, compact five-stage responsive pyramid and direct all-path access. Header aligns to the start and uses the canonical Secondary 2 descriptor. Intro has explicit mute control and attempts sound on replay after the gesture. Existing 43 review checks, help interaction checks, TypeScript and production build passed after these edits. Full bilingual translation and live audio verification are not claimed.
+
+## Export audit
+An exported verification-workspace ZIP contained 727 entries; CRC passed. All intended public files were present and matched the local originals except an unrelated temporary hidden PDF copy. The revised activities source matched exactly. Export proves editor contents, not durable server save: the large PDF batch returned to Unsaved changes twice. The original full-asset review copy c10ce5ee-badd-4774-bdd8-6155e1272588 subsequently loaded and received a 30-file source update; its runtime validation is in progress.

@@ -1,0 +1,11 @@
+import './acceptance';
+import React from 'react';
+import assert from 'node:assert/strict';
+import {render,screen,fireEvent,cleanup} from '@testing-library/react';
+import {AnkhHelp} from '../src/AnkhHelp';
+cleanup();let navigations=0;render(<><AnkhHelp/><button onClick={()=>navigations++}>Vocabulary Vault</button><button onClick={()=>navigations++}>private learner response</button></>);
+fireEvent.click(screen.getByRole('button',{name:'Ankh Translate / مفتاح الحياة'}));
+fireEvent.click(screen.getByText('Vocabulary Vault'));assert.equal(navigations,0);assert.ok(screen.getByRole('heading',{name:'المفردات'}));
+fireEvent.click(screen.getByText('private learner response'));assert.equal(navigations,0);assert.ok(screen.getByText(/Help for this control/));assert.ok(!localStorage.getItem('kemet_help_counts')?.includes('private learner'));
+fireEvent.keyDown(document,{key:'Escape'});fireEvent.click(screen.getByText('Vocabulary Vault'));assert.equal(navigations,1);assert.equal(screen.queryByLabelText('Interface help'),null);
+console.log('PASS HELP: tap intercept, Arabic explanation, unknown controls not stored, Escape restores navigation');cleanup();

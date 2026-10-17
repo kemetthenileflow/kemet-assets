@@ -1,3 +1,4 @@
+import { AnkhHelp } from './AnkhHelp';
 import React, { useState, useEffect } from 'react';
 import core from './data/core.json';
 import blueprint from './data/blueprint.json';
@@ -205,7 +206,7 @@ export default function App() {
                 KEMET: The Nile Flow
               </div>
             </div>
-            <span className="app-subtitle">Egyptian Baccalaureate — Second Secondary — English</span>
+            <span className="app-subtitle">Egyptian Baccalaureate | Secondary 2 | English</span>
             <span className="ai-assistant-badge">AI Language Assistant</span>
           </div>
         </div>
@@ -811,6 +812,7 @@ export default function App() {
         ))}
       </nav>
 
+      <AnkhHelp />
       {intro && <Intro close={() => setIntro(false)} />}
       {thoth && <Thoth close={() => setThoth(false)} />}
     </div>

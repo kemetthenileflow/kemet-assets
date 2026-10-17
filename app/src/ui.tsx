@@ -90,227 +90,7 @@ export function LearnerCartouche({
   );
 }
 
-export function SteppedPyramid({
-  go,
-  lang = 'en',
-  onSelectSupport,
-  support = 'independent',
-}: {
-  go: (route: any) => void;
-  lang?: 'en' | 'ar';
-  onSelectSupport?: (support: string) => void;
-  support?: string;
-}) {
-  return (
-    <section className="stepped-pyramid-section" aria-label="KEMET Learning Pyramid">
-      <div className="pyramid-intro">
-        <span className="pyramid-kicker">
-          {lang === 'ar' ? 'هرم كيمت التعليمي' : 'THE LIVING PYRAMID OF KEMET'}
-        </span>
-        <h2>
-          {lang === 'ar'
-            ? 'اختر مسارك التعليمي: من الاستكشاف إلى التحدي'
-            : 'Choose your learning path'}
-        </h2>
-        <p>
-          {lang === 'ar'
-            ? 'جميع المستويات متاحة لك بحرية؛ الهرم يرتب مهاراتك من الفهم إلى الإنتاج والإبداع.'
-            : 'All tiers and support levels are open. Choose your step directly without arbitrary gating.'}
-        </p>
-      </div>
-
-      <div className="pyramid-structure">
-        {/* Tier 5 (Apex): Challenge, Review & Create */}
-        <div className="pyramid-tier tier-5" data-tier="5">
-          <div className="tier-header">
-            <span className="tier-badge">Tier 5 · Apex</span>
-            <h3>{lang === 'ar' ? 'التحدي والمراجعة والإبداع' : 'Challenge, Review & Create'}</h3>
-          </div>
-          <div className="tier-actions">
-            <button
-              className="tier-btn primary-tier"
-              onClick={() => go({ page: 'challenge' })}
-            >
-              <strong>Challenge Arena</strong>
-              <span>11 Banks · 330 Source Questions</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'rosetta_decoder' })}
-            >
-              <strong>Rosetta Decoder</strong>
-              <span>Interactive Meaning Pairs Match</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'nile_quest' })}
-            >
-              <strong>Nile Quest</strong>
-              <span>Chapter 1 Narrative Adventure</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'osiris' })}
-            >
-              <strong>Osiris Challenges</strong>
-              <span>8 Who Said/Did Source Tasks</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Tier 4: Apply & Express */}
-        <div className="pyramid-tier tier-4" data-tier="4">
-          <div className="tier-header">
-            <span className="tier-badge">Tier 4</span>
-            <h3>{lang === 'ar' ? 'التطبيق والتعبير' : 'Apply & Express'}</h3>
-          </div>
-          <div className="tier-actions">
-            <button className="tier-btn" onClick={() => go({ page: 'writing' })}>
-              <strong>Writer’s Papyrus</strong>
-              <span>Socratic Council Drafting & Rubric</span>
-            </button>
-            <button className="tier-btn" onClick={() => go({ page: 'voice' })}>
-              <strong>Voice Mirror</strong>
-              <span>Microphone Practice & Reflection</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'evidence_hunt' })}
-            >
-              <strong>Seshat Evidence Hunt</strong>
-              <span>Quote Source Spans from Passages</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Tier 3: Build & Practise */}
-        <div className="pyramid-tier tier-3" data-tier="3">
-          <div className="tier-header">
-            <span className="tier-badge">Tier 3</span>
-            <h3>{lang === 'ar' ? 'البناء والتطبيق النحوي' : 'Build & Practise'}</h3>
-          </div>
-          <div className="tier-actions">
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'grammar_pyramid', mode: 'builder' })}
-            >
-              <strong>Grammar Sentence Builder</strong>
-              <span>Scrambled Token Reconstruction</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'grammar_pyramid', mode: 'detective' })}
-            >
-              <strong>Error Detective</strong>
-              <span>Spot & Repair Grammatical Flaws</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'sequence', id: 'relative_clauses' })}
-            >
-              <strong>Relative Clauses (41p)</strong>
-              <span>Stepped Card Sequences</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'sequence', id: 'conditionals' })}
-            >
-              <strong>Conditionals (41p)</strong>
-              <span>Worked Examples & Feedback</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'sequence', id: 'participles' })}
-            >
-              <strong>Participles (37p)</strong>
-              <span>Cinematic Study Cards</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Tier 2: Explore & Understand */}
-        <div className="pyramid-tier tier-2" data-tier="2">
-          <div className="tier-header">
-            <span className="tier-badge">Tier 2</span>
-            <h3>{lang === 'ar' ? 'الاستكشاف والفهم' : 'Explore & Understand'}</h3>
-          </div>
-          <div className="tier-actions">
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'vocabulary' })}
-            >
-              <strong>Vocabulary Vault</strong>
-              <span>66 Unit 1 Cards + 59 Story Words</span>
-            </button>
-            <button className="tier-btn" onClick={() => go({ page: 'story' })}>
-              <strong>Story Quest</strong>
-              <span>The Lost World Chapter 1</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'library', category: 'Reading' })}
-            >
-              <strong>Alexandrian Reading</strong>
-              <span>6 Curriculum Passages · Pending Review</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'media', tab: 'curriculum_listening' })}
-            >
-              <strong>Curriculum Listening</strong>
-              <span>Echoes of the Nile (REC-01, 04)</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Tier 1 (Base): Welcome, Overview & Support Choice */}
-        <div className="pyramid-tier tier-1" data-tier="1">
-          <div className="tier-header">
-            <span className="tier-badge">Tier 1 · Foundation Base</span>
-            <h3>{lang === 'ar' ? 'البداية والاستكشاف والدعم' : 'Welcome, Overview & Support Mode'}</h3>
-          </div>
-          <div className="tier-actions base-actions">
-            <button
-              className="tier-btn primary-start"
-              onClick={() => go({ page: 'journey' })}
-            >
-              <strong>{lang === 'ar' ? 'ابدأ أو واصل التعلم الآن' : 'Start or Continue Learning'}</strong>
-              <span>{lang === 'ar' ? 'انطلق من نقطتك الحالية' : 'Resume where you left off'}</span>
-            </button>
-            <div className="support-selector-panel">
-              <label>
-                <strong>{lang === 'ar' ? 'مستوى الدعم التعليمي:' : 'Educational Support Mode:'}</strong>
-                <select
-                  value={support}
-                  onChange={(e) => onSelectSupport?.(e.target.value)}
-                  className="support-select"
-                >
-                  <option value="supported">Supported (scaffolds & hints available)</option>
-                  <option value="independent">Independent (unassisted evidence)</option>
-                  <option value="stretch">Stretch (deeper transfer & synthesis)</option>
-                </select>
-              </label>
-            </div>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'pdf_study', id: 'unit1_standard' })}
-            >
-              <strong>Unit 1 Textbook (108p)</strong>
-              <span>Study in In-App PDF Reader</span>
-            </button>
-            <button
-              className="tier-btn"
-              onClick={() => go({ page: 'discover' })}
-            >
-              <strong>Discover the KEMET Logo</strong>
-              <span>Heritage & Original Brand Art</span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+export { SteppedPyramid } from './PyramidNavigator';
 
 export { Pdf } from './PdfReader';
 
@@ -701,6 +481,7 @@ export function MediaLibrary({
 export function Intro({ close, replay = false }: { close: () => void; replay?: boolean }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [manual, setManual] = useState(false);
+  const [muted, setMuted] = useState(true);
   const a = asset('intro');
 
   useEffect(() => {
@@ -725,6 +506,7 @@ export function Intro({ close, replay = false }: { close: () => void; replay?: b
       sessionStorage.setItem('kemet_intro_seen', 'yes');
     } catch {}
     write('kemet_intro_once', true);
+    if (replay && ref.current) { ref.current.muted = false; setMuted(false); }
     ref.current?.play().catch(() => setManual(true));
   }, []);
 
@@ -733,18 +515,19 @@ export function Intro({ close, replay = false }: { close: () => void; replay?: b
       <button autoFocus onClick={close}>
         Skip — Enter Home
       </button>
-      <video ref={ref} src={a?.path} muted playsInline onEnded={close} onError={close} />
+      <video ref={ref} src={a?.path} muted={muted} playsInline onEnded={close} onError={close} />
       {manual && <button onClick={() => ref.current?.play().catch(() => setManual(true))}>Play</button>}
       <button
         onClick={() => {
           if (ref.current) {
-            ref.current.muted = false;
+            ref.current.muted = false; setMuted(false);
             ref.current.play().catch(() => setManual(true));
           }
         }}
       >
         Play with sound
       </button>
+      <button onClick={() => { const next=!muted;setMuted(next);if(ref.current)ref.current.muted=next; }}>{muted?'Unmute / تشغيل الصوت':'Mute / كتم الصوت'}</button>
       <label>
         Introduction{' '}
         <select
