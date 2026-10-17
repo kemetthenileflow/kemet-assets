@@ -61,7 +61,8 @@
   },
   "/pdfs/sources/unit1_original.pdf": {
     "bytes": 35522435,
-    "available": true
+    "available": false,
+    "transportNote": "Reconstructed byte-for-byte through verified gzip transport; not served as a raw >30MB Studio snapshot file."
   },
   "/pdfs/unit1/dyslexia_friendly.pdf": {
     "bytes": 7492725,
@@ -2630,5 +2631,9 @@
   "/vocab/alternatives/VOC-054-alt-2.webp": {
     "bytes": 189834,
     "available": true
+  },
+  "/pdfs/sources/unit1_original.pdf.gz": {
+    "available": true,
+    "bytes": 27181046
   }
 }

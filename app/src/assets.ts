@@ -1,6 +1,6 @@
 import catalog from './data/catalog.json';
 import available from './data/available-assets.json';
-import manifest from '../public/vocab/import_manifest.json';
+import manifest from './data/vocab-import-manifest.json';
 
 export type AssetEntry = {
   id: string;
@@ -25,7 +25,7 @@ function add(id: string, path: string, name: string, kind: string) {
 // 1. All 18 canonical / study PDFs (1,233 pages total)
 catalog.documents
   .filter((d) => d.path.startsWith('/pdfs/'))
-  .forEach((d) => add(d.id, d.path, d.originalFilename, 'pdf'));
+  .forEach((d) => add(d.id, d.id === 'unit1_source' ? d.path + '.gz' : d.path, d.originalFilename, 'pdf'));
 
 // 2. Curated audio media items
 catalog.media.forEach((m) => add(m.id, m.path, m.originalFilename, 'audio'));
