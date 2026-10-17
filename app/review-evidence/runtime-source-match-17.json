@@ -1,0 +1,147 @@
+{
+  "commit": "fc7d2c257efeac5a2a7af86aef595e6b7d0155c6",
+  "files": [
+    {
+      "path": "index.html",
+      "sha": "0a2d8cae88c51aa53f18875a1b6d117cc7863de7",
+      "local_sha": "0a2d8cae88c51aa53f18875a1b6d117cc7863de7",
+      "match": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha": "59a2d09251f05d3bb8187fe402d0bad522511463",
+      "local_sha": "59a2d09251f05d3bb8187fe402d0bad522511463",
+      "match": true
+    },
+    {
+      "path": "package.json",
+      "sha": "b1bd21095151137214ddfb4236f785142cf46ea3",
+      "local_sha": "b1bd21095151137214ddfb4236f785142cf46ea3",
+      "match": true
+    },
+    {
+      "path": "src/AnkhHelp.tsx",
+      "sha": "2f1d7bc7c324b29c6b4c3f101b029b480fb5fb06",
+      "local_sha": "2f1d7bc7c324b29c6b4c3f101b029b480fb5fb06",
+      "match": true
+    },
+    {
+      "path": "src/App.tsx",
+      "sha": "5e30f9e7ef4f533d3253af87799905e0352dc5ca",
+      "local_sha": "5e30f9e7ef4f533d3253af87799905e0352dc5ca",
+      "match": true
+    },
+    {
+      "path": "src/CumulativeProgressChart.tsx",
+      "sha": "72151c735d03701acd18c1b75f0514245833ff34",
+      "local_sha": "72151c735d03701acd18c1b75f0514245833ff34",
+      "match": true
+    },
+    {
+      "path": "src/PdfReader.tsx",
+      "sha": "f4330de7ba9f6fa42e3e3d22e3ed7d33419b5e8f",
+      "local_sha": "f4330de7ba9f6fa42e3e3d22e3ed7d33419b5e8f",
+      "match": true
+    },
+    {
+      "path": "src/PyramidNavigator.tsx",
+      "sha": "4bfdbb409d6a6e02fc74fb7605520d4cd05e7366",
+      "local_sha": "4bfdbb409d6a6e02fc74fb7605520d4cd05e7366",
+      "match": true
+    },
+    {
+      "path": "src/VoiceMirror.tsx",
+      "sha": "a1d7a7c8a36cf528e6c6b69f139c0981ed060c29",
+      "local_sha": "a1d7a7c8a36cf528e6c6b69f139c0981ed060c29",
+      "match": true
+    },
+    {
+      "path": "src/activities.tsx",
+      "sha": "759472ef3a471c8759948747e0b9412d300d3575",
+      "local_sha": "759472ef3a471c8759948747e0b9412d300d3575",
+      "match": true
+    },
+    {
+      "path": "src/assets.ts",
+      "sha": "a10cfdf06b7710dbb0b6a2ed8ac9f307f979b32b",
+      "local_sha": "a10cfdf06b7710dbb0b6a2ed8ac9f307f979b32b",
+      "match": true
+    },
+    {
+      "path": "src/data/available-assets.json",
+      "sha": "4f27666de0f12d92e0ca76f15e12cdb78669d948",
+      "local_sha": "4f27666de0f12d92e0ca76f15e12cdb78669d948",
+      "match": true
+    },
+    {
+      "path": "src/data/blueprint.json",
+      "sha": "18594c3ab80e9fb1972389ea8e88faacaa9712e2",
+      "local_sha": "18594c3ab80e9fb1972389ea8e88faacaa9712e2",
+      "match": true
+    },
+    {
+      "path": "src/data/catalog.json",
+      "sha": "9c399bb4db4473cbf465e437ebb894da2262110a",
+      "local_sha": "9c399bb4db4473cbf465e437ebb894da2262110a",
+      "match": true
+    },
+    {
+      "path": "src/data/core.json",
+      "sha": "39a1541f84b8505e776d9ae53d802bdf90a11024",
+      "local_sha": "39a1541f84b8505e776d9ae53d802bdf90a11024",
+      "match": true
+    },
+    {
+      "path": "src/data/ministry-transport.json",
+      "sha": "4936b236ebd8f31c3b983ef529bd0ad009587bab",
+      "local_sha": "4936b236ebd8f31c3b983ef529bd0ad009587bab",
+      "match": true
+    },
+    {
+      "path": "src/data/vocab-import-manifest.json",
+      "sha": "b4929ba95224bde03aa064a65345dae6639c069e",
+      "local_sha": "b4929ba95224bde03aa064a65345dae6639c069e",
+      "match": true
+    },
+    {
+      "path": "src/engine.ts",
+      "sha": "bd3b1146184c6266b5917856ea66e93a4b9f6e1a",
+      "local_sha": "bd3b1146184c6266b5917856ea66e93a4b9f6e1a",
+      "match": true
+    },
+    {
+      "path": "src/main.tsx",
+      "sha": "e2779845eb2d4f3385b55c4bc252acfcea8ba475",
+      "local_sha": "e2779845eb2d4f3385b55c4bc252acfcea8ba475",
+      "match": true
+    },
+    {
+      "path": "src/pdfTransport.ts",
+      "sha": "3ceac429e144500fde194b5255ace8502b7e48f2",
+      "local_sha": "3ceac429e144500fde194b5255ace8502b7e48f2",
+      "match": true
+    },
+    {
+      "path": "src/style.css",
+      "sha": "3a647b43330f428c28617ae1784371d036a04aac",
+      "local_sha": "3a647b43330f428c28617ae1784371d036a04aac",
+      "match": true
+    },
+    {
+      "path": "src/ui.tsx",
+      "sha": "8633e35848f98ec32da5ad3fdb70bce87c7d7281",
+      "local_sha": "8633e35848f98ec32da5ad3fdb70bce87c7d7281",
+      "match": true
+    },
+    {
+      "path": "vite.config.ts",
+      "sha": "5e1255bb7f6d14a5770ccd98c8d60b819b3dcbfc",
+      "local_sha": "5e1255bb7f6d14a5770ccd98c8d60b819b3dcbfc",
+      "match": true
+    }
+  ],
+  "independent_comparison": {
+    "matched": 23,
+    "mismatches": []
+  }
+}
