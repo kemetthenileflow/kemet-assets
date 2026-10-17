@@ -14,6 +14,7 @@ export function microphoneMessage(error: any) {
   }
 }
 export function VoiceMirror({ prompt, word }: { prompt: string; word?: string }) {
+  const [embeddedBlocked, setEmbeddedBlocked] = useState(false);
   const [phase, setPhase] = useState<Phase>('ready');
   const [message, setMessage] = useState('Ready. Your recording stays temporarily in this tab; it is never uploaded.');
   const [url, setUrl] = useState('');
@@ -56,7 +57,7 @@ export function VoiceMirror({ prompt, word }: { prompt: string; word?: string })
         busy.current = false; setPhase('error'); setMessage('Recording is unavailable in this browser. Use a current browser on HTTPS, or practise aloud.'); return;
       }
       const policy = (document as any).permissionsPolicy || (document as any).featurePolicy;
-      if (policy?.allowsFeature && !policy.allowsFeature('microphone')) throw Object.assign(new Error(), { name: 'SecurityError' });
+      if (policy?.allowsFeature && !policy.allowsFeature('microphone')) { setEmbeddedBlocked(true); throw Object.assign(new Error(), { name: 'SecurityError' }); }
       const s = await navigator.mediaDevices.getUserMedia({ audio: true });
       if (token !== generation.current) { s.getTracks().forEach(t => t.stop()); return; }
       stream.current = s;
@@ -100,6 +101,7 @@ export function VoiceMirror({ prompt, word }: { prompt: string; word?: string })
       <button onClick={() => { if (playback.current) { playback.current.currentTime = 0; playback.current.play().catch(() => setMessage('Use the audio player’s Play button to listen.')); } }}>Replay recording</button>
       <button disabled={['requesting','recording','stopping'].includes(phase)} onClick={() => { playback.current?.pause(); clearUrl(); setPhase('ready'); setMessage('Recording deleted. Ready for another try.'); }}>Delete recording</button></div>}
     <p role="status" aria-live="polite" data-phase={phase}>{message}</p>
+    {embeddedBlocked && <p><a href={window.location.origin + '/?practice=voice'} target="_blank" rel="noopener noreferrer">Open Voice Mirror in a separate tab / افتح التدريب الصوتي في تبويب مستقل</a></p>}
     <p>No automatic pronunciation score. Listen for clear meaning, sounds and rhythm; choose one improvement for your next try.</p>
   </section>;
 }

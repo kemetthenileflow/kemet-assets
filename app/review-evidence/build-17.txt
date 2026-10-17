@@ -1,0 +1,19 @@
+
+> kemet-the-nile-flow@0.0.0 prebuild
+> node scripts/prepare-pdf.mjs
+
+
+> kemet-the-nile-flow@0.0.0 build
+> vite build
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 600 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.67 kB │ gzip:   0.34 kB
+dist/assets/index-goOwvPKq.css     22.36 kB │ gzip:   5.69 kB
+dist/assets/pdf-BoFE_6oi.js       329.25 kB │ gzip:  96.93 kB
+dist/assets/index-BilijQkB.js   1,136.48 kB │ gzip: 253.30 kB
+
+✓ built in 1.35s

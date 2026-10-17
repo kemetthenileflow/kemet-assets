@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 const stages=[
- {en:'Start & orient',ar:'ابدأ واكتشف',paths:[['Original Ministry textbook · 172 pages','كتاب الوزارة الأصلي',{page:'pdf_study',id:'unit1_source'}],['All 18 original PDFs','كل ملفات PDF',{page:'documents'}],['Unit overview','نظرة على الوحدة',{page:'journey'}]]},
+ {en:'Start & orient',ar:'ابدأ واكتشف',paths:[['Ministry textbook · Part 1 · 172 pages','كتاب الوزارة الأصلي',{page:'pdf_study',id:'unit1_source'}],['All 18 original PDFs','كل ملفات PDF',{page:'documents'}],['Unit overview','نظرة على الوحدة',{page:'journey'}]]},
  {en:'Explore & understand',ar:'استكشف وافهم',paths:[['Vocabulary Vault','المفردات',{page:'vocabulary'}],['Story Quest','القصة',{page:'story'}],['Alexandrian Reading','القراءة',{page:'library',category:'Reading'}],['Curriculum Listening','الاستماع المنهجي',{page:'media',tab:'curriculum_listening'}]]},
  {en:'Build & practise',ar:'ابنِ وتدرّب',paths:[['Grammar Sentence Builder','بناء الجمل',{page:'grammar_pyramid',mode:'builder'}],['Error Detective','محقق الأخطاء',{page:'grammar_pyramid',mode:'detective'}],['Grammar lessons','دروس القواعد',{page:'library',category:'Grammar'}]]},
  {en:'Apply & express',ar:'طبّق وعبّر',paths:[['Voice Mirror','مرآة الصوت',{page:'voice'}],['Writer’s Papyrus','بردية الكاتب',{page:'writing'}],['Seshat Evidence Hunt','البحث عن الدليل',{page:'evidence_hunt'}]]},

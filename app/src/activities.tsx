@@ -1280,6 +1280,7 @@ export function GrammarPyramidGame({ mode = 'builder', close }: { mode?: 'builde
       {feedback && <p role="status" className="feedback-banner">{feedback}</p>}
 
       <div className="pyramid-nav">
+        <button onClick={()=>{setCurrentIdx(0);setChosenTokens([]);setSelectedError('');setFeedback('');}}>Restart Grammar</button>
         <button
           disabled={currentIdx >= sentences.length - 1}
           onClick={() => setCurrentIdx((i) => i + 1)}
@@ -1306,22 +1307,22 @@ export function SeshatEvidenceHunt({ close }: { close: () => void }) {
       return;
     }
     if (fullText.includes(quote.trim())) {
-      setFeedback('✓ Valid source evidence span found directly in the passage!');
+      setFeedback('✓ Valid source evidence span found. Explain why it supports the claim; relevance requires teacher review.');
       record({
         uid: profile().uid,
         session: crypto.randomUUID(),
         contentId: 'SESHAT-EVIDENCE-' + p.id,
         version,
         mode: 'evidence_hunt',
-        dataset: 'source330',
+        dataset: 'derived-evidence',
         support: 'independent',
         response: quote,
-        result: 'correct',
+        result: 'pending',
         hints: 0,
         reveal: false,
         transcript: false,
         replays: 0,
-        review: 'none',
+        review: 'pending',
         durationMs: 0,
       });
     } else {
@@ -1432,6 +1433,7 @@ export function NileQuest({ close }: { close: () => void }) {
           Next Checkpoint
         </button>
       )}
+      {stepIdx === steps.length - 1 && choice && <button onClick={()=>{setStepIdx(0);setChoice('');setRes('');}}>Replay Story Quest</button>}
       <button onClick={close} className="btn-exit">
         Back
       </button>

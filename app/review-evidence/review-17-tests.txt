@@ -1,0 +1,79 @@
+PASS authoritative counts and grading preserved
+PASS entire pool has no repeat before exhaustion
+PASS queue cursor survives read / remount
+PASS learner queues isolated
+PASS small pool stays short with no duplicate padding
+PASS all 11 banks and all 330 IDs reachable
+PASS option shuffle retains correct stable ID
+PASS first response immutable and assisted retry retained
+PASS new unassisted session can supply independent evidence
+PASS CSV BOM and formula escaping
+PASS every registered canonical asset has real bytes
+PASS Thoth English and Arabic lexical search finds actual decade source
+PASS Thoth unrelated query gives no invented match
+PASS Group 8 actually opens words 43–48
+PASS recall hides answer-bearing learning image
+PASS selected passage is preserved in source activity
+PASS writing autosave resumes
+PASS open writing remains pending human review
+PASS Cairo-date daily symbol stable across remount
+PASS Vocabulary dashboard distinct
+PASS Story dashboard distinct
+PASS Challenge dashboard exposes V1/V2 routes
+PASS learner attempt histories isolated
+PASS storage denial falls back to explicitly volatile memory
+PASS all 18 canonical PDFs cataloged with verified paths and positive page counts
+PASS RosettaDecoder and GrammarPyramid render playable interactive activities
+PASS SeshatEvidenceHunt validates verbatim quotes against source passages
+PASS registered videos and navigation events are stored locally without external telemetry
+PASS D3 cumulative progress chart renders across 330 questions tracking independent accuracy
+{
+  "passed": 29,
+  "environment": "jsdom behavioral simulation; not a real browser visual/playback test",
+  "tests": [
+    "authoritative counts and grading preserved",
+    "entire pool has no repeat before exhaustion",
+    "queue cursor survives read / remount",
+    "learner queues isolated",
+    "small pool stays short with no duplicate padding",
+    "all 11 banks and all 330 IDs reachable",
+    "option shuffle retains correct stable ID",
+    "first response immutable and assisted retry retained",
+    "new unassisted session can supply independent evidence",
+    "CSV BOM and formula escaping",
+    "every registered canonical asset has real bytes",
+    "Thoth English and Arabic lexical search finds actual decade source",
+    "Thoth unrelated query gives no invented match",
+    "Group 8 actually opens words 43–48",
+    "recall hides answer-bearing learning image",
+    "selected passage is preserved in source activity",
+    "writing autosave resumes",
+    "open writing remains pending human review",
+    "Cairo-date daily symbol stable across remount",
+    "Vocabulary dashboard distinct",
+    "Story dashboard distinct",
+    "Challenge dashboard exposes V1/V2 routes",
+    "learner attempt histories isolated",
+    "storage denial falls back to explicitly volatile memory",
+    "all 18 canonical PDFs cataloged with verified paths and positive page counts",
+    "RosettaDecoder and GrammarPyramid render playable interactive activities",
+    "SeshatEvidenceHunt validates verbatim quotes against source passages",
+    "registered videos and navigation events are stored locally without external telemetry",
+    "D3 cumulative progress chart renders across 330 questions tracking independent accuracy"
+  ]
+}
+PASS REVIEW unit1 all words reachable without repetition
+PASS REVIEW story all words reachable without repetition
+PASS REVIEW recording has stop enabled
+PASS REVIEW recording produces playable local URL and releases track
+PASS REVIEW record again revokes previous object URL
+PASS REVIEW delete removes recording and revokes URL
+PASS REVIEW NotAllowedError explicit recovery
+PASS REVIEW NotFoundError explicit recovery
+PASS REVIEW NotReadableError explicit recovery
+PASS REVIEW late stream after cancellation is closed
+PASS REVIEW leaving recording screen releases microphone
+PASS REVIEW all 18 documents have an accessible reader action
+PASS REVIEW reading route selects Reading instead of stale category
+PASS REVIEW listening shortcut opens curriculum recordings
+Review tests completed: mocked recording and jsdom navigation; no personal microphone test.

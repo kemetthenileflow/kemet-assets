@@ -67,7 +67,7 @@ const navigation = {
 const REPORT_SUMMARY_TEXT = `KEMET review: see the detailed versioned review-report.md shipped with this revision. Automated tests are simulations unless explicitly labelled browser tests. Personal microphone and editorial source approval require owner review.`;
 
 export default function App() {
-  const [route, setRoute] = useState<Route>({ page: 'home' });
+  const [route, setRoute] = useState<Route>(() => ({ page: new URLSearchParams(window.location.search).get('practice') === 'voice' ? 'voice' : 'home' }));
   const [lang, setLang] = useState<'en' | 'ar'>(read('kemet_ui_language', 'en'));
   const [intro, setIntro] = useState(true);
   const [thoth, setThoth] = useState(false);
@@ -281,7 +281,7 @@ export default function App() {
               <h2>{lang === 'ar' ? 'ابدأ من هنا' : 'Start here'}</h2>
               <p>{lang === 'ar' ? 'افتح المنهج الأصلي، ثم اختر شرح كيمت أو التدريب. كل المسارات متاحة لك.' : 'Read the original curriculum, explore KEMET explanations, then practise. Every route is open to you.'}</p>
               <div className="start-actions">
-                <button className="primary" onClick={() => go({page:'pdf_study',id:'unit1_source'})}>{lang === 'ar' ? 'كتاب الوزارة الأصلي · ١٧٢ صفحة' : 'Original Ministry textbook · 172 pages'}</button>
+                <button className="primary" onClick={() => go({page:'pdf_study',id:'unit1_source'})}>{lang === 'ar' ? 'كتاب الوزارة · الجزء الأول · ١٧٢ صفحة' : 'Ministry textbook · Part 1 · 172 pages'}</button>
                 <button onClick={() => go({page:'documents'})}>{lang === 'ar' ? 'كل ملفات PDF · ١٨ ملفًا' : 'All 18 original PDFs'}</button>
                 <button onClick={() => go({page:'media',tab:'curriculum_listening'})}>{lang === 'ar' ? 'استمع إلى تسجيلات الوحدة' : 'Unit 1 listening'}</button>
               </div>
@@ -341,7 +341,7 @@ export default function App() {
           <p>Choose the source textbook or a KEMET edition. Each opens the supplied PDF unchanged; activities are separate.</p>
           {['Original Ministry curriculum', 'Learn with KEMET'].map((group, i) => <section key={group}>
             <h2>{group}</h2><div className="document-grid">{catalog.documents.filter(d => d.path.startsWith('/pdfs/') && (i === 0 ? d.id === 'unit1_source' : d.id !== 'unit1_source')).map(d => <article className="panel" key={d.id}>
-              <h3>{d.originalFilename}</h3><p>{d.pageCount} pages</p><button onClick={() => go({page:'pdf_study',id:d.id})}>Read original PDF</button><a className="download-btn" href={d.path} download={d.originalFilename}>Download original</a>
+              <h3>{d.originalFilename}</h3><p>{d.pageCount} pages</p><button onClick={() => go({page:'pdf_study',id:d.id})}>Read original PDF</button>{d.id === 'unit1_source' ? <button onClick={() => go({page:'pdf_study',id:d.id})}>Open original to download</button> : <a className="download-btn" href={d.path} download={d.originalFilename}>Download original</a>}
             </article>)}</div>
           </section>)}
         </section>}
