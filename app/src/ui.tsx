@@ -382,7 +382,7 @@ export function MediaLibrary({
           </div>
         )}
 
-        <div className="teacher-video-section">
+        <details className="teacher-video-section"><summary>Instructor media tools / أدوات المعلم</summary>
           <hr />
           <h3>Teacher Video Registration (Local Draft Preview)</h3>
           <p>
@@ -473,7 +473,7 @@ export function MediaLibrary({
               ))}
             </div>
           )}
-        </div>
+        </details>
       </div>
     </section>
   );

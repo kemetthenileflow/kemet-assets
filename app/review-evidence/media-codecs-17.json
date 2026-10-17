@@ -1,0 +1,1045 @@
+[
+  {
+    "path": "public/audio/media/media-04.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "197.376000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-05.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "161.256000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-13.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "292.056000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-11.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "98.928000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-12.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "170.544000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-10.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "156.288000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-06.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "197.640000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-02.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "407.640000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-08.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "404.448000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-07.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "320.808000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-14.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "423.240000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-03.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "302.856000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-01.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "328.848000"
+    }
+  },
+  {
+    "path": "public/audio/media/media-09.mp3",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "289.920000"
+    }
+  },
+  {
+    "path": "public/audio/words/danger.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.300317"
+    }
+  },
+  {
+    "path": "public/audio/words/energy.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.242132"
+    }
+  },
+  {
+    "path": "public/audio/words/face.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.206667"
+    }
+  },
+  {
+    "path": "public/audio/words/theory.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.210023"
+    }
+  },
+  {
+    "path": "public/audio/words/assignment.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.514966"
+    }
+  },
+  {
+    "path": "public/audio/words/suddenly.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.346848"
+    }
+  },
+  {
+    "path": "public/audio/words/character.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.469206"
+    }
+  },
+  {
+    "path": "public/audio/words/argue.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.243084"
+    }
+  },
+  {
+    "path": "public/audio/words/reporter.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.422268"
+    }
+  },
+  {
+    "path": "public/audio/words/avoid.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.385941"
+    }
+  },
+  {
+    "path": "public/audio/words/clever.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.355102"
+    }
+  },
+  {
+    "path": "public/audio/words/admire.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.410431"
+    }
+  },
+  {
+    "path": "public/audio/words/truly.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.251066"
+    }
+  },
+  {
+    "path": "public/audio/words/fossils.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.369433"
+    }
+  },
+  {
+    "path": "public/audio/words/explain.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.527528"
+    }
+  },
+  {
+    "path": "public/audio/words/journal.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.107302"
+    }
+  },
+  {
+    "path": "public/audio/words/sketches.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.362902"
+    }
+  },
+  {
+    "path": "public/audio/words/disappointed.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.729070"
+    }
+  },
+  {
+    "path": "public/audio/words/find_out.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.602993"
+    }
+  },
+  {
+    "path": "public/audio/words/claim.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.349796"
+    }
+  },
+  {
+    "path": "public/audio/words/value.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.328345"
+    }
+  },
+  {
+    "path": "public/audio/words/sensible.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.495510"
+    }
+  },
+  {
+    "path": "public/audio/words/discover.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.421633"
+    }
+  },
+  {
+    "path": "public/audio/words/challenge.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.341497"
+    }
+  },
+  {
+    "path": "public/audio/words/impress.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.341315"
+    }
+  },
+  {
+    "path": "public/audio/words/reveal.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.366803"
+    }
+  },
+  {
+    "path": "public/audio/words/scientific.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.541587"
+    }
+  },
+  {
+    "path": "public/audio/words/courage.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.274603"
+    }
+  },
+  {
+    "path": "public/audio/words/adventure.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.523537"
+    }
+  },
+  {
+    "path": "public/audio/words/aggressive.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.364127"
+    }
+  },
+  {
+    "path": "public/audio/words/brave.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.217551"
+    }
+  },
+  {
+    "path": "public/audio/words/interview.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.427029"
+    }
+  },
+  {
+    "path": "public/audio/words/brilliant.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.266893"
+    }
+  },
+  {
+    "path": "public/audio/words/extraordinary.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.897551"
+    }
+  },
+  {
+    "path": "public/audio/words/evidence.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.415329"
+    }
+  },
+  {
+    "path": "public/audio/words/prove.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.281497"
+    }
+  },
+  {
+    "path": "public/audio/words/evolution.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.516599"
+    }
+  },
+  {
+    "path": "public/audio/words/remarkable.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.580771"
+    }
+  },
+  {
+    "path": "public/audio/words/pretend.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.432971"
+    }
+  },
+  {
+    "path": "public/audio/words/realise.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.319093"
+    }
+  },
+  {
+    "path": "public/audio/words/unknown.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.409751"
+    }
+  },
+  {
+    "path": "public/audio/words/risk.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.139138"
+    }
+  },
+  {
+    "path": "public/audio/words/zoologist.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.568118"
+    }
+  },
+  {
+    "path": "public/audio/words/demand.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.336145"
+    }
+  },
+  {
+    "path": "public/audio/words/refuse.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.368889"
+    }
+  },
+  {
+    "path": "public/audio/words/damaged.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.272426"
+    }
+  },
+  {
+    "path": "public/audio/words/willing.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.202630"
+    }
+  },
+  {
+    "path": "public/audio/words/barely.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.184989"
+    }
+  },
+  {
+    "path": "public/audio/words/technical.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.432653"
+    }
+  },
+  {
+    "path": "public/audio/words/consider.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.437551"
+    }
+  },
+  {
+    "path": "public/audio/words/purpose.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.282268"
+    }
+  },
+  {
+    "path": "public/audio/words/details.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.413152"
+    }
+  },
+  {
+    "path": "public/audio/words/complicated.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.799773"
+    }
+  },
+  {
+    "path": "public/audio/words/expect.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.418639"
+    }
+  },
+  {
+    "path": "public/audio/words/experienced.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.680136"
+    }
+  },
+  {
+    "path": "public/audio/words/nervous.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.318322"
+    }
+  },
+  {
+    "path": "public/audio/words/warn.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.249478"
+    }
+  },
+  {
+    "path": "public/audio/words/mistaken.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.489025"
+    }
+  },
+  {
+    "path": "public/audio/words/strangely.wav",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "codec_type": "audio"
+      }
+    ],
+    "format": {
+      "duration": "1.493878"
+    }
+  },
+  {
+    "path": "public/brand/intro.mp4",
+    "valid": true,
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio"
+      },
+      {
+        "codec_type": "data"
+      }
+    ],
+    "format": {
+      "duration": "6.291667"
+    }
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "engine": "PDF.js 4.10.38 Node legacy parser (not browser canvas)",
+  "checks": [
+    {
+      "id": "read_story",
+      "pages": 31,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "unit1_above_level",
+      "pages": 112,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "unit1_standard",
+      "pages": 108,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "story_standard",
+      "pages": 7,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "unit1_below_level",
+      "pages": 110,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "unit1_dyslexia_friendly",
+      "pages": 214,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "unit1_source",
+      "pages": 172,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "cleopatra",
+      "pages": 35,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "living_lexicon",
+      "pages": 215,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "osiris",
+      "pages": 18,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "characters",
+      "pages": 16,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "story_below_level",
+      "pages": 8,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "story_dyslexia_friendly",
+      "pages": 18,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "thoth",
+      "pages": 43,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "story_above_level",
+      "pages": 7,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "relative_clauses",
+      "pages": 41,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "conditionals",
+      "pages": 41,
+      "firstAndLastParsed": true
+    },
+    {
+      "id": "participles",
+      "pages": 37,
+      "firstAndLastParsed": true
+    }
+  ]
+}

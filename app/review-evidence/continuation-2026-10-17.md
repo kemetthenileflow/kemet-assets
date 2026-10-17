@@ -43,3 +43,5 @@ Direct runtime retrieval succeeded: reviewed source was hash-validated, runtime 
 Found and fixed contextual Back navigation: PDF Back now returns to its previous document list instead of always Home. Brand control continues to go Home. Added a real interaction regression test and adjusted the old acceptance label accordingly.
 
 Non-PDF assets were also missing after the Studio workspace reset. A pinned recovery helper now restores only missing/empty approved runtime assets. Existing heritage SVGs and exact image repairs were persisted as overrides; the previously zero-byte Thoth 028 override is now repaired. Runtime non-PDF restoration has been requested, not yet certified complete in this entry.
+
+Latest verified update: all 18 PDFs first/last rendered in browser; Ministry 172/172 and page12. Runtime helper reports 658/658 nonzero assets, remaining []. Browser REC01/REC04 playback progressed and starting second paused first. REC04 task opened corresponding question. Standalone Voice Mirror Ready only; owner hardware not tested.
