@@ -1192,19 +1192,19 @@ export function GrammarPyramidGame({ mode = 'builder', close }: { mode?: 'builde
   const s = sentences[currentIdx];
 
   // Builder state
-  const [shuffledTokens, setShuffledTokens] = useState(() => shuffle(s.tokens, 42));
+  const shuffledTokens = shuffle(s.tokens, 42 + currentIdx);
   const [chosenTokens, setChosenTokens] = useState<string[]>([]);
   const [feedback, setFeedback] = useState('');
 
   // Detective state
   const [selectedError, setSelectedError] = useState('');
 
-  useEffect(() => {
-    setShuffledTokens(shuffle(sentences[currentIdx].tokens, 42 + currentIdx));
+  function resetRound(index: number) {
+    setCurrentIdx(index);
     setChosenTokens([]);
     setFeedback('');
     setSelectedError('');
-  }, [currentIdx]);
+  }
 
   function handleTokenClick(tok: string) {
     if (chosenTokens.includes(tok)) return;
@@ -1253,7 +1253,7 @@ export function GrammarPyramidGame({ mode = 'builder', close }: { mode?: 'builde
           <div className="sentence-stage panel">
             <h4>Your Constructed Sentence:</h4>
             <p className="built-text">{chosenTokens.join(' ') || 'Select tokens from above...'}</p>
-            <button onClick={() => setChosenTokens([])} className="btn-small">
+            <button onClick={() => {setChosenTokens([]);setFeedback('');}} className="btn-small">
               Reset Construction
             </button>
           </div>
@@ -1280,10 +1280,10 @@ export function GrammarPyramidGame({ mode = 'builder', close }: { mode?: 'builde
       {feedback && <p role="status" className="feedback-banner">{feedback}</p>}
 
       <div className="pyramid-nav">
-        <button onClick={()=>{setCurrentIdx(0);setChosenTokens([]);setSelectedError('');setFeedback('');}}>Restart Grammar</button>
+        <button onClick={()=>resetRound(0)}>Restart Grammar</button>
         <button
           disabled={currentIdx >= sentences.length - 1}
-          onClick={() => setCurrentIdx((i) => i + 1)}
+          onClick={() => resetRound(currentIdx + 1)}
         >
           Next Grammar Challenge
         </button>
