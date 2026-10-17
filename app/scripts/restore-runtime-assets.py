@@ -39,7 +39,7 @@ def restore(repair=False):
   target=APP/'public'/path.lstrip('/');target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
 
  manifest=json.loads(fetch('packages-manifest.json'))
- groups=[('02_Control_Visuals.zip',lambda p:p.startswith(('/brand/','/art/','/cards/','/heritage/'))),('04_Audio_Video.zip',lambda p:p.startswith(('/audio/','/video/')))]
+ groups=[('02_Control_Visuals.zip',lambda p:p.startswith(('/brand/','/art/','/cards/','/heritage/')) and p!='/brand/intro.mp4'),('04_Audio_Video.zip',lambda p:p.startswith(('/audio/','/video/')) or p=='/brand/intro.mp4')]
  for name,matches in groups:
   want=set(p for p in needed() if matches(p))
   if not want:continue
@@ -71,6 +71,9 @@ def restore(repair=False):
    if sha(data)!='a60f23bfaa68c5ced2dbccbf737d791811a8f877a832de9c051658c838a23b88':raise ValueError('Thoth repair integrity failure')
    target=APP/'public/cards/thoth/028.webp'
    if not target.exists() or not target.stat().st_size:target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
+ source=APP/'public/brand/intro.mp4';alias=APP/'public/video/intro.mp4'
+ if '/video/intro.mp4' in needed() and source.is_file() and source.stat().st_size:
+  alias.parent.mkdir(parents=True,exist_ok=True);alias.write_bytes(source.read_bytes())
  remaining=needed();print(json.dumps({'remainingMissingOrEmpty':remaining}),flush=True)
  if remaining:raise ValueError('Assets still missing; report these paths without fabricating files')
 if __name__=='__main__':
