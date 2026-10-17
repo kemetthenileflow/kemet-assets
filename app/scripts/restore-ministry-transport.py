@@ -17,7 +17,9 @@ def validate(raw):
     if len(raw)!=SIZE or sha(raw)!=EXPECTED:raise ValueError('Original Ministry PDF integrity mismatch')
     return raw
 
-def restore(source=None, destination=None):
+def restore(source=None, destination=None, all_pdfs=False):
+    restored=[]
+    if source and all_pdfs:raise ValueError("--all-pdfs requires the approved packet")
     if source:raw=validate(Path(source).read_bytes())
     else:
         manifest=json.loads(fetch('packages-manifest.json'))
@@ -39,17 +41,30 @@ def restore(source=None, destination=None):
             with zipfile.ZipFile(archive) as z:
                 if z.testzip():raise ValueError('Approved packet CRC failure')
                 raw=None
+                docs=json.loads((Path(__file__).resolve().parents[1]/'src/data/catalog.json').read_text())['documents']
+                expected={d['sha256']:d for d in docs}
+                verified=[]
                 for entry in z.infolist():
-                    if entry.filename.lower().endswith('.pdf') and entry.file_size==SIZE:
-                        candidate=z.read(entry)
-                        if sha(candidate)==EXPECTED:raw=validate(candidate);break
+                    if not entry.filename.lower().endswith('.pdf'):continue
+                    if not all_pdfs and entry.file_size!=SIZE:continue
+                    candidate=z.read(entry);digest=sha(candidate)
+                    if digest==EXPECTED:raw=validate(candidate)
+                    if all_pdfs and digest in expected:verified.append((expected[digest],candidate))
+                if all_pdfs:
+                    if len({d['id'] for d,_ in verified})!=18:raise ValueError('Not all 18 original PDFs found and verified')
+                    app=Path(__file__).resolve().parents[1]
+                    for doc,data in verified:
+                        if doc['id']=='unit1_source':continue
+                        relative=Path(doc['path'].lstrip('/'))
+                        if not str(relative).startswith('pdfs/') or '..' in relative.parts:raise ValueError('Unsafe PDF destination')
+                        path=app/'public'/relative;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(data);restored.append(doc['id'])
                 if raw is None:raise ValueError('Exact Ministry original not found in approved packet')
     target=Path(destination) if destination else Path(__file__).resolve().parents[1]/'public/pdfs/sources/unit1_original.pdf.gz'
     compressed=gzip.compress(raw,compresslevel=9,mtime=0)
     if gzip.decompress(compressed)!=raw:raise ValueError('Lossless transport verification failed')
     if len(compressed)>=30*1024*1024:raise ValueError('Transport exceeds Studio single-file limit')
     target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(compressed)
-    print(json.dumps({'originalBytes':len(raw),'sha256':EXPECTED,'transportBytes':len(compressed),'path':str(target),'lossless':True}))
+    print(json.dumps({'originalBytes':len(raw),'sha256':EXPECTED,'transportBytes':len(compressed),'path':str(target),'lossless':True,'otherOriginalPDFsRestored':restored}))
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--source');parser.add_argument('--destination');args=parser.parse_args();restore(args.source,args.destination)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--source');parser.add_argument('--destination');parser.add_argument('--all-pdfs',action='store_true');args=parser.parse_args();restore(args.source,args.destination,args.all_pdfs)
