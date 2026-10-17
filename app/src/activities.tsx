@@ -1036,22 +1036,24 @@ export function Osiris({ close }: { close: () => void }) {
 
 export function RosettaDecoder({ close }: { close: () => void }) {
   const [round, setRound] = useState(0);
+  const [pairCount, setPairCount] = useState(4);
+  const setCount = Math.ceil(core.UNIT_1_VOCABULARY.length / pairCount);
   const [selectedWord, setSelectedWord] = useState<string | null>(null);
   const [selectedMeaning, setSelectedMeaning] = useState<string | null>(null);
   const [matches, setMatches] = useState<string[]>([]);
   const [score, setScore] = useState(0);
   const [message, setMessage] = useState('Select an English word and its matching meaning.');
 
-  const vocabSlice = core.UNIT_1_VOCABULARY.slice(round * 4, round * 4 + 4);
+  const vocabSlice = core.UNIT_1_VOCABULARY.slice(round * pairCount, (round + 1) * pairCount);
   const words = vocabSlice.map((v) => ({ id: v.id, text: v.word }));
-  const [meanings] = useState(() =>
+  const meanings =
     shuffle(
-      vocabSlice.map((v) => ({ id: v.id, text: v.englishMeaning + ' (' + v.arabicMeaning + ')' })),
+      vocabSlice.map((v) => ({ id: v.id, text: v.englishMeaning + (pairCount === 4 ? ' (' + v.arabicMeaning + ')' : '') })),
       100 + round
-    )
-  );
+    );
 
   function checkMatch(wordId: string, meaningId: string) {
+    if (matches.includes(wordId) || matches.includes(meaningId)) return;
     if (wordId === meaningId) {
       setMatches([...matches, wordId]);
       setScore((s) => s + 1);
@@ -1084,8 +1086,10 @@ export function RosettaDecoder({ close }: { close: () => void }) {
     <section className="panel rosetta-decoder-panel">
       <h2>Rosetta Decoder · فك شفرة رشيد</h2>
       <p>Match target terms to authentic meanings with non-leaking clues.</p>
+      <label>Decoder level <select value={pairCount} onChange={e => {setPairCount(Number(e.target.value));setRound(0);setMatches([]);setScore(0);setSelectedWord(null);setSelectedMeaning(null);setMessage("Select an English word and its matching meaning.");}}><option value={4}>Foundation · 4 bilingual pairs</option><option value={6}>Apply · 6 English pairs</option><option value={8}>Challenge · 8 English pairs</option></select></label>
+      <p>Set {round + 1} of {setCount} · All {core.UNIT_1_VOCABULARY.length} words are reachable.</p>
       <p className="score-badge">
-        Score: {score} | Pairs decoded: {matches.length}/4
+        Score: {score} | Pairs decoded: {matches.length}/{vocabSlice.length}
       </p>
 
       <div className="rosetta-grid">
@@ -1127,13 +1131,14 @@ export function RosettaDecoder({ close }: { close: () => void }) {
         {message}
       </p>
 
-      {matches.length === 4 && (
+      {matches.length === vocabSlice.length && (
         <div className="round-won">
           <h4>Round Complete!</h4>
           <button
             onClick={() => {
-              setRound((r) => (r + 1) % 15);
+              setRound((r) => (r + 1) % setCount);
               setMatches([]);
+              setSelectedWord(null);setSelectedMeaning(null);
               setMessage('Select an English word and its matching meaning.');
             }}
           >
