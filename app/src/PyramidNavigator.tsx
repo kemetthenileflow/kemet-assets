@@ -12,7 +12,7 @@ const stages: {
     paths: [
       ['Ministry textbook · Part 1 · 172 pages', 'كتاب الوزارة الأصلي', { page: 'pdf_study', id: 'unit1_source' }, 'pdf'],
       ['All 18 original PDFs', 'كل ملفات PDF', { page: 'documents' }, 'library'],
-      ['Unit overview', 'نظرة على الوحدة', { page: 'journey' }, 'journey'],
+      ['Unit 1 study guide', 'دليل دراسة الوحدة الأولى', { page: 'pdf_study', id: 'unit1_standard' }, 'reading'],
     ],
   },
   {

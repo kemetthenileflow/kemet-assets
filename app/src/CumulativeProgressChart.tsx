@@ -686,7 +686,7 @@ export function CumulativeProgressChart({ attempts: rawAttempts, lang = 'en' }: 
           <span className="metric-value">
             {selectedBank === 'ALL' ? '11 Banks' : `${selectedBank} Bank`}
           </span>
-          <span className="metric-sub">V1, V2, R1, R2, G1, G2, L1, L2, W1, N1, S1</span>
+          <span className="metric-sub">{core.BANK_METADATA.map(bank => bank.id).join(', ')}</span>
         </div>
       </div>
 

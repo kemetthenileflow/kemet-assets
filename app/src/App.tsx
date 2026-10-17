@@ -1,3 +1,4 @@
+import { Home } from './Home';
 import { AnkhHelp } from './AnkhHelp';
 import React, { useState, useEffect, useRef } from 'react';
 import { SymbolDiscover } from './SymbolDiscover';
@@ -20,7 +21,6 @@ import {
 import {
   Banner,
   Intro,
-  DailySymbol,
   Discover,
   Thoth,
   Media,
@@ -236,7 +236,7 @@ export default function App() {
         </div>
       </header>
 
-      <div className="discovery-bar">
+      {route.page !== 'home' && <div className="discovery-bar">
         <button
           className="discovery-link"
           onClick={() => go({ page: 'symbol_discover' })}
@@ -249,7 +249,7 @@ export default function App() {
           <KemetIcon name="cartouche" size={18} />
           <span>Discover the KEMET Logo / اكتشف شعار كيمت</span>
         </button>
-      </div>
+      </div>}
 
       <main>
         <p className="status">{storageStatus()}</p>
@@ -260,142 +260,12 @@ export default function App() {
           </button>
         )}
 
-        {/* HOME VIEW: Hero, 3 Gateways, Stepped Pyramid, Daily Symbol, Library Chips */}
-        {route.page === 'home' && (
-          <>
-            <section className="hero" style={{ textAlign: "center" }}>
-              <span className="eyebrow">LEARN · PRACTISE · DISCOVER</span>
-              <h1>{lang === 'ar' ? 'ابدأ رحلتك مع الوحدة الأولى' : 'Your Unit 1 learning journey'}</h1>
-              <p style={{ fontStyle: "italic", fontSize: 17 }}>{lang === 'ar' ? 'بمعرفتك تصنع أثرًا' : 'Let knowledge shape your legacy.'}</p>
-              <p>
-                {lang === 'ar'
-                  ? 'اختار طريقك، وخد خطوة صغيرة نحو فهم أوضح عبر لغة حية وأصيلة.'
-                  : 'Choose your path through a living library of language grounded in authentic Egyptian heritage.'}
-              </p>
-              <div className="hero-cta-group" style={{ justifyContent: "center" }}>
-                <button
-                  className="primary primary-hero"
-                  onClick={() => go(read<Route>('kemet_resume_' + profile().uid, { page: 'journey' }))}
-                >
-                  <KemetIcon name="journey" size={18} />
-                  <span>{lang === 'ar' ? 'واصل التعلم' : 'Continue learning'}</span>
-                </button>
-                <div className="quick-support-toggle">
-                  <label>
-                    Support:{' '}
-                    <select
-                      value={support}
-                      onChange={(e) => setSupport(e.target.value)}
-                      className="quick-support-select"
-                    >
-                      <option value="supported">Supported (with scaffolds)</option>
-                      <option value="independent">Independent (unassisted)</option>
-                      <option value="stretch">Stretch (deeper transfer)</option>
-                    </select>
-                  </label>
-                </div>
-              </div>
-            </section>
-
-            <section className="panel start-here" aria-label="Start here">
-              <h2>{lang === 'ar' ? 'ابدأ من هنا' : 'Start here'}</h2>
-              <p>{lang === 'ar' ? 'افتح المنهج الأصلي، ثم اختر شرح كيمت أو التدريب. كل المسارات متاحة لك.' : 'Read the original curriculum, explore KEMET explanations, then practise. Every route is open to you.'}</p>
-              <div className="start-actions">
-                <button className="primary" onClick={() => go({page:'pdf_study',id:'unit1_source'})}><KemetIcon name="pdf" size={18} /> {lang === 'ar' ? 'كتاب الوزارة · الجزء الأول · ١٧٢ صفحة' : 'Ministry textbook · Part 1 · 172 pages'}</button>
-                <button onClick={() => go({page:'documents'})}><KemetIcon name="library" size={18} /> {lang === 'ar' ? 'كل ملفات PDF · ١٨ ملفًا' : 'All 18 original PDFs'}</button>
-                <button onClick={() => go({page:'media',tab:'curriculum_listening'})}><KemetIcon name="listening" size={18} /> {lang === 'ar' ? 'استمع إلى تسجيلات الوحدة' : 'Unit 1 listening'}</button>
-              </div>
-            </section>
-            {/* Three Major Gateways */}
-            <section className="gateway-grid">
-              {[
-                ['vocabulary', 'Vocabulary Vault', 'Words, meanings and independent recall', 'vocabulary'],
-                ['story', 'Story Quest', 'A Dream of Adventure · Chapter 1', 'story'],
-                ['challenge', 'Challenge Arena', 'Choose a source bank and support', 'challenge'],
-              ].map(([page, title, sub, iconName]) => (
-                <button className="gateway" key={page} onClick={() => go({ page })}>
-                  <div className="gateway-icon-header">
-                    <KemetIcon name={iconName as any} size={32} />
-                  </div>
-                  <strong>{title}</strong>
-                  <span>{sub}</span>
-                </button>
-              ))}
-            </section>
-
-            {/* Stepped Pyramid Central Metaphor */}
-            <SteppedPyramid
-              go={go}
-              lang={lang}
-              onSelectSupport={setSupport}
-              support={support}
-            />
-
-            <DailySymbol lang={lang} />
-
-            <section className="panel symbol-discover-home-card" style={{ border: '2px solid #b8892d', background: '#fff9ec' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 12 }}>
-                <div>
-                  <h3 style={{ margin: '0 0 4px', color: '#553e18' }}>
-                    {lang === 'ar' ? 'بطاقات الرموز والشخصيات المصرية (٣١ بطاقة)' : 'Egyptian Symbol & Character Cards (31 Cards)'}
-                  </h3>
-                  <p style={{ margin: 0, fontSize: '0.92rem', color: '#3a2d13' }}>
-                    {lang === 'ar'
-                      ? 'استكشف بطاقات التراث والأعلام الوطنية من توت عنخ آمون وحتشبسوت إلى رموز العدالة والعلم وقناة السويس.'
-                      : 'Explore authentic heritage cards and national icons, from Tutankhamun and Hatshepsut to justice, science, and the Suez Canal.'}
-                  </p>
-                </div>
-                <button
-                  className="primary"
-                  onClick={() => go({ page: 'symbol_discover' })}
-                  style={{ minWidth: 200, margin: 0 }}
-                >
-                  <KemetIcon name="scarab" size={18} />
-                  <span>{lang === 'ar' ? 'استكشف الـ ٣١ رمزًا' : 'Explore All 31 Symbols'} →</span>
-                </button>
-              </div>
-            </section>
-
-            <section className="panel library-summary-panel">
-              <h2>{lang === 'ar' ? 'المكتبة السكندرية' : 'Alexandrian Library'}</h2>
-              <div className="chips">
-                {[
-                  ['Vocabulary', 'vocabulary'],
-                  ['Reading', 'reading'],
-                  ['Grammar', 'grammar'],
-                  ['Listening', 'listening'],
-                  ['Writing', 'writing'],
-                  ['Story', 'story'],
-                ].map(([c, icon]) => (
-                  <button
-                    key={c}
-                    onClick={() => {
-                      setCategory(c);
-                      go({ page: 'library' });
-                    }}
-                  >
-                    <KemetIcon name={icon as any} size={15} />
-                    <span>{c}</span>
-                  </button>
-                ))}
-              </div>
-              <div className="library-quick-links">
-                <button onClick={() => go({ page: 'media' })}>
-                  <KemetIcon name="video" size={16} />
-                  <span>Open Media Library (5 Categories)</span>
-                </button>
-                <button onClick={() => go({ page: 'voice' })}>
-                  <KemetIcon name="mic" size={16} />
-                  <span>Spoken Voice Mirror</span>
-                </button>
-                <button onClick={() => go({ page: 'pdf_study', id: 'unit1_standard' })}>
-                  <KemetIcon name="reading" size={16} />
-                  <span>Study Unit 1 Standard in App</span>
-                </button>
-              </div>
-            </section>
-          </>
-        )}
+        {route.page === 'home' && <Home lang={lang} go={go} resume={() => go(read<Route>('kemet_resume_' + profile().uid, {page:'journey'}))} />}
+        {route.page === 'journey' && <section className="journey-overview">
+          <h1>{lang === 'ar' ? 'رحلتك التعليمية' : 'Your learning journey'}</h1>
+          <SteppedPyramid go={go} lang={lang} onSelectSupport={setSupport} support={support}/>
+          <button onClick={() => go({page:'challenge'})}><KemetIcon name="challenge" size={18}/>{lang === 'ar' ? 'اختر بنك أسئلة للتدريب' : 'Choose a question bank for practice'}</button>
+        </section>}
 
         {route.page === 'documents' && <section className="documents-page">
           <h1>{lang === 'ar' ? 'ملفات المنهج وكيمت الأصلية' : 'Original curriculum & KEMET PDFs'}</h1>
@@ -560,9 +430,9 @@ export default function App() {
         )}
 
         {/* CHALLENGE ARENA / JOURNEY */}
-        {['challenge', 'journey'].includes(route.page) && (
+        {route.page === 'challenge' && (
           <section className="challenge-page">
-            <h1>{route.page === 'journey' ? 'Learning Journey' : 'Challenge Arena'}</h1>
+            <h1>{lang === 'ar' ? 'ساحة التحدي' : 'Challenge Arena'}</h1>
             <p>Context → notice → explain → guided try → independent response → feedback → later review.</p>
             {selector()}
             <div className="challenge-shortcuts">
@@ -898,7 +768,7 @@ export default function App() {
 
             <div className="panel audit-downloads-panel">
               <h3>Official Audit Downloads</h3>
-              <p>Download the comprehensive implementation report and the complete source checkpoint archive:</p>
+              <p>Download the review summary or the existing source checkpoint archive:</p>
               <div className="audit-download-buttons">
                 <button
                   className="primary"
@@ -910,7 +780,7 @@ export default function App() {
                     )
                   }
                 >
-                  Download Full Implementation Report (MD)
+                  Download review summary (MD)
                 </button>
                 <a
                   href="/kemet_source_checkpoint_2026-10-16.zip"

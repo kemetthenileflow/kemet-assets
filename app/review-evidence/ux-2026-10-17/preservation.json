@@ -1,0 +1,12 @@
+{
+  "src/ui.tsx": true,
+  "src/SymbolDiscover.tsx": true,
+  "src/data/symbolCards.ts": true,
+  "src/activities.tsx": true,
+  "src/VoiceMirror.tsx": true,
+  "src/PdfReader.tsx": true,
+  "src/PyramidNavigator.tsx": "Only self-link Unit overview replaced with existing Unit1 Standard PDF study guide; all other stages/routes preserved.",
+  "src/data/core.json": true,
+  "src/data/catalog.json": true,
+  "src/data/blueprint.json": true
+}
