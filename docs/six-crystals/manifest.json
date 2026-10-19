@@ -1,0 +1,91 @@
+{
+  "title": "KEMET — THE SIX CRYSTALS",
+  "subtitle": "Your Future Quest",
+  "type": "nine static sequential visual cards",
+  "state": "asset files pending upload on safe GitHub feature branch",
+  "asset_directory": "public/brand/six-crystals",
+  "count": 9,
+  "screens": [
+    {
+      "order": 0,
+      "path": "public/brand/six-crystals/00-welcome-check-your-crystals.png",
+      "sha256": "1bedcbcd53e88aa25fb1c4c02a75fedfd23053b5470611b1627a7a3c33cd4950",
+      "bytes": 2667661,
+      "width": 941,
+      "height": 1672,
+      "title": "Welcome"
+    },
+    {
+      "order": 1,
+      "path": "public/brand/six-crystals/01-nothing-lasts-the-same.png",
+      "sha256": "79e5417e60923a97ba7debf253a6dcc5a11178b7f09a7c1cd1bc062f85aff876",
+      "bytes": 2188954,
+      "width": 941,
+      "height": 1672,
+      "title": "Nothing Lasts the Same"
+    },
+    {
+      "order": 2,
+      "path": "public/brand/six-crystals/02-your-future-is-in-your-hands.png",
+      "sha256": "b320acfbe7afa150daf4b3d28ba55df8061ac7012af7d46c8658c0f77fc3edae",
+      "bytes": 2394633,
+      "width": 941,
+      "height": 1672,
+      "title": "Your Future Is in Your Hands"
+    },
+    {
+      "order": 3,
+      "path": "public/brand/six-crystals/03-legacy-of-greatness.png",
+      "sha256": "d072bcdabb096a02542fd1116640bc46d5ae396d2f074e55ef0be53ba6a00265",
+      "bytes": 2313907,
+      "width": 941,
+      "height": 1672,
+      "title": "Legacy of Greatness"
+    },
+    {
+      "order": 4,
+      "path": "public/brand/six-crystals/04-turn-your-dream-into-a-plan.png",
+      "sha256": "df4a38ab179d07b61be67c75f44ad769a5150f08c83622bf10279e784602f8cc",
+      "bytes": 2361483,
+      "width": 941,
+      "height": 1672,
+      "title": "Turn Your Dream into a Plan"
+    },
+    {
+      "order": 5,
+      "path": "public/brand/six-crystals/05-small-steps-build-great-things.png",
+      "sha256": "bedd93d37bd4fbf27d29e814bdcc48d80c9efcd6c2a2757b7e80da4a274c7eca",
+      "bytes": 2571046,
+      "width": 941,
+      "height": 1672,
+      "title": "Small Steps Build Great Things"
+    },
+    {
+      "order": 6,
+      "path": "public/brand/six-crystals/06-you-can.png",
+      "sha256": "1f58411dbed1281ec99321d2e3374f3d42c3b2adb99ebf50d8898dde146deda5",
+      "bytes": 2649643,
+      "width": 941,
+      "height": 1672,
+      "title": "You Can"
+    },
+    {
+      "order": 7,
+      "path": "public/brand/six-crystals/07-what-did-the-crystals-tell-you.png",
+      "sha256": "44da08964151b87a6292f69519ab2dd0bdfab3da2d4acec582d1736788d08294",
+      "bytes": 2575112,
+      "width": 941,
+      "height": 1672,
+      "title": "What Did the Crystals Tell You?"
+    },
+    {
+      "order": 8,
+      "path": "public/brand/six-crystals/08-kemet-a-journey-within.png",
+      "sha256": "40fb4334e360dfe4ab066ecea7d1e18c5b2aa7c56e61146af30bc31d959055dd",
+      "bytes": 2772794,
+      "width": 941,
+      "height": 1672,
+      "title": "KEMET — A Journey Within You"
+    }
+  ]
+}
