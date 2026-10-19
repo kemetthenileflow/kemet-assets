@@ -361,7 +361,8 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "A Dream of Adventure"
     },
     {
       "id": "MEDIA-02",
@@ -375,7 +376,8 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "Army Guards much more than my sleep"
     },
     {
       "id": "MEDIA-03",
@@ -389,7 +391,8 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "Egyption Identity & English Learning Motivation"
     },
     {
       "id": "MEDIA-04",
@@ -403,7 +406,10 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "I'm an Egyptian Student — Watch Me Grow (Version 2)",
+      "canonicalTitle": "I'm an Egyptian Student — Watch Me Grow",
+      "audioVersion": 2
     },
     {
       "id": "MEDIA-05",
@@ -417,7 +423,9 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "English Sounds and Pronunciation",
+      "canonicalTitle": "English Sounds and Pronunciation"
     },
     {
       "id": "MEDIA-06",
@@ -431,7 +439,10 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "I'm an Egyptian Student — Watch Me Grow (Version 1)",
+      "canonicalTitle": "I'm an Egyptian Student — Watch Me Grow",
+      "audioVersion": 1
     },
     {
       "id": "MEDIA-07",
@@ -445,7 +456,9 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "The Present Continuous Tense",
+      "canonicalTitle": "The Present Continuous Tense"
     },
     {
       "id": "MEDIA-08",
@@ -459,7 +472,8 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "dream of adventure 3mp3"
     },
     {
       "id": "MEDIA-09",
@@ -473,7 +487,9 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "If Clauses and Conditionals",
+      "canonicalTitle": "If Clauses and Conditionals"
     },
     {
       "id": "MEDIA-10",
@@ -487,7 +503,9 @@
       "release": "owner_supplied_preview",
       "defaultVisible": false,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "Story of the Kemet Logo",
+      "canonicalTitle": "Story of the Kemet Logo"
     },
     {
       "id": "REC-01",
@@ -501,7 +519,8 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "recording_1"
     },
     {
       "id": "REC-04",
@@ -515,7 +534,8 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "recording_4"
     },
     {
       "id": "MEDIA-13",
@@ -529,7 +549,9 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "The Present Continuous at the Grand Egyptian Museum",
+      "canonicalTitle": "The Present Continuous at the Grand Egyptian Museum"
     },
     {
       "id": "MEDIA-14",
@@ -543,7 +565,9 @@
       "release": "owner_supplied_preview",
       "defaultVisible": true,
       "remoteUrl": null,
-      "importVerification": "not_verified_in_current_project"
+      "importVerification": "not_verified_in_current_project",
+      "displayTitle": "The Present Simple Tense",
+      "canonicalTitle": "The Present Simple Tense"
     }
   ],
   "vocabularyAssets": [

@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-19",
+  "scope": "Owner-requested audio display title standardization",
+  "note": "Original filenames, archive bytes, IDs and playback paths are preserved. Versions 1 and 2 share a canonical title per owner instruction; lyric and musical equivalence have not been independently verified. Lyrics, vocal settings and genre analysis remain pending.",
+  "titles": {
+    "MEDIA-04": {
+      "title": "I'm an Egyptian Student — Watch Me Grow",
+      "version": 2
+    },
+    "MEDIA-05": {
+      "title": "English Sounds and Pronunciation"
+    },
+    "MEDIA-06": {
+      "title": "I'm an Egyptian Student — Watch Me Grow",
+      "version": 1
+    },
+    "MEDIA-07": {
+      "title": "The Present Continuous Tense"
+    },
+    "MEDIA-09": {
+      "title": "If Clauses and Conditionals"
+    },
+    "MEDIA-10": {
+      "title": "Story of the Kemet Logo"
+    },
+    "MEDIA-13": {
+      "title": "The Present Continuous at the Grand Egyptian Museum"
+    },
+    "MEDIA-14": {
+      "title": "The Present Simple Tense"
+    }
+  }
+}

@@ -242,7 +242,7 @@ export function MediaLibrary({
     {
       id: 'archive_unclassified',
       title: 'Instructor Archive | أرشيف المعلم',
-      subtitle: 'MEDIA-10 kemet.mp3 unclassified pending teacher review',
+      subtitle: 'Story of the Kemet Logo · MEDIA-10',
       icon: 'cartouche',
       items: catalog.media.filter((m) => m.id === 'MEDIA-10'),
     },
@@ -339,7 +339,7 @@ export function MediaLibrary({
                 <div className="media-card-header">
                   <div className="media-title-group">
                     <KemetIcon name="audio" size={20} />
-                    <h3>{m.originalFilename.replace(/\.mp3$/, '')}</h3>
+                    <h3>{m.displayTitle || m.originalFilename.replace(/\.mp3$/, '')}</h3>
                   </div>
                   <div className="media-badge-group">
                     <span className="badge">{m.id}</span>
