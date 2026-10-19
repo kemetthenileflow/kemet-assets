@@ -1,37 +1,50 @@
 # KEMET — TWO ALTERNATING DAILY CARD EXPERIENCES
+## Continuation: NEW OPENING CARD FOR GAME A
 
-**Game A: The Six Crystals** and **Game B: Your Future, Your Pyramid** are **two different image-based journeys**. They are not one combined fifteen-card game.
+**Status (19 October 2026):** The introductory image and full illustrated Word report exist as conversation deliverables, **but their binary files have not been uploaded to GitHub**. This branch records the verified continuation and exact upload instructions. It does **not** claim the images or document are available at GitHub paths yet.
 
-- **Game A / day one:** 6 original landscape PNG images (1672 × 941 px): Nile Change, Lotus Dreams, Papyrus Choices, Rosetta Knowledge, Eye Wisdom, Pyramid Action.
-- **Game B / day two:** 9 original portrait PNG images (941 × 1672 px): one introduction, six numbered motivational steps in the student's journey, one final reflection/share image, and one KEMET closing image.
-- **Day three:** Game A again; **day four:** Game B, and so on.
-- The student may replay or manually switch to the other experience; no forced waiting or daily streak.
+### Existing parent handoff
+This branch continues `assets/kemet-two-daily-games-2026-10-19`. Do not create a different app, combine the two games, or overwrite original image files.
 
-## What is ready
+### Game A — THE SIX CRYSTALS (7 images: 1 NEW unnumbered opening + 6 originals)
+The **new supplementary opening** is the **FIRST image**, not Crystal 1 of 6 and not a replacement for Crystal 6 of 6.
 
-The ChatGPT conversation has generated an **83.9 MB complete ZIP** named:
+1. **NEW opening** — `00-your-journey-begins-here.png` — “YOUR JOURNEY BEGINS HERE”; “SIX SYMBOLS • SIX REFLECTIONS”; “ONE FUTURE TO BUILD”; **INTRODUCTION**, no Crystal number.
+2. Original **Crystal 1 of 6** — `01-the-nile-change.jpg` — change, Nile and adaptability.
+3. Original **Crystal 2 of 6** — `02-the-lotus-dreams.jpg` — dreams and future orientation.
+4. Original **Crystal 3 of 6** — `03-the-papyrus-choices.jpg` — choices and agency.
+5. Original **Crystal 4 of 6** — `04-the-rosetta-knowledge.jpg` — knowledge and languages.
+6. Original **Crystal 5 of 6** — `05-the-eye-wisdom.jpg` — judgment, persistence, strategies.
+7. Original **Crystal 6 of 6** — `06-the-pyramid-action.jpg` — one achievable first step.
 
-`KEMET_Two_Alternating_Daily_Games_Complete.zip`
+**Target folder for all seven Game A images:** `public/brand/daily-motivation/game-a-six-crystals/`.
 
-Its contents include:
-- **15 full-resolution, original, unmodified PNG cards**, arranged into separate A and B folders.
-- A 23-page **illustrated English documentation in DOCX and PDF**. Both experiences have their own explanations, pedagogical/psychological rationale, and reconstruction prompts.
-- **manifest.json** with original checksums, dimensions, and order.
-- **WORK_GITHUB_HANDOFF.md** with detailed instructions.
+The newly supplied original Game A cards are 1536 × 864 JPEG files in the conversation, despite earlier 1672 × 941 PNG descriptions. Preserve their actual bytes and file format; do not relabel JPEG bytes as PNG. The newly designed opening card is a 1536 × 864 PNG. Never publish the two rejected regenerated alternatives for Crystal 6.
 
-## What still needs to happen
+### Game B — YOUR FUTURE, YOUR PYRAMID (9 original images, unchanged)
+Independent portrait narrative: `00-welcome-check-your-crystals.png`, `01-nothing-lasts-the-same.png`, `02-your-future-is-in-your-hands.png`, `03-legacy-of-greatness.png`, `04-turn-your-dream-into-a-plan.png`, `05-small-steps-build-great-things.png`, `06-you-can.png`, `07-what-did-the-crystals-tell-you.png`, `08-kemet-a-journey-within.png`.
 
-**The binary images, DOCX and PDF have not yet been uploaded to GitHub.**
+**Target folder for Game B:** `public/brand/daily-motivation/game-b-pyramid-journey/`.
 
-In ChatGPT **Work** mode, attach the ZIP from the conversation and request:
+### Updated documentation
+Upload the standalone editable report **`KEMET_Two_Daily_Games_Complete_Illustrated_Documentation.docx`** to `docs/daily-motivation/`. The current local copy contains **16 embedded images** (7 Game A including the new opener, and 9 Game B). It explains the educational, psychological and visual design philosophy, the individual reconstruction prompts, and the alternating daily schedule.
 
-1. Review this branch and the archive.
-2. Upload Game A's six PNGs under `public/brand/daily-motivation/game-a-six-crystals/`.
-3. Upload Game B's nine PNGs under `public/brand/daily-motivation/game-b-pyramid-journey/`.
-4. Upload the illustrated DOCX, PDF, manifest and README under `docs/daily-motivation/`.
-5. Compare the original binary hashes in the ZIP with GitHub-hosted assets, check all 15 URLs, and report actual commit SHA.
-6. **Do not merge, deploy, build a new game, alter original images, change the KEMET logo, or touch protected recovery material.**
+### Alternation in the existing platform
+- Day 1 Game A: NEW opening (00) → numbered Crystals 1–6.
+- Day 2 Game B: its own original 00–08 sequence.
+- Day 3 Game A again; Day 4 Game B; continue alternating.
+- Students may revisit either experience. The rotation is proposed, **not verified as implemented**.
+- All images are static. Printed “Swipe,” “Next,” and similar shapes are not functional application buttons.
 
-Images contain rendered “Next” buttons and social icons as part of the static art; these do not function unless the existing app provides navigation. There is an English copy typo in the original 2/6 Pyramid Journey image (“and you decisions”); preserve the original asset but flag it for an approved corrected replacement.
+### Exact new binary asset verification
+- New opening image: `KEMET_Six_Crystals_New_Opening_Card.png`, size **1,417,677 bytes**, **1536 × 864**, SHA-256 `ced25fe81c1f2f59e04c5858e9e5ba83b9c127d24e0855b0f281f387e812e9cd`.
+- Illustrated Word documentation: `KEMET_Two_Daily_Games_Complete_Illustrated_Documentation.docx`, size **27,452,741 bytes**, SHA-256 `e9d97524fa95d752f17e1f9f957eb433f86a1619b27e40f57b5a15ec6b52aa72`.
 
-**Important:** This README is a Work handoff, **not proof that the original image assets have been uploaded**.
+### Required authenticated upload and verification
+1. In ChatGPT Work (with a cloud browser or another authenticated binary-file-capable workflow), open this branch and obtain the two above **actual conversation files**; obtain the six original Game A JPEGs and the nine Game B PNGs from their existing source package. Never regenerate.
+2. Upload the new `00-your-journey-begins-here.png` **at the beginning of Game A** and the updated DOCX under `docs/daily-motivation/`; preserve source images.
+3. Verify bytes/hashes, file count and image decoding; check the correct new order Game A (7) and Game B (9).
+4. Confirm GitHub file URLs work; commit on a feature branch. **Do not report success until binary contents exist at these paths.**
+5. Do not merge to `main`, deploy, change official KEMET logo, alter any original, or touch recovery branches without explicit approval.
+
+**Note:** The old `docs/six-crystals/` handoff on a separate branch refers to the NINE-PORTRAIT storyline by a confusing former title. It must not be mistaken for Game A's six landscape crystals.
