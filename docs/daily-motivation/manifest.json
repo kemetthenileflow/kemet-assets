@@ -1,0 +1,165 @@
+{
+  "project": "KEMET — The Nile Flow",
+  "product": "Two Alternating Daily Card Experiences",
+  "version": "continuation — new unnumbered opening before six original landscape crystals",
+  "repo": "kemetthenileflow/kemet-assets",
+  "target_branch": "assets/kemet-two-daily-games-opening-2026-10-19",
+  "expected_source_assets": 16,
+  "original_assets": 15,
+  "new_introduction_assets": 1,
+  "game_a_sequence": 7,
+  "game_b_sequence": 9,
+  "files": [
+    {
+      "path": "public/brand/daily-motivation/game-a-six-crystals/00-your-journey-begins-here.png",
+      "kind": "new_unumbered_opening",
+      "bytes": 1417677,
+      "sha256": "ced25fe81c1f2f59e04c5858e9e5ba83b9c127d24e0855b0f281f387e812e9cd",
+      "width": 1536,
+      "height": 864,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-a-six-crystals/01-the-nile-change.jpeg",
+      "kind": "original_game_a",
+      "bytes": 659011,
+      "sha256": "f4730b7d94f293d0acc7e5edd50ec2708128eea83796e5050566f876670fe1fd",
+      "width": 1536,
+      "height": 864,
+      "image_format": "JPEG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-a-six-crystals/02-the-lotus-dreams.jpeg",
+      "kind": "original_game_a",
+      "bytes": 639506,
+      "sha256": "dcdc24abb870a16070c94db1c4b92d45ffc5a4f6a70c3981eee34fe34010e0a1",
+      "width": 1536,
+      "height": 864,
+      "image_format": "JPEG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-a-six-crystals/03-the-papyrus-choices.jpeg",
+      "kind": "original_game_a",
+      "bytes": 635247,
+      "sha256": "c0c05fb07f077003dc7833a0bf31fab0d81bb2b6c64c19277a371eb7852598eb",
+      "width": 1536,
+      "height": 864,
+      "image_format": "JPEG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-a-six-crystals/04-the-rosetta-knowledge.jpeg",
+      "kind": "original_game_a",
+      "bytes": 657657,
+      "sha256": "9557e99e193842d5bf1d59902ff7bfb292333f9e8efef17617dd9148483e73da",
+      "width": 1536,
+      "height": 864,
+      "image_format": "JPEG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-a-six-crystals/05-the-eye-wisdom.jpeg",
+      "kind": "original_game_a",
+      "bytes": 628376,
+      "sha256": "8763c005385b6e66e3a077877e499732f203c696850334619ad2ab48d74b68b5",
+      "width": 1536,
+      "height": 864,
+      "image_format": "JPEG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-a-six-crystals/06-the-pyramid-action.jpeg",
+      "kind": "original_game_a",
+      "bytes": 648786,
+      "sha256": "65637061f2a01ee60b3b87f8282ee66426a22f25e41c00cb1024e0b2cd137cc2",
+      "width": 1536,
+      "height": 864,
+      "image_format": "JPEG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/00-welcome-check-your-crystals.png",
+      "kind": "original_game_b",
+      "bytes": 2667661,
+      "sha256": "1bedcbcd53e88aa25fb1c4c02a75fedfd23053b5470611b1627a7a3c33cd4950",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/01-nothing-lasts-the-same.png",
+      "kind": "original_game_b",
+      "bytes": 2188954,
+      "sha256": "79e5417e60923a97ba7debf253a6dcc5a11178b7f09a7c1cd1bc062f85aff876",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/02-your-future-is-in-your-hands.png",
+      "kind": "original_game_b",
+      "bytes": 2394633,
+      "sha256": "b320acfbe7afa150daf4b3d28ba55df8061ac7012af7d46c8658c0f77fc3edae",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/03-legacy-of-greatness.png",
+      "kind": "original_game_b",
+      "bytes": 2313907,
+      "sha256": "d072bcdabb096a02542fd1116640bc46d5ae396d2f074e55ef0be53ba6a00265",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/04-turn-your-dream-into-a-plan.png",
+      "kind": "original_game_b",
+      "bytes": 2361483,
+      "sha256": "df4a38ab179d07b61be67c75f44ad769a5150f08c83622bf10279e784602f8cc",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/05-small-steps-build-great-things.png",
+      "kind": "original_game_b",
+      "bytes": 2571046,
+      "sha256": "bedd93d37bd4fbf27d29e814bdcc48d80c9efcd6c2a2757b7e80da4a274c7eca",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/06-you-can.png",
+      "kind": "original_game_b",
+      "bytes": 2649643,
+      "sha256": "1f58411dbed1281ec99321d2e3374f3d42c3b2adb99ebf50d8898dde146deda5",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/07-what-did-the-crystals-tell-you.png",
+      "kind": "original_game_b",
+      "bytes": 2575112,
+      "sha256": "44da08964151b87a6292f69519ab2dd0bdfab3da2d4acec582d1736788d08294",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "public/brand/daily-motivation/game-b-pyramid-journey/08-kemet-a-journey-within.png",
+      "kind": "original_game_b",
+      "bytes": 2772794,
+      "sha256": "40fb4334e360dfe4ab066ecea7d1e18c5b2aa7c56e61146af30bc31d959055dd",
+      "width": 941,
+      "height": 1672,
+      "image_format": "PNG"
+    },
+    {
+      "path": "docs/daily-motivation/KEMET_Two_Daily_Games_Complete_Illustrated_Documentation.docx",
+      "kind": "illustrated_documentation",
+      "bytes": 27452668,
+      "sha256": "b5b02b78ae7c8c31dbda46b13f04cfe3e2b1ae3631c6eae9f6c6f25e81e068fb"
+    }
+  ],
+  "docx_embedded_images": 16
+}
