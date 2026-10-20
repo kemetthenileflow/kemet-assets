@@ -1,0 +1,289 @@
+@import "tailwindcss";
+
+:root {
+  /* Official Kemet Palette */
+  --kemet-turquoise: #0AB4B5;
+  --kemet-turquoise-hover: #0CE6E8;
+  --kemet-turquoise-dark: #089293;
+  --kemet-gold-dark: #B8860B;
+  --kemet-gold-rich: #D4AF37;
+  --kemet-gold-light: #FFD700;
+  --kemet-gold-sheen: #FFF4B8;
+  --kemet-gold-shadow: #5C4003;
+  --kemet-papyrus: #F4EFEA;
+  --kemet-papyrus-warm: #EBDDC6;
+  --kemet-papyrus-border: #D1B894;
+  --kemet-text: #3E2723;
+  --kemet-text-muted: #6D4C41;
+  --kemet-dark-bg: #141210;
+  --kemet-lapis: #1A365D;
+}
+
+/* Custom scrollbars with gold accent */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #E8DECF;
+}
+::-webkit-scrollbar-thumb {
+  background: #C49733;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8860B;
+}
+
+/* Authentic Papyrus Woven Reed Background (Procedural high-res SVG pattern) */
+.papyrus-texture {
+  background-color: var(--kemet-papyrus);
+  background-image: 
+    radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+    radial-gradient(ellipse at 85% 80%, rgba(184, 134, 11, 0.09) 0%, transparent 45%),
+    linear-gradient(90deg, rgba(139, 101, 8, 0.03) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(139, 101, 8, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 28px 28px, 14px 14px;
+}
+
+.papyrus-dark-texture {
+  background-color: var(--kemet-dark-bg);
+  background-image: 
+    radial-gradient(ellipse at 20% 20%, rgba(212, 175, 55, 0.07) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(10, 180, 181, 0.06) 0%, transparent 50%),
+    linear-gradient(90deg, rgba(255, 215, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(255, 215, 0, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 32px 32px, 16px 16px;
+}
+
+/* Pharaonic Meander & Lotus Hieroglyphic Border Pattern */
+.egyptian-frieze-top {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #B8860B 0px,
+    #B8860B 12px,
+    #0AB4B5 12px,
+    #0AB4B5 20px,
+    #D4AF37 20px,
+    #D4AF37 32px,
+    #3E2723 32px,
+    #3E2723 36px
+  );
+  height: 4px;
+}
+
+/* ========================================================
+   3D LUXURY GOLD & TURQUOISE BUTTON SYSTEM STYLES
+   ======================================================== */
+
+/* Primary 3D Egyptian Gold Button */
+.btn-gold-3d {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #241604;
+  text-shadow: 0 1px 0 rgba(255, 245, 180, 0.6);
+  background: linear-gradient(
+    180deg,
+    #FFF4B8 0%,
+    #FFD700 14%,
+    #E5B80B 45%,
+    #C69214 75%,
+    #A67808 100%
+  );
+  border: 1px solid #735105;
+  border-top-color: #FFF9D2;
+  border-bottom-color: #523703;
+  border-radius: 9999px;
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -2px 3px 0 rgba(92, 64, 3, 0.45),
+    0 4px 12px -2px rgba(184, 134, 11, 0.45),
+    0 2px 4px 0 rgba(0, 0, 0, 0.18);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-gold-3d:hover:not(:disabled) {
+  background: linear-gradient(
+    180deg,
+    #FFFFFF 0%,
+    #FFE033 16%,
+    #F0C419 45%,
+    #D8A01A 75%,
+    #BA870B 100%
+  );
+  box-shadow: 
+    inset 0 1px 2px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -2px 4px 0 rgba(92, 64, 3, 0.5),
+    0 6px 18px -2px rgba(212, 175, 55, 0.6),
+    0 3px 6px 0 rgba(0, 0, 0, 0.22);
+  transform: translateY(-1.5px);
+}
+
+.btn-gold-3d:active:not(:disabled) {
+  transform: translateY(1px) scale(0.99);
+  background: linear-gradient(
+    180deg,
+    #DDA80B 0%,
+    #C4920E 40%,
+    #B58209 80%,
+    #996A04 100%
+  );
+  box-shadow: 
+    inset 0 2px 4px 0 rgba(50, 35, 2, 0.6),
+    inset 0 -1px 1px 0 rgba(255, 245, 180, 0.3),
+    0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Primary Turquoise Pharaonic Button (as in user's prompt specifications) */
+.btn-turquoise-3d {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, var(--kemet-turquoise), #089293);
+  border: 2px solid var(--kemet-gold-dark);
+  border-top-color: #FFD700;
+  border-bottom-color: #7A5703;
+  border-radius: 9999px;
+  box-shadow: 
+    inset 0 2px 5px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 4px rgba(4, 70, 71, 0.4),
+    0 5px 12px rgba(10, 180, 181, 0.35),
+    0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-turquoise-3d:hover:not(:disabled) {
+  background: linear-gradient(145deg, #0CE6E8, var(--kemet-turquoise));
+  border-color: var(--kemet-gold-light);
+  box-shadow: 
+    inset 0 2px 6px rgba(255, 255, 255, 0.6),
+    inset 0 -2px 4px rgba(4, 70, 71, 0.5),
+    0 7px 18px rgba(10, 180, 181, 0.5),
+    0 3px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1.5px);
+}
+
+.btn-turquoise-3d:active:not(:disabled) {
+  transform: translateY(1px) scale(0.99);
+  background: linear-gradient(145deg, #077B7C, #066566);
+  box-shadow: 
+    inset 0 2px 5px rgba(0, 0, 0, 0.4),
+    0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Secondary Refined Gold Inset / Papyrus Button */
+.btn-secondary-gold {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: #7A5405;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1.5px solid #C49733;
+  border-radius: 9999px;
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.8),
+    0 2px 5px rgba(139, 101, 8, 0.12);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.btn-secondary-gold:hover:not(:disabled) {
+  background: rgba(255, 250, 235, 0.95);
+  border-color: #B8860B;
+  color: #523703;
+  box-shadow: 
+    inset 0 1px 3px rgba(255, 255, 255, 0.9),
+    0 4px 10px rgba(184, 134, 11, 0.22);
+  transform: translateY(-1px);
+}
+
+.btn-secondary-gold:active:not(:disabled) {
+  transform: translateY(1px);
+  background: #EEDBB8;
+  box-shadow: inset 0 1px 3px rgba(92, 64, 3, 0.2);
+}
+
+/* Tertiary Minimal Pharaonic Scribe Button */
+.btn-tertiary-kemet {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  color: #6D4C41;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-tertiary-kemet:hover:not(:disabled) {
+  color: #936005;
+  background: rgba(184, 134, 11, 0.1);
+  border-color: rgba(184, 134, 11, 0.25);
+}
+
+.btn-tertiary-kemet:active:not(:disabled) {
+  background: rgba(184, 134, 11, 0.2);
+}
+
+/* Dimensional Royal Cartouche Badge & Card */
+.kemet-royal-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 2px solid var(--kemet-gold-dark);
+  border-radius: 16px;
+  box-shadow: 
+    inset 0 0 12px rgba(184, 134, 11, 0.16),
+    0 6px 16px -2px rgba(62, 39, 35, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.kemet-royal-card-dark {
+  background: rgba(28, 25, 23, 0.88);
+  border: 2px solid #C49733;
+  border-radius: 16px;
+  box-shadow: 
+    inset 0 0 16px rgba(212, 175, 55, 0.14),
+    0 8px 24px -4px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+/* Metallic Gold Medallion Icon Base */
+.gold-medallion {
+  background: radial-gradient(circle at 35% 35%, #FFF8C4 0%, #FFD700 35%, #C69214 70%, #805703 100%);
+  border: 1.5px solid #FFEC94;
+  box-shadow: 
+    inset 0 1px 2px rgba(255, 255, 255, 0.8),
+    inset 0 -1.5px 2px rgba(70, 48, 2, 0.5),
+    0 3px 8px rgba(184, 134, 11, 0.35);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .btn-gold-3d,
+  .btn-turquoise-3d,
+  .btn-secondary-gold,
+  .btn-tertiary-kemet,
+  .kemet-card {
+    transition: none !important;
+    transform: none !important;
+  }
+}

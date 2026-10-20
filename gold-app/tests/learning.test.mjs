@@ -1,0 +1,15 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {parseProgress,progressSummary} from '../src/utils/learningProgress.ts';
+const event=(id,type,extra={})=>({id,type,resource:'VOC-001',at:'2026-10-21T00:00:00Z',...extra});
+test('new learners have no fabricated progress',()=>{assert.deepEqual(parseProgress(null),[]);assert.equal(progressSummary([]).attempts,0);});
+test('navigation never counts as learning completion',()=>{const p=progressSummary([event('a','open')]);assert.equal(p.reviewed,0);assert.equal(p.correct,0);});
+test('assisted answers remain separate from independent evidence',()=>{const p=progressSummary([event('a','attempt',{result:'correct',assisted:true}),event('b','attempt',{result:'incorrect'}),event('c','attempt',{result:'pending'})]);assert.equal(p.correct,1);assert.equal(p.independentCorrect,0);assert.equal(p.incorrect,1);assert.equal(p.pending,1);});
+test('storage roundtrip retains legitimate attempts and ignores duplicate events',()=>{const e=event('a','attempt',{result:'correct'});assert.deepEqual(parseProgress(JSON.stringify({version:1,events:[e,e]})),[e]);});
+test('malformed or incompatible storage fails explicitly',()=>{assert.throws(()=>parseProgress('{'));assert.throws(()=>parseProgress('{"version":2,"events":[]}'));assert.throws(()=>parseProgress('null'));});
+test('unknown events and invalid timestamps are excluded',()=>{assert.deepEqual(parseProgress(JSON.stringify({version:1,events:[event('a','mastered'),event('b','open',{at:'unknown'})]})),[]);});
+test('reviewed resources and question coverage are unique',()=>{const p=progressSummary([event('a','review'),event('b','review'),event('c','attempt',{resource:'question:V1-01'}),event('d','attempt',{resource:'question:V1-01'})]);assert.equal(p.reviewed,1);assert.equal(p.distinctQuestionsAttempted,1);});
+const c=JSON.parse(fs.readFileSync(new URL('../src/data/curriculum.json',import.meta.url),'utf8'));
+test('canonical vocabulary and questions preserve unique stable IDs',()=>{for(const [key,count] of [['UNIT_1_VOCABULARY',66],['STORY_VOCABULARY_59',59],['ALL_330_QUESTIONS',330]]){assert.equal(c[key].length,count);assert.equal(new Set(c[key].map(x=>x.id)).size,count);}});
+test('all 11 banks expose their original 30 questions with valid choice keys',()=>{for(const b of c.BANK_METADATA){const q=c.ALL_330_QUESTIONS.filter(q=>q.bankId===b.id);assert.equal(q.length,30);for(const x of q.filter(x=>x.grading==='deterministic_choice'))assert.ok(x.options.some(o=>o.id===x.correctOptionId));}});

@@ -1,0 +1,6 @@
+{
+  "name": "KEMET Master - Ancient Egyptian Scribe & Gold Design System",
+  "description": "Museum-grade Ancient Egyptian learning platform featuring hieroglyphic deciphering, royal cartouche forge, and luxury 3D Egyptian gold button and icon system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
